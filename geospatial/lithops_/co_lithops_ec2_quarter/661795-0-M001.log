@@ -1,0 +1,325 @@
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,911 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,911 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00000
+    2022-10-01 14:32:43,912 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,917 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,917 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,976 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00000/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,977 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,981 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,409 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.6073 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> merge_dem_partitions - end - 1664634767.6285038 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,630 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,630 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,630 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,652 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00000/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,652 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,661 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,912 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,913 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00001
+    2022-10-01 14:32:43,913 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,918 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,918 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,974 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00001/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,974 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,978 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,407 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.562809 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> merge_dem_partitions - end - 1664634767.6262271 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,628 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,652 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00001/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,652 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,664 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,916 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,916 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00003
+    2022-10-01 14:32:43,917 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,924 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,924 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,983 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00003/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,983 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,987 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,299 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.4291725 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> merge_dem_partitions - end - 1664634767.6043172 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,605 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,605 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,606 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,632 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00003/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,632 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,639 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,914 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,914 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00002
+    2022-10-01 14:32:43,915 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,922 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,923 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,979 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00002/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,979 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,984 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,331 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.4524815 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> merge_dem_partitions - end - 1664634767.6258812 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,627 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,627 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,652 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00002/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,653 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,663 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,917 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,917 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00004
+    2022-10-01 14:32:43,917 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,923 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,923 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,987 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00004/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,987 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,993 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,413 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.5518963 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> merge_dem_partitions - end - 1664634767.6284935 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,630 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,630 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,630 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,665 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00004/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,665 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,671 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,921 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,921 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00006
+    2022-10-01 14:32:43,922 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,929 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,929 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,987 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00006/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,988 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,993 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,398 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.5431623 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> merge_dem_partitions - end - 1664634767.6258874 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,627 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,628 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,660 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00006/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,660 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,669 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,919 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,919 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00005
+    2022-10-01 14:32:43,920 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,927 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,927 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,987 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00005/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,987 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,992 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,332 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.4516017 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> merge_dem_partitions - end - 1664634767.6261177 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,628 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,652 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00005/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,652 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,662 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,922 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,922 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00007
+    2022-10-01 14:32:43,922 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,930 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,930 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,979 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00007/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,979 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,983 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,410 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.5409877 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> merge_dem_partitions - end - 1664634767.6212382 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,623 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,623 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,623 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,648 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00007/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,649 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,659 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,925 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,926 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00009
+    2022-10-01 14:32:43,926 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,933 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,933 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,993 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00009/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,993 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,998 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,412 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.566943 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> merge_dem_partitions - end - 1664634767.6043031 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,605 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,606 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,606 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,679 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00009/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,679 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,685 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,930 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,930 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00011
+    2022-10-01 14:32:43,931 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,938 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,938 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,996 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00011/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,996 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:44,001 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,402 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.569309 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> merge_dem_partitions - end - 1664634767.6249728 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,626 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,626 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,627 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,649 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00011/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,650 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,661 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,927 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,928 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00010
+    2022-10-01 14:32:43,928 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,933 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,933 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,987 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00010/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,987 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,991 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,408 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.604862 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> merge_dem_partitions - end - 1664634767.6262271 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,628 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,652 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00010/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,653 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,664 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,924 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,924 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00008
+    2022-10-01 14:32:43,925 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,932 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,932 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,987 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00008/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,988 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,993 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,415 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.554479 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> merge_dem_partitions - end - 1664634767.6042936 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,605 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,605 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,606 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,633 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00008/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,633 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,641 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (5e41144bc29e)
+[
+    2022-10-01 14:32:43,932 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 14:32:43,932 [INFO] handler.py:153 -- Execution ID: 661795-0-M001/00012
+    2022-10-01 14:32:43,933 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 14:32:43,940 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 14:32:43,940 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 14:32:43,975 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00012/5e41144bc29e.init - Size: 0.0B - OK
+    2022-10-01 14:32:43,976 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 14:32:43,980 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 14:32:44,406 [INFO] jobrunner.py:233 -- Going to execute 'merge_dem_partitions_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> merge_dem_partitions - start - 1664634764.5622087 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    Merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
+    Done merging copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> merge_dem_partitions - end - 1664634767.6261873 - copc/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    ----------------------------------------------------------
+    2022-10-01 14:32:47,627 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 14:32:47,628 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 14:32:47,628 [INFO] jobrunner.py:308 -- Storing function result - Size: 98.0B
+    2022-10-01 14:32:47,696 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/00012/output.pickle - Size: 98.0B - OK
+    2022-10-01 14:32:47,696 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 14:32:47,702 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+

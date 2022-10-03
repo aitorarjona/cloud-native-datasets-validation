@@ -1,0 +1,801 @@
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,323 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,323 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00000
+    2022-10-01 13:09:16,323 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,329 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,329 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,381 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00000/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,381 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,385 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,719 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629792.0175145 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    0.0%
+    4.101718517515876%
+    8.203437035031753%
+    12.305155552547628%
+    16.406874070063505%
+    20.50859258757938%
+    24.610311105095256%
+    28.712029622611134%
+    32.81374814012701%
+    36.91546665764289%
+    41.01718517515876%
+    45.118903692674635%
+    49.22062221019051%
+    53.32234072770638%
+    57.42405924522227%
+    61.525777762738144%
+    65.62749628025402%
+    69.7292147977699%
+    73.83093331528578%
+    77.93265183280165%
+    82.03437035031752%
+    86.13608886783341%
+    90.23780738534927%
+    94.33952590286515%
+    98.44124442038103%
+    100.0%
+    >>> partition_las - end - 1664629822.4294236 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    2022-10-01 13:10:23,192 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_3 - Size: 13.2MiB - OK
+    2022-10-01 13:10:23,216 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_2 - Size: 14.6MiB - OK
+    2022-10-01 13:10:23,251 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_1 - Size: 12.3MiB - OK
+    2022-10-01 13:10:23,329 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_4 - Size: 12.4MiB - OK
+    2022-10-01 13:10:23,343 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_7 - Size: 14.4MiB - OK
+    2022-10-01 13:10:23,351 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_0 - Size: 15.8MiB - OK
+    2022-10-01 13:10:23,359 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_8 - Size: 13.2MiB - OK
+    2022-10-01 13:10:23,363 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_5 - Size: 11.5MiB - OK
+    2022-10-01 13:10:23,475 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00000/cloudobject_6 - Size: 18.0MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:23,495 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:23,496 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:23,496 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:23,540 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00000/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:23,541 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:23,573 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,328 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,328 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00003
+    2022-10-01 13:09:16,329 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,337 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,337 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,400 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00003/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,401 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,405 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,740 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.6357636 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    0.0%
+    3.731704200645077%
+    7.463408401290154%
+    11.195112601935232%
+    14.926816802580309%
+    18.65852100322539%
+    22.390225203870465%
+    26.12192940451554%
+    29.853633605160617%
+    33.5853378058057%
+    37.31704200645078%
+    41.048746207095846%
+    44.78045040774093%
+    48.512154608386005%
+    52.24385880903108%
+    55.97556300967616%
+    59.707267210321234%
+    63.43897141096632%
+    67.1706756116114%
+    70.90237981225647%
+    74.63408401290155%
+    78.36578821354662%
+    82.09749241419169%
+    85.82919661483677%
+    89.56090081548186%
+    93.29260501612693%
+    97.02430921677201%
+    100.0%
+    >>> partition_las - end - 1664629824.0603337 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    2022-10-01 13:10:24,718 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_5 - Size: 10.9MiB - OK
+    2022-10-01 13:10:24,764 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_0 - Size: 17.2MiB - OK
+    2022-10-01 13:10:24,771 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_7 - Size: 13.9MiB - OK
+    2022-10-01 13:10:24,824 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_4 - Size: 11.4MiB - OK
+    2022-10-01 13:10:24,827 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_8 - Size: 14.4MiB - OK
+    2022-10-01 13:10:24,828 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_3 - Size: 15.0MiB - OK
+    2022-10-01 13:10:24,832 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_6 - Size: 13.6MiB - OK
+    2022-10-01 13:10:24,838 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_1 - Size: 17.0MiB - OK
+    2022-10-01 13:10:24,880 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00003/cloudobject_2 - Size: 19.9MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:24,936 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:24,936 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:24,936 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:24,968 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00003/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:24,968 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:25,060 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,326 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,326 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00002
+    2022-10-01 13:09:16,326 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,331 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,332 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,398 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00002/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,398 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,403 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,716 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.617696 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    0.0%
+    3.5644224445122794%
+    7.128844889024559%
+    10.693267333536838%
+    14.257689778049118%
+    17.822112222561397%
+    21.386534667073676%
+    24.950957111585957%
+    28.515379556098235%
+    32.07980200061051%
+    35.644224445122795%
+    39.20864688963508%
+    42.77306933414735%
+    46.33749177865963%
+    49.901914223171914%
+    53.46633666768419%
+    57.03075911219647%
+    60.595181556708745%
+    64.15960400122103%
+    67.72402644573332%
+    71.28844889024559%
+    74.85287133475786%
+    78.41729377927015%
+    81.98171622378243%
+    85.5461386682947%
+    89.11056111280699%
+    92.67498355731927%
+    96.23940600183154%
+    99.80382844634383%
+    100.0%
+    >>> partition_las - end - 1664629826.6408195 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    2022-10-01 13:10:27,378 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_3 - Size: 10.9MiB - OK
+    2022-10-01 13:10:27,465 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_0 - Size: 13.8MiB - OK
+    2022-10-01 13:10:27,502 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_8 - Size: 13.6MiB - OK
+    2022-10-01 13:10:27,508 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_1 - Size: 15.9MiB - OK
+    2022-10-01 13:10:27,536 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_6 - Size: 13.5MiB - OK
+    2022-10-01 13:10:27,544 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_4 - Size: 18.2MiB - OK
+    2022-10-01 13:10:27,550 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_7 - Size: 13.6MiB - OK
+    2022-10-01 13:10:27,562 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_5 - Size: 15.3MiB - OK
+    2022-10-01 13:10:27,585 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00002/cloudobject_2 - Size: 16.7MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:27,599 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:27,599 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:27,599 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:27,632 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00002/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:27,632 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:27,653 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,324 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,325 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00001
+    2022-10-01 13:09:16,325 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,332 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,332 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,393 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00001/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,393 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,397 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,740 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629792.0722337 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    0.0%
+    3.9457841368034927%
+    7.891568273606985%
+    11.837352410410478%
+    15.78313654721397%
+    19.728920684017464%
+    23.674704820820956%
+    27.62048895762445%
+    31.56627309442794%
+    35.51205723123144%
+    39.45784136803493%
+    43.403625504838416%
+    47.34940964164191%
+    51.2951937784454%
+    55.2409779152489%
+    59.18676205205239%
+    63.13254618885588%
+    67.07833032565938%
+    71.02411446246288%
+    74.96989859926636%
+    78.91568273606985%
+    82.86146687287335%
+    86.80725100967683%
+    90.75303514648033%
+    94.69881928328383%
+    98.64460342008732%
+    100.0%
+    >>> partition_las - end - 1664629825.5034137 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    2022-10-01 13:10:26,227 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_3 - Size: 14.4MiB - OK
+    2022-10-01 13:10:26,306 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_1 - Size: 15.7MiB - OK
+    2022-10-01 13:10:26,397 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_4 - Size: 14.5MiB - OK
+    2022-10-01 13:10:26,405 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_8 - Size: 15.2MiB - OK
+    2022-10-01 13:10:26,477 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_5 - Size: 15.2MiB - OK
+    2022-10-01 13:10:26,494 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_6 - Size: 14.1MiB - OK
+    2022-10-01 13:10:26,513 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_2 - Size: 15.9MiB - OK
+    2022-10-01 13:10:26,517 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_7 - Size: 15.5MiB - OK
+    2022-10-01 13:10:27,430 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00001/cloudobject_0 - Size: 16.5MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:27,456 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:27,456 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:27,456 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:27,508 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00001/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:27,509 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:27,534 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,333 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,333 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00006
+    2022-10-01 13:09:16,334 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,341 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,342 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,407 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00006/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,407 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,411 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,742 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.5276396 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    0.0%
+    3.8547839661494456%
+    7.709567932298891%
+    11.564351898448336%
+    15.419135864597783%
+    19.27391983074723%
+    23.128703796896673%
+    26.98348776304612%
+    30.838271729195565%
+    34.693055695345016%
+    38.54783966149446%
+    42.402623627643905%
+    46.257407593793346%
+    50.1121915599428%
+    53.96697552609224%
+    57.82175949224169%
+    61.67654345839113%
+    65.53132742454058%
+    69.38611139069003%
+    73.24089535683947%
+    77.09567932298891%
+    80.95046328913837%
+    84.80524725528781%
+    88.66003122143725%
+    92.51481518758669%
+    96.36959915373615%
+    100.0%
+    >>> partition_las - end - 1664629824.537509 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    2022-10-01 13:10:25,205 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_0 - Size: 14.4MiB - OK
+    2022-10-01 13:10:25,210 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_7 - Size: 14.5MiB - OK
+    2022-10-01 13:10:25,333 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_2 - Size: 13.1MiB - OK
+    2022-10-01 13:10:25,342 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_1 - Size: 14.3MiB - OK
+    2022-10-01 13:10:25,356 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_4 - Size: 12.9MiB - OK
+    2022-10-01 13:10:25,388 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_3 - Size: 14.7MiB - OK
+    2022-10-01 13:10:25,389 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_8 - Size: 15.5MiB - OK
+    2022-10-01 13:10:25,416 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_5 - Size: 16.4MiB - OK
+    2022-10-01 13:10:25,441 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00006/cloudobject_6 - Size: 15.8MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:25,474 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:25,474 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:25,474 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:25,510 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00006/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:25,510 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:25,528 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,340 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,340 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00010
+    2022-10-01 13:09:16,341 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,347 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,347 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,400 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00010/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,400 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,404 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,740 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.6701086 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    0.0%
+    3.549384233301594%
+    7.098768466603188%
+    10.64815269990478%
+    14.197536933206376%
+    17.746921166507967%
+    21.29630539980956%
+    24.845689633111153%
+    28.39507386641275%
+    31.94445809971434%
+    35.493842333015934%
+    39.04322656631753%
+    42.59261079961912%
+    46.14199503292072%
+    49.691379266222306%
+    53.2407634995239%
+    56.7901477328255%
+    60.33953196612709%
+    63.88891619942868%
+    67.43830043273029%
+    70.98768466603187%
+    74.53706889933346%
+    78.08645313263506%
+    81.63583736593665%
+    85.18522159923825%
+    88.73460583253984%
+    92.28399006584144%
+    95.83337429914303%
+    99.38275853244461%
+    100.0%
+    >>> partition_las - end - 1664629825.6312006 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    2022-10-01 13:10:26,444 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_3 - Size: 14.8MiB - OK
+    2022-10-01 13:10:26,535 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_7 - Size: 14.1MiB - OK
+    2022-10-01 13:10:26,612 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_0 - Size: 18.7MiB - OK
+    2022-10-01 13:10:26,644 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_8 - Size: 11.1MiB - OK
+    2022-10-01 13:10:26,650 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_1 - Size: 15.6MiB - OK
+    2022-10-01 13:10:26,656 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_4 - Size: 16.8MiB - OK
+    2022-10-01 13:10:26,670 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_2 - Size: 13.1MiB - OK
+    2022-10-01 13:10:26,690 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_6 - Size: 16.4MiB - OK
+    2022-10-01 13:10:26,709 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00010/cloudobject_5 - Size: 19.2MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:26,735 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:26,736 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:26,736 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:26,771 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00010/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:26,771 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:26,792 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,338 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,338 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00009
+    2022-10-01 13:09:16,339 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,347 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,347 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,406 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00009/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,406 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,410 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,716 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.372047 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    0.0%
+    3.50357802906218%
+    7.00715605812436%
+    10.51073408718654%
+    14.01431211624872%
+    17.5178901453109%
+    21.02146817437308%
+    24.52504620343526%
+    28.02862423249744%
+    31.53220226155962%
+    35.0357802906218%
+    38.53935831968398%
+    42.04293634874616%
+    45.546514377808336%
+    49.05009240687052%
+    52.553670435932695%
+    56.05724846499488%
+    59.56082649405705%
+    63.06440452311924%
+    66.56798255218142%
+    70.0715605812436%
+    73.57513861030579%
+    77.07871663936795%
+    80.58229466843014%
+    84.08587269749232%
+    87.5894507265545%
+    91.09302875561667%
+    94.59660678467885%
+    98.10018481374104%
+    100.0%
+    >>> partition_las - end - 1664629826.1938064 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    2022-10-01 13:10:27,049 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_2 - Size: 15.7MiB - OK
+    2022-10-01 13:10:27,082 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_4 - Size: 12.9MiB - OK
+    2022-10-01 13:10:27,176 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_5 - Size: 12.8MiB - OK
+    2022-10-01 13:10:27,216 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_8 - Size: 14.0MiB - OK
+    2022-10-01 13:10:27,272 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_3 - Size: 13.6MiB - OK
+    2022-10-01 13:10:27,313 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_0 - Size: 18.5MiB - OK
+    2022-10-01 13:10:27,322 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_1 - Size: 16.7MiB - OK
+    2022-10-01 13:10:27,323 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_7 - Size: 13.8MiB - OK
+    2022-10-01 13:10:27,344 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00009/cloudobject_6 - Size: 16.4MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:27,383 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:27,384 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:27,384 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:27,414 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00009/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:27,414 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:27,437 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,345 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,345 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00012
+    2022-10-01 13:09:16,345 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,352 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,353 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,401 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00012/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,402 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,406 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,719 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.6082249 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    0.0%
+    3.545368844220393%
+    7.090737688440786%
+    10.636106532661179%
+    14.181475376881572%
+    17.726844221101963%
+    21.272213065322358%
+    24.81758190954275%
+    28.362950753763144%
+    31.908319597983535%
+    35.45368844220393%
+    38.99905728642432%
+    42.544426130644716%
+    46.08979497486511%
+    49.6351638190855%
+    53.18053266330589%
+    56.72590150752629%
+    60.27127035174667%
+    63.81663919596707%
+    67.36200804018746%
+    70.90737688440785%
+    74.45274572862826%
+    77.99811457284864%
+    81.54348341706904%
+    85.08885226128943%
+    88.63422110550982%
+    92.17958994973021%
+    95.7249587939506%
+    99.270327638171%
+    100.0%
+    >>> partition_las - end - 1664629825.9026036 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    2022-10-01 13:10:26,770 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_1 - Size: 15.3MiB - OK
+    2022-10-01 13:10:26,773 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_0 - Size: 15.5MiB - OK
+    2022-10-01 13:10:26,823 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_4 - Size: 13.6MiB - OK
+    2022-10-01 13:10:26,901 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_2 - Size: 16.7MiB - OK
+    2022-10-01 13:10:26,922 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_6 - Size: 15.2MiB - OK
+    2022-10-01 13:10:26,959 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_7 - Size: 16.0MiB - OK
+    2022-10-01 13:10:26,965 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_8 - Size: 18.2MiB - OK
+    2022-10-01 13:10:26,967 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_5 - Size: 16.3MiB - OK
+    2022-10-01 13:10:26,978 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00012/cloudobject_3 - Size: 14.0MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:27,007 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:27,007 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:27,007 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:27,074 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00012/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:27,074 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:27,093 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,330 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,330 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00004
+    2022-10-01 13:09:16,331 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,339 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,339 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,394 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00004/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,395 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,399 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,720 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629792.0311215 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    0.0%
+    3.6872658724443466%
+    7.374531744888693%
+    11.06179761733304%
+    14.749063489777386%
+    18.436329362221734%
+    22.12359523466608%
+    25.810861107110426%
+    29.498126979554772%
+    33.185392851999126%
+    36.87265872444347%
+    40.55992459688781%
+    44.24719046933216%
+    47.93445634177651%
+    51.62172221422085%
+    55.3089880866652%
+    58.996253959109545%
+    62.683519831553895%
+    66.37078570399825%
+    70.0580515764426%
+    73.74531744888694%
+    77.43258332133128%
+    81.11984919377562%
+    84.80711506621998%
+    88.49438093866432%
+    92.18164681110868%
+    95.86891268355302%
+    99.55617855599736%
+    100.0%
+    >>> partition_las - end - 1664629827.5324655 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    2022-10-01 13:10:28,236 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_4 - Size: 12.0MiB - OK
+    2022-10-01 13:10:28,292 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_1 - Size: 12.6MiB - OK
+    2022-10-01 13:10:28,318 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_5 - Size: 13.4MiB - OK
+    2022-10-01 13:10:28,326 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_8 - Size: 14.2MiB - OK
+    2022-10-01 13:10:28,343 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_6 - Size: 16.0MiB - OK
+    2022-10-01 13:10:28,378 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_2 - Size: 13.5MiB - OK
+    2022-10-01 13:10:28,388 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_7 - Size: 13.5MiB - OK
+    2022-10-01 13:10:28,393 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_3 - Size: 16.9MiB - OK
+    2022-10-01 13:10:28,411 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00004/cloudobject_0 - Size: 18.1MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:28,427 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:28,427 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:28,427 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:28,459 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00004/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:28,460 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:28,473 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,333 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,333 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00007
+    2022-10-01 13:09:16,334 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,339 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,339 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,394 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00007/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,394 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,399 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,740 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.9392934 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    0.0%
+    3.5726510560631484%
+    7.145302112126297%
+    10.717953168189444%
+    14.290604224252593%
+    17.86325528031574%
+    21.43590633637889%
+    25.00855739244204%
+    28.581208448505187%
+    32.15385950456833%
+    35.72651056063148%
+    39.299161616694626%
+    42.87181267275778%
+    46.44446372882092%
+    50.01711478488408%
+    53.58976584094722%
+    57.162416897010374%
+    60.73506795307352%
+    64.30771900913666%
+    67.88037006519981%
+    71.45302112126296%
+    75.02567217732611%
+    78.59832323338925%
+    82.1709742894524%
+    85.74362534551555%
+    89.3162764015787%
+    92.88892745764184%
+    96.46157851370499%
+    100.0%
+    >>> partition_las - end - 1664629827.3714268 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    2022-10-01 13:10:27,850 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_0 - Size: 8.8MiB - OK
+    2022-10-01 13:10:27,859 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_6 - Size: 8.6MiB - OK
+    2022-10-01 13:10:28,137 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_1 - Size: 14.6MiB - OK
+    2022-10-01 13:10:28,234 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_2 - Size: 18.6MiB - OK
+    2022-10-01 13:10:28,238 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_7 - Size: 17.8MiB - OK
+    2022-10-01 13:10:28,242 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_5 - Size: 16.9MiB - OK
+    2022-10-01 13:10:28,250 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_3 - Size: 14.9MiB - OK
+    2022-10-01 13:10:28,259 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_4 - Size: 19.1MiB - OK
+    2022-10-01 13:10:28,290 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00007/cloudobject_8 - Size: 18.4MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:28,304 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:28,304 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:28,304 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:28,336 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00007/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:28,337 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:28,355 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,335 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,336 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00008
+    2022-10-01 13:09:16,336 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,344 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,344 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,408 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00008/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,408 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,412 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,741 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.54402 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    0.0%
+    3.545846554908675%
+    7.09169310981735%
+    10.637539664726024%
+    14.1833862196347%
+    17.729232774543373%
+    21.275079329452048%
+    24.820925884360726%
+    28.3667724392694%
+    31.912618994178075%
+    35.458465549086746%
+    39.004312103995424%
+    42.550158658904095%
+    46.096005213812774%
+    49.64185176872145%
+    53.18769832363013%
+    56.7335448785388%
+    60.27939143344747%
+    63.82523798835615%
+    67.37108454326483%
+    70.91693109817349%
+    74.46277765308218%
+    78.00862420799085%
+    81.55447076289953%
+    85.10031731780819%
+    88.64616387271688%
+    92.19201042762555%
+    95.73785698253423%
+    99.2837035374429%
+    100.0%
+    >>> partition_las - end - 1664629827.4307826 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    2022-10-01 13:10:28,072 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_6 - Size: 10.2MiB - OK
+    2022-10-01 13:10:28,187 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_7 - Size: 11.4MiB - OK
+    2022-10-01 13:10:28,194 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_0 - Size: 16.1MiB - OK
+    2022-10-01 13:10:28,207 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_5 - Size: 13.2MiB - OK
+    2022-10-01 13:10:28,216 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_4 - Size: 14.3MiB - OK
+    2022-10-01 13:10:28,221 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_1 - Size: 11.4MiB - OK
+    2022-10-01 13:10:28,256 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_8 - Size: 14.0MiB - OK
+    2022-10-01 13:10:28,286 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_3 - Size: 21.4MiB - OK
+    2022-10-01 13:10:28,400 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00008/cloudobject_2 - Size: 20.9MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:28,430 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:28,430 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:28,430 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:28,485 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00008/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:28,486 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:28,503 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,343 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,343 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00011
+    2022-10-01 13:09:16,343 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,349 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,349 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,401 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00011/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,402 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,406 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,740 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629791.6371243 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    0.0%
+    3.042586968088861%
+    6.085173936177722%
+    9.127760904266584%
+    12.170347872355444%
+    15.212934840444307%
+    18.255521808533167%
+    21.298108776622026%
+    24.34069574471089%
+    27.38328271279975%
+    30.425869680888614%
+    33.46845664897747%
+    36.511043617066335%
+    39.55363058515519%
+    42.59621755324405%
+    45.638804521332915%
+    48.68139148942178%
+    51.72397845751063%
+    54.7665654255995%
+    57.80915239368836%
+    60.85173936177723%
+    63.89432632986608%
+    66.93691329795494%
+    69.9795002660438%
+    73.02208723413267%
+    76.06467420222152%
+    79.10726117031038%
+    82.14984813839925%
+    85.1924351064881%
+    88.23502207457697%
+    91.27760904266583%
+    94.3201960107547%
+    97.36278297884355%
+    100.0%
+    >>> partition_las - end - 1664629827.9359121 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    2022-10-01 13:10:28,469 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_6 - Size: 10.4MiB - OK
+    2022-10-01 13:10:28,582 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_7 - Size: 15.6MiB - OK
+    2022-10-01 13:10:28,600 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_0 - Size: 17.7MiB - OK
+    2022-10-01 13:10:28,628 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_4 - Size: 18.3MiB - OK
+    2022-10-01 13:10:28,664 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_2 - Size: 18.8MiB - OK
+    2022-10-01 13:10:28,688 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_3 - Size: 18.1MiB - OK
+    2022-10-01 13:10:28,711 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_1 - Size: 19.7MiB - OK
+    2022-10-01 13:10:28,732 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_5 - Size: 22.1MiB - OK
+    2022-10-01 13:10:28,764 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00011/cloudobject_8 - Size: 18.2MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:28,807 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:28,808 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:28,808 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:28,856 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00011/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:28,857 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:28,867 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
+Activation: '786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6' (163de76aee6f)
+[
+    2022-10-01 13:09:16,331 [INFO] handler.py:152 -- Lithops v2.7.1.dev0 - Starting Localhost execution
+    2022-10-01 13:09:16,331 [INFO] handler.py:153 -- Execution ID: c83ded-0-M000/00005
+    2022-10-01 13:09:16,332 [DEBUG] aws_s3.py:33 -- Creating S3 client
+    2022-10-01 13:09:16,339 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+    2022-10-01 13:09:16,340 [DEBUG] handler.py:168 -- Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 - Timeout: 1800 seconds
+    2022-10-01 13:09:16,376 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00005/163de76aee6f.init - Size: 0.0B - OK
+    2022-10-01 13:09:16,376 [DEBUG] handler.py:178 -- Starting JobRunner process
+    2022-10-01 13:09:16,380 [DEBUG] jobrunner.py:203 -- Process started
+    2022-10-01 13:09:49,716 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
+    ---------------------- FUNCTION LOG ----------------------
+    >>> partition_las - start - 1664629792.3714101 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    0.0%
+    2.992172148520534%
+    5.984344297041068%
+    8.976516445561602%
+    11.968688594082137%
+    14.96086074260267%
+    17.953032891123204%
+    20.94520503964374%
+    23.937377188164273%
+    26.929549336684804%
+    29.92172148520534%
+    32.91389363372587%
+    35.90606578224641%
+    38.898237930766946%
+    41.89041007928748%
+    44.88258222780801%
+    47.874754376328546%
+    50.86692652484908%
+    53.85909867336961%
+    56.85127082189014%
+    59.84344297041068%
+    62.83561511893121%
+    65.82778726745174%
+    68.81995941597228%
+    71.81213156449282%
+    74.80430371301335%
+    77.79647586153389%
+    80.78864801005442%
+    83.78082015857495%
+    86.77299230709549%
+    89.76516445561602%
+    92.75733660413655%
+    95.74950875265709%
+    98.74168090117762%
+    100.0%
+    >>> partition_las - end - 1664629829.724642 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    2022-10-01 13:10:30,244 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_1 - Size: 14.5MiB - OK
+    2022-10-01 13:10:30,247 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_4 - Size: 17.2MiB - OK
+    2022-10-01 13:10:30,254 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_3 - Size: 16.3MiB - OK
+    2022-10-01 13:10:30,265 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_6 - Size: 17.2MiB - OK
+    2022-10-01 13:10:30,269 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_8 - Size: 16.9MiB - OK
+    2022-10-01 13:10:30,289 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_2 - Size: 16.1MiB - OK
+    2022-10-01 13:10:30,289 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_0 - Size: 21.0MiB - OK
+    2022-10-01 13:10:30,308 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_7 - Size: 21.2MiB - OK
+    2022-10-01 13:10:30,308 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/c83ded-0-M000-00005/cloudobject_5 - Size: 21.1MiB - OK
+    ----------------------------------------------------------
+    2022-10-01 13:10:30,324 [INFO] jobrunner.py:239 -- Success function execution
+    2022-10-01 13:10:30,324 [DEBUG] jobrunner.py:253 -- Pickling result
+    2022-10-01 13:10:30,324 [INFO] jobrunner.py:308 -- Storing function result - Size: 891.0B
+    2022-10-01 13:10:30,379 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/00005/output.pickle - Size: 891.0B - OK
+    2022-10-01 13:10:30,379 [INFO] jobrunner.py:313 -- Process finished
+    2022-10-01 13:10:30,392 [DEBUG] handler.py:182 -- JobRunner process finished
+]
+
