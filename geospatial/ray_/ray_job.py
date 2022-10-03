@@ -401,7 +401,7 @@ def merge_dem_partitions_ray_task_wrapper(args):
     return [result_ref]
 
 
-ray.init(address='ray://44.204.116.159:10001')
+ray.init(address='ray://18.207.180.19:10001')
 
 
 # ray.init()
@@ -501,7 +501,7 @@ def run_naive_tasks():
 
     paths = s3.glob('s3://point-cloud-datasets/laz/CA_YosemiteNP_2019/*.laz')
     # paths = s3.glob('s3://geospatial/laz/*')
-    paths = paths[:len(paths) // 5]
+    paths = paths[:len(paths) // 4]
     print(paths)
 
     print(f'>>> pipeline - start - {time.time()}')
@@ -576,5 +576,5 @@ def run_cloudnative_tasks():
 if __name__ == '__main__':
     # run_naive_workflow()
     # run_cloudnative_workflow()
-    run_naive_tasks()
-    # run_cloudnative_tasks()
+    # run_naive_tasks()
+    run_cloudnative_tasks()

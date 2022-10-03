@@ -1,0 +1,460 @@
+2022-10-01 16:29:29,026 [INFO] config.py:131 -- Lithops v2.7.1.dev0
+2022-10-01 16:29:29,026 [DEBUG] config.py:90 -- Loading configuration from /home/aitor-pc/.lithops/config
+2022-10-01 16:29:29,049 [DEBUG] config.py:208 -- Loading Standalone backend module: aws_ec2
+2022-10-01 16:29:29,107 [DEBUG] config.py:248 -- Loading Storage backend module: aws_s3
+2022-10-01 16:29:29,108 [DEBUG] aws_s3.py:33 -- Creating S3 client
+2022-10-01 16:29:29,157 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+2022-10-01 16:29:29,157 [DEBUG] aws_ec2.py:51 -- Creating AWS EC2 client
+2022-10-01 16:29:29,204 [INFO] aws_ec2.py:76 -- AWS EC2 client created - Region: us-east-1
+2022-10-01 16:29:29,204 [DEBUG] standalone.py:58 -- Standalone handler created successfully
+2022-10-01 16:29:29,204 [DEBUG] invokers.py:94 -- ExecutorID 661795-0 - Invoker initialized. Max workers: 100
+2022-10-01 16:29:29,204 [DEBUG] aws_ec2.py:88 -- Initializing AWS EC2 backend (reuse mode)
+2022-10-01 16:29:30,147 [DEBUG] executors.py:164 -- Function executor for aws_ec2 created with ID: 661795-0
+2022-10-01 16:29:30,147 [DEBUG] config.py:90 -- Loading configuration from /home/aitor-pc/.lithops/config
+2022-10-01 16:29:30,156 [DEBUG] config.py:248 -- Loading Storage backend module: aws_s3
+2022-10-01 16:29:30,156 [DEBUG] aws_s3.py:33 -- Creating S3 client
+2022-10-01 16:29:30,160 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+2022-10-01 16:29:30,724 [INFO] invokers.py:108 -- ExecutorID 661795-0 | JobID M000 - Selected Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 
+2022-10-01 16:29:30,725 [DEBUG] storage.py:415 -- Runtime metadata found in local disk cache
+2022-10-01 16:29:30,726 [DEBUG] job.py:233 -- ExecutorID 661795-0 | JobID M000 - Serializing function and data
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:66 -- Queuing module 'os'
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:110 -- Module 'os' is to be ignored, skipping
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:66 -- Queuing module 'tempfile'
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:110 -- Module 'tempfile' is to be ignored, skipping
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:66 -- Queuing module 'json'
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:110 -- Module 'json' is to be ignored, skipping
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:66 -- Queuing module 'lpc_workflow'
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:117 -- Inspecting module 'lpc_workflow'
+2022-10-01 16:29:30,746 [DEBUG] module_dependency.py:128 -- Module 'lpc_workflow' is source/compiled. Added path '/home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:142 -- Module 'lpc_workflow' had these imports {'os', 'pdal', 'tempfile', 'shutil', 'json', 'time', 'rasterio', 'numpy', 'laspy', 'io'}
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'os' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'pdal' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'tempfile' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'shutil' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'json' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:160 -- Module 'lpc_workflow' Source import 'time' added to queue
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'rasterio' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'numpy' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'laspy' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'io' to be ignored
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:117 -- Inspecting module 'time'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:172 -- Module 'time' is built-in. Skipping.
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'time'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:106 -- Already inspected module 'time', skipping
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'io'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:110 -- Module 'io' is to be ignored, skipping
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'pdal'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:110 -- Module 'pdal' is to be ignored, skipping
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'numpy'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:110 -- Module 'numpy' is to be ignored, skipping
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'laspy'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:110 -- Module 'laspy' is to be ignored, skipping
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:66 -- Queuing module 'laspy.copc'
+2022-10-01 16:29:30,749 [DEBUG] module_dependency.py:110 -- Module 'laspy' is to be ignored, skipping
+2022-10-01 16:29:30,749 [DEBUG] serialize.py:73 -- Referenced modules: /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/laspy/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/pdal/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/io.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/json/__init__.py, time, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/laspy/copc.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/numpy/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/os.py, /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/tempfile.py
+2022-10-01 16:29:30,750 [DEBUG] serialize.py:90 -- Modules to transmit: /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py
+2022-10-01 16:29:30,750 [DEBUG] job.py:267 -- ExecutorID 661795-0 | JobID M000 - Uploading function and modules to the storage backend
+2022-10-01 16:29:31,515 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0/e8e298d1936783dc6ac91eff7b034d21.func.pickle - Size: 14.1KiB - OK
+2022-10-01 16:29:31,515 [DEBUG] job.py:293 -- ExecutorID 661795-0 | JobID M000 - Uploading data to the storage backend
+2022-10-01 16:29:31,771 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M000/aggdata.pickle - Size: 12.8KiB - OK
+2022-10-01 16:29:31,771 [INFO] invokers.py:172 -- ExecutorID 661795-0 | JobID M000 - Starting function invocation: create_dem_copc_lithops_wrapper() - Total: 117 activations
+2022-10-01 16:29:31,771 [DEBUG] invokers.py:177 -- ExecutorID 661795-0 | JobID M000 - Worker processes: 16 - Chunksize: 16
+2022-10-01 16:29:32,544 [DEBUG] ssh_client.py:40 -- 23.22.49.218 ssh client created
+2022-10-01 16:29:33,840 [DEBUG] standalone.py:278 -- Found 0 free workers connected to master VM instance lithops-master-1317 (23.22.49.218)
+2022-10-01 16:29:33,841 [DEBUG] standalone.py:283 -- Going to create 8 new workers
+2022-10-01 16:29:34,274 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0000
+2022-10-01 16:29:34,280 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0001
+2022-10-01 16:29:34,282 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0003
+2022-10-01 16:29:34,282 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0002
+2022-10-01 16:29:34,285 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0006
+2022-10-01 16:29:34,285 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0007
+2022-10-01 16:29:34,285 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0004
+2022-10-01 16:29:34,286 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-661795-0-m000-0005
+2022-10-01 16:29:36,047 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0000 created successfully 
+2022-10-01 16:29:37,065 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0003 created successfully 
+2022-10-01 16:29:37,145 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0005 created successfully 
+2022-10-01 16:29:37,170 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0002 created successfully 
+2022-10-01 16:29:37,189 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0006 created successfully 
+2022-10-01 16:29:37,193 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0004 created successfully 
+2022-10-01 16:29:37,221 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0007 created successfully 
+2022-10-01 16:29:37,349 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-661795-0-m000-0001 created successfully 
+2022-10-01 16:29:37,350 [DEBUG] standalone.py:261 -- Total worker VM instances created: 8/8
+2022-10-01 16:29:37,350 [DEBUG] standalone.py:290 -- ExecutorID 661795-0 | JobID M000 - Going to run 117 activations in 8 workers
+2022-10-01 16:29:37,351 [DEBUG] standalone.py:293 -- Checking if VM instance lithops-master-1317 (23.22.49.218) is ready
+2022-10-01 16:29:38,124 [DEBUG] standalone.py:321 -- Job invoked on VM instance lithops-master-1317 (23.22.49.218)
+2022-10-01 16:29:38,124 [DEBUG] invokers.py:253 -- ExecutorID 661795-0 | JobID M000 - Job invoked (6.353s) - Activation ID: 661795-0-M000
+2022-10-01 16:29:38,124 [INFO] invokers.py:208 -- ExecutorID 661795-0 | JobID M000 - View execution logs at /tmp/lithops/logs/661795-0-M000.log
+2022-10-01 16:29:38,128 [DEBUG] monitor.py:381 -- ExecutorID 661795-0 - Starting Storage job monitor
+2022-10-01 16:29:38,130 [INFO] wait.py:97 -- ExecutorID 661795-0 - Getting results from 117 function activations
+2022-10-01 16:29:40,704 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 117 - Running: 0 - Done: 0
+2022-10-01 16:30:15,022 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 117 - Running: 0 - Done: 0
+2022-10-01 16:30:38,717 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 5 - Running: 112 - Done: 0
+2022-10-01 16:30:40,865 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 117 - Done: 0
+2022-10-01 16:31:15,786 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 117 - Done: 0
+2022-10-01 16:31:31,558 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 114 - Done: 3
+2022-10-01 16:31:31,644 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00115 - Activation ID: 7a998b62a0ed - Time: 49.15 seconds
+2022-10-01 16:31:31,644 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00114 - Activation ID: 7a998b62a0ed - Time: 49.84 seconds
+2022-10-01 16:31:31,645 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00112 - Activation ID: 7a998b62a0ed - Time: 48.67 seconds
+2022-10-01 16:31:31,778 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00115 - Activation ID: 7a998b62a0ed
+2022-10-01 16:31:31,780 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00114 - Activation ID: 7a998b62a0ed
+2022-10-01 16:31:31,783 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00112 - Activation ID: 7a998b62a0ed
+2022-10-01 16:31:36,942 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 112 - Done: 5
+2022-10-01 16:31:37,822 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00113 - Activation ID: 7a998b62a0ed - Time: 54.86 seconds
+2022-10-01 16:31:37,826 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00116 - Activation ID: 7a998b62a0ed - Time: 56.31 seconds
+2022-10-01 16:31:37,951 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00113 - Activation ID: 7a998b62a0ed
+2022-10-01 16:31:37,954 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00116 - Activation ID: 7a998b62a0ed
+2022-10-01 16:31:40,107 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 110 - Done: 7
+2022-10-01 16:31:40,974 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00005 - Activation ID: 5ea0508ddd06 - Time: 63.12 seconds
+2022-10-01 16:31:40,978 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00004 - Activation ID: 5ea0508ddd06 - Time: 62.29 seconds
+2022-10-01 16:31:40,998 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 109 - Done: 8
+2022-10-01 16:31:41,098 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00005 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:41,500 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00004 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:41,507 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00003 - Activation ID: 5ea0508ddd06 - Time: 63.70 seconds
+2022-10-01 16:31:41,639 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00003 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:44,200 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 107 - Done: 10
+2022-10-01 16:31:44,654 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00013 - Activation ID: 5ea0508ddd06 - Time: 67.19 seconds
+2022-10-01 16:31:44,658 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00032 - Activation ID: f007d3d86ee6 - Time: 65.17 seconds
+2022-10-01 16:31:44,781 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00013 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:44,789 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00032 - Activation ID: f007d3d86ee6
+2022-10-01 16:31:45,006 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 104 - Done: 13
+2022-10-01 16:31:45,799 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00015 - Activation ID: 5ea0508ddd06 - Time: 67.86 seconds
+2022-10-01 16:31:45,804 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00031 - Activation ID: 6b0c7fe743eb - Time: 68.22 seconds
+2022-10-01 16:31:45,808 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00063 - Activation ID: c8029559b717 - Time: 67.32 seconds
+2022-10-01 16:31:45,819 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 103 - Done: 14
+2022-10-01 16:31:45,929 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00031 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:31:45,932 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00015 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:46,371 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00063 - Activation ID: c8029559b717
+2022-10-01 16:31:46,374 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00012 - Activation ID: 5ea0508ddd06 - Time: 68.77 seconds
+2022-10-01 16:31:46,509 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00012 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:46,764 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 102 - Done: 15
+2022-10-01 16:31:47,563 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00078 - Activation ID: d204e7319812 - Time: 69.93 seconds
+2022-10-01 16:31:47,699 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00078 - Activation ID: d204e7319812
+2022-10-01 16:31:47,707 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 101 - Done: 16
+2022-10-01 16:31:48,620 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 98 - Done: 19
+2022-10-01 16:31:48,707 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00014 - Activation ID: 5ea0508ddd06 - Time: 71.61 seconds
+2022-10-01 16:31:48,713 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00098 - Activation ID: 745e2923d4a1 - Time: 71.63 seconds
+2022-10-01 16:31:48,717 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00069 - Activation ID: d204e7319812 - Time: 70.42 seconds
+2022-10-01 16:31:48,718 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00058 - Activation ID: c8029559b717 - Time: 71.25 seconds
+2022-10-01 16:31:48,843 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00014 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:48,848 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00098 - Activation ID: 745e2923d4a1
+2022-10-01 16:31:48,852 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00069 - Activation ID: d204e7319812
+2022-10-01 16:31:48,859 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00058 - Activation ID: c8029559b717
+2022-10-01 16:31:49,453 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 95 - Done: 22
+2022-10-01 16:31:49,868 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00011 - Activation ID: 5ea0508ddd06 - Time: 72.61 seconds
+2022-10-01 16:31:49,872 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00010 - Activation ID: 5ea0508ddd06 - Time: 72.55 seconds
+2022-10-01 16:31:49,876 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00085 - Activation ID: 6b62ab77f5cb - Time: 71.97 seconds
+2022-10-01 16:31:50,003 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00010 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:50,006 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00085 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:31:50,009 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00011 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:50,363 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 93 - Done: 24
+2022-10-01 16:31:51,016 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00001 - Activation ID: 5ea0508ddd06 - Time: 72.87 seconds
+2022-10-01 16:31:51,017 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00002 - Activation ID: 5ea0508ddd06 - Time: 73.07 seconds
+2022-10-01 16:31:51,142 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00002 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:51,157 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00001 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:51,720 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 87 - Done: 30
+2022-10-01 16:31:52,172 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00008 - Activation ID: 5ea0508ddd06 - Time: 74.26 seconds
+2022-10-01 16:31:52,172 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00086 - Activation ID: 6b62ab77f5cb - Time: 73.72 seconds
+2022-10-01 16:31:52,177 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00056 - Activation ID: c8029559b717 - Time: 73.38 seconds
+2022-10-01 16:31:52,184 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00105 - Activation ID: 745e2923d4a1 - Time: 74.09 seconds
+2022-10-01 16:31:52,189 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00079 - Activation ID: d204e7319812 - Time: 73.98 seconds
+2022-10-01 16:31:52,193 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00009 - Activation ID: 5ea0508ddd06 - Time: 73.77 seconds
+2022-10-01 16:31:52,306 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00008 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:52,311 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00056 - Activation ID: c8029559b717
+2022-10-01 16:31:52,313 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00086 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:31:52,320 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00079 - Activation ID: d204e7319812
+2022-10-01 16:31:52,320 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00105 - Activation ID: 745e2923d4a1
+2022-10-01 16:31:52,334 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00009 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:53,064 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 84 - Done: 33
+2022-10-01 16:31:53,344 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00092 - Activation ID: 6b62ab77f5cb - Time: 75.68 seconds
+2022-10-01 16:31:53,348 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00033 - Activation ID: f007d3d86ee6 - Time: 75.72 seconds
+2022-10-01 16:31:53,348 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00057 - Activation ID: c8029559b717 - Time: 74.87 seconds
+2022-10-01 16:31:53,476 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00092 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:31:53,488 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00057 - Activation ID: c8029559b717
+2022-10-01 16:31:53,489 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00033 - Activation ID: f007d3d86ee6
+2022-10-01 16:31:54,006 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 82 - Done: 35
+2022-10-01 16:31:54,498 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00017 - Activation ID: 6b0c7fe743eb - Time: 76.44 seconds
+2022-10-01 16:31:54,503 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00000 - Activation ID: 5ea0508ddd06 - Time: 76.45 seconds
+2022-10-01 16:31:54,629 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00017 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:31:54,639 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00000 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:54,835 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 79 - Done: 38
+2022-10-01 16:31:55,645 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00054 - Activation ID: c8029559b717 - Time: 77.74 seconds
+2022-10-01 16:31:55,646 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00016 - Activation ID: 6b0c7fe743eb - Time: 77.38 seconds
+2022-10-01 16:31:55,646 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00061 - Activation ID: c8029559b717 - Time: 76.91 seconds
+2022-10-01 16:31:55,765 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 77 - Done: 40
+2022-10-01 16:31:55,770 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00054 - Activation ID: c8029559b717
+2022-10-01 16:31:55,772 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00016 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:31:55,846 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00061 - Activation ID: c8029559b717
+2022-10-01 16:31:55,850 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00097 - Activation ID: 745e2923d4a1 - Time: 78.58 seconds
+2022-10-01 16:31:55,854 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00007 - Activation ID: 5ea0508ddd06 - Time: 78.49 seconds
+2022-10-01 16:31:55,980 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00097 - Activation ID: 745e2923d4a1
+2022-10-01 16:31:55,983 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00007 - Activation ID: 5ea0508ddd06
+2022-10-01 16:31:56,693 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 75 - Done: 42
+2022-10-01 16:31:56,992 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00111 - Activation ID: 745e2923d4a1 - Time: 78.98 seconds
+2022-10-01 16:31:56,996 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00055 - Activation ID: c8029559b717 - Time: 78.99 seconds
+2022-10-01 16:31:57,137 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00055 - Activation ID: c8029559b717
+2022-10-01 16:31:57,333 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00111 - Activation ID: 745e2923d4a1
+2022-10-01 16:31:57,612 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 73 - Done: 44
+2022-10-01 16:31:58,343 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00030 - Activation ID: 6b0c7fe743eb - Time: 80.47 seconds
+2022-10-01 16:31:58,344 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00034 - Activation ID: f007d3d86ee6 - Time: 80.43 seconds
+2022-10-01 16:31:58,456 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 70 - Done: 47
+2022-10-01 16:31:58,475 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00030 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:31:58,478 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00034 - Activation ID: f007d3d86ee6
+2022-10-01 16:31:58,483 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00040 - Activation ID: f007d3d86ee6 - Time: 81.46 seconds
+2022-10-01 16:31:58,488 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00062 - Activation ID: c8029559b717 - Time: 81.17 seconds
+2022-10-01 16:31:58,489 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00084 - Activation ID: 6b62ab77f5cb - Time: 80.79 seconds
+2022-10-01 16:31:58,617 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00040 - Activation ID: f007d3d86ee6
+2022-10-01 16:31:58,624 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00084 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:31:58,625 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00062 - Activation ID: c8029559b717
+2022-10-01 16:31:59,273 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 69 - Done: 48
+2022-10-01 16:31:59,633 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00047 - Activation ID: f007d3d86ee6 - Time: 82.32 seconds
+2022-10-01 16:31:59,786 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00047 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:00,663 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 62 - Done: 55
+2022-10-01 16:32:00,796 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00006 - Activation ID: 5ea0508ddd06 - Time: 82.90 seconds
+2022-10-01 16:32:00,802 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00035 - Activation ID: f007d3d86ee6 - Time: 83.35 seconds
+2022-10-01 16:32:00,810 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00037 - Activation ID: f007d3d86ee6 - Time: 83.15 seconds
+2022-10-01 16:32:00,811 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00093 - Activation ID: 6b62ab77f5cb - Time: 82.56 seconds
+2022-10-01 16:32:00,811 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00059 - Activation ID: c8029559b717 - Time: 82.25 seconds
+2022-10-01 16:32:00,823 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00060 - Activation ID: c8029559b717 - Time: 82.65 seconds
+2022-10-01 16:32:00,824 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00088 - Activation ID: 6b62ab77f5cb - Time: 83.01 seconds
+2022-10-01 16:32:00,930 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00006 - Activation ID: 5ea0508ddd06
+2022-10-01 16:32:00,932 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00035 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:00,943 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00059 - Activation ID: c8029559b717
+2022-10-01 16:32:00,946 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00093 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:00,957 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00037 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:00,960 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00088 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:00,962 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00060 - Activation ID: c8029559b717
+2022-10-01 16:32:01,602 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 56 - Done: 61
+2022-10-01 16:32:01,977 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00028 - Activation ID: 6b0c7fe743eb - Time: 83.43 seconds
+2022-10-01 16:32:01,982 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00021 - Activation ID: 6b0c7fe743eb - Time: 84.27 seconds
+2022-10-01 16:32:01,983 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00064 - Activation ID: d204e7319812 - Time: 84.34 seconds
+2022-10-01 16:32:01,990 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00043 - Activation ID: f007d3d86ee6 - Time: 83.67 seconds
+2022-10-01 16:32:01,994 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00080 - Activation ID: 6b62ab77f5cb - Time: 83.45 seconds
+2022-10-01 16:32:01,995 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00109 - Activation ID: 745e2923d4a1 - Time: 84.59 seconds
+2022-10-01 16:32:02,112 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00028 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:02,119 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00064 - Activation ID: d204e7319812
+2022-10-01 16:32:02,122 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00021 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:02,124 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00043 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:02,138 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00080 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:02,145 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00109 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:02,872 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 55 - Done: 62
+2022-10-01 16:32:03,153 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00027 - Activation ID: 6b0c7fe743eb - Time: 85.13 seconds
+2022-10-01 16:32:03,287 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00027 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:04,052 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 51 - Done: 66
+2022-10-01 16:32:04,296 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00096 - Activation ID: 745e2923d4a1 - Time: 86.45 seconds
+2022-10-01 16:32:04,302 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00108 - Activation ID: 745e2923d4a1 - Time: 86.82 seconds
+2022-10-01 16:32:04,306 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00094 - Activation ID: 6b62ab77f5cb - Time: 86.33 seconds
+2022-10-01 16:32:04,311 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00077 - Activation ID: d204e7319812 - Time: 86.23 seconds
+2022-10-01 16:32:04,428 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00096 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:04,434 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00108 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:04,440 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00077 - Activation ID: d204e7319812
+2022-10-01 16:32:04,443 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00094 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:05,017 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 45 - Done: 72
+2022-10-01 16:32:05,457 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00073 - Activation ID: d204e7319812 - Time: 88.18 seconds
+2022-10-01 16:32:05,457 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00038 - Activation ID: f007d3d86ee6 - Time: 88.16 seconds
+2022-10-01 16:32:05,461 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00089 - Activation ID: 6b62ab77f5cb - Time: 87.35 seconds
+2022-10-01 16:32:05,461 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00091 - Activation ID: 6b62ab77f5cb - Time: 87.27 seconds
+2022-10-01 16:32:05,466 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00095 - Activation ID: 6b62ab77f5cb - Time: 87.39 seconds
+2022-10-01 16:32:05,467 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00106 - Activation ID: 745e2923d4a1 - Time: 87.00 seconds
+2022-10-01 16:32:05,594 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00089 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:05,595 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00073 - Activation ID: d204e7319812
+2022-10-01 16:32:05,601 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00038 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:05,602 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00091 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:05,604 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00095 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:05,605 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00106 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:06,797 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 44 - Done: 73
+2022-10-01 16:32:07,613 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00018 - Activation ID: 6b0c7fe743eb - Time: 88.63 seconds
+2022-10-01 16:32:07,747 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00018 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:08,451 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 39 - Done: 78
+2022-10-01 16:32:08,756 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00024 - Activation ID: 6b0c7fe743eb - Time: 90.87 seconds
+2022-10-01 16:32:08,761 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00041 - Activation ID: f007d3d86ee6 - Time: 90.51 seconds
+2022-10-01 16:32:08,765 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00042 - Activation ID: f007d3d86ee6 - Time: 89.38 seconds
+2022-10-01 16:32:08,770 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00110 - Activation ID: 745e2923d4a1 - Time: 90.31 seconds
+2022-10-01 16:32:08,774 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00107 - Activation ID: 745e2923d4a1 - Time: 90.03 seconds
+2022-10-01 16:32:08,889 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00041 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:08,895 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00024 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:08,897 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00110 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:08,900 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00042 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:08,902 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00107 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:10,107 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 34 - Done: 83
+2022-10-01 16:32:10,913 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00026 - Activation ID: 6b0c7fe743eb - Time: 91.77 seconds
+2022-10-01 16:32:10,914 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00025 - Activation ID: 6b0c7fe743eb - Time: 91.94 seconds
+2022-10-01 16:32:10,914 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00044 - Activation ID: f007d3d86ee6 - Time: 91.93 seconds
+2022-10-01 16:32:10,916 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00087 - Activation ID: 6b62ab77f5cb - Time: 91.71 seconds
+2022-10-01 16:32:10,917 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00090 - Activation ID: 6b62ab77f5cb - Time: 92.17 seconds
+2022-10-01 16:32:11,043 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00044 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:11,048 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00025 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:11,051 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00087 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:11,054 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00090 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:11,057 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 32 - Done: 85
+2022-10-01 16:32:11,060 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00026 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:11,065 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00100 - Activation ID: 745e2923d4a1 - Time: 93.69 seconds
+2022-10-01 16:32:11,066 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00072 - Activation ID: d204e7319812 - Time: 93.84 seconds
+2022-10-01 16:32:11,195 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00100 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:11,199 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00072 - Activation ID: d204e7319812
+2022-10-01 16:32:11,982 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 26 - Done: 91
+2022-10-01 16:32:12,208 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00039 - Activation ID: f007d3d86ee6 - Time: 94.42 seconds
+2022-10-01 16:32:12,213 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00053 - Activation ID: c8029559b717 - Time: 94.39 seconds
+2022-10-01 16:32:12,218 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00076 - Activation ID: d204e7319812 - Time: 94.27 seconds
+2022-10-01 16:32:12,223 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00066 - Activation ID: d204e7319812 - Time: 94.89 seconds
+2022-10-01 16:32:12,227 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00101 - Activation ID: 745e2923d4a1 - Time: 94.46 seconds
+2022-10-01 16:32:12,232 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00099 - Activation ID: 745e2923d4a1 - Time: 94.40 seconds
+2022-10-01 16:32:12,347 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00053 - Activation ID: c8029559b717
+2022-10-01 16:32:12,350 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00076 - Activation ID: d204e7319812
+2022-10-01 16:32:12,352 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00039 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:12,354 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00101 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:12,357 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00066 - Activation ID: d204e7319812
+2022-10-01 16:32:12,366 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00099 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:12,801 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 24 - Done: 93
+2022-10-01 16:32:13,374 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00029 - Activation ID: 6b0c7fe743eb - Time: 95.76 seconds
+2022-10-01 16:32:13,378 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00046 - Activation ID: f007d3d86ee6 - Time: 95.38 seconds
+2022-10-01 16:32:13,502 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00046 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:13,506 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00029 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:13,724 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 21 - Done: 96
+2022-10-01 16:32:14,512 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00102 - Activation ID: 745e2923d4a1 - Time: 96.39 seconds
+2022-10-01 16:32:14,512 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00103 - Activation ID: 745e2923d4a1 - Time: 96.67 seconds
+2022-10-01 16:32:14,516 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00083 - Activation ID: 6b62ab77f5cb - Time: 96.81 seconds
+2022-10-01 16:32:14,641 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00083 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:14,646 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00103 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:14,651 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00102 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:14,652 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00036 - Activation ID: f007d3d86ee6 - Time: 97.02 seconds
+2022-10-01 16:32:14,776 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00036 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:15,002 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 19 - Done: 98
+2022-10-01 16:32:15,784 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00049 - Activation ID: c8029559b717 - Time: 97.16 seconds
+2022-10-01 16:32:15,911 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00049 - Activation ID: c8029559b717
+2022-10-01 16:32:18,929 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00019 - Activation ID: 6b0c7fe743eb - Time: 100.39 seconds
+2022-10-01 16:32:18,934 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00050 - Activation ID: c8029559b717 - Time: 101.20 seconds
+2022-10-01 16:32:18,939 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00081 - Activation ID: 6b62ab77f5cb - Time: 99.67 seconds
+2022-10-01 16:32:18,943 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00020 - Activation ID: 6b0c7fe743eb - Time: 101.40 seconds
+2022-10-01 16:32:18,947 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00070 - Activation ID: d204e7319812 - Time: 100.34 seconds
+2022-10-01 16:32:19,070 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00019 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:19,070 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00050 - Activation ID: c8029559b717
+2022-10-01 16:32:19,073 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00081 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:19,076 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00020 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:19,078 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00070 - Activation ID: d204e7319812
+2022-10-01 16:32:19,180 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 13 - Done: 104
+2022-10-01 16:32:20,082 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00071 - Activation ID: d204e7319812 - Time: 101.13 seconds
+2022-10-01 16:32:20,224 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00071 - Activation ID: d204e7319812
+2022-10-01 16:32:20,918 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 9 - Done: 108
+2022-10-01 16:32:21,237 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00023 - Activation ID: 6b0c7fe743eb - Time: 102.04 seconds
+2022-10-01 16:32:21,241 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00065 - Activation ID: d204e7319812 - Time: 103.31 seconds
+2022-10-01 16:32:21,245 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00082 - Activation ID: 6b62ab77f5cb - Time: 101.94 seconds
+2022-10-01 16:32:21,249 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00068 - Activation ID: d204e7319812 - Time: 102.47 seconds
+2022-10-01 16:32:21,372 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00023 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:21,375 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00082 - Activation ID: 6b62ab77f5cb
+2022-10-01 16:32:21,380 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00065 - Activation ID: d204e7319812
+2022-10-01 16:32:21,384 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00068 - Activation ID: d204e7319812
+2022-10-01 16:32:22,007 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 7 - Done: 110
+2022-10-01 16:32:22,393 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00052 - Activation ID: c8029559b717 - Time: 104.77 seconds
+2022-10-01 16:32:22,397 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00075 - Activation ID: d204e7319812 - Time: 105.44 seconds
+2022-10-01 16:32:22,525 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00052 - Activation ID: c8029559b717
+2022-10-01 16:32:22,531 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00075 - Activation ID: d204e7319812
+2022-10-01 16:32:24,601 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 4 - Done: 113
+2022-10-01 16:32:25,551 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00074 - Activation ID: d204e7319812 - Time: 107.69 seconds
+2022-10-01 16:32:25,551 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00067 - Activation ID: d204e7319812 - Time: 107.70 seconds
+2022-10-01 16:32:25,553 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00104 - Activation ID: 745e2923d4a1 - Time: 105.62 seconds
+2022-10-01 16:32:25,660 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 3 - Done: 114
+2022-10-01 16:32:25,684 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00067 - Activation ID: d204e7319812
+2022-10-01 16:32:25,687 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00104 - Activation ID: 745e2923d4a1
+2022-10-01 16:32:25,690 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00074 - Activation ID: d204e7319812
+2022-10-01 16:32:25,693 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00022 - Activation ID: 6b0c7fe743eb - Time: 108.40 seconds
+2022-10-01 16:32:25,824 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00022 - Activation ID: 6b0c7fe743eb
+2022-10-01 16:32:29,304 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 1 - Done: 116
+2022-10-01 16:32:29,850 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00048 - Activation ID: c8029559b717 - Time: 111.23 seconds
+2022-10-01 16:32:29,853 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00051 - Activation ID: c8029559b717 - Time: 110.93 seconds
+2022-10-01 16:32:29,975 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00048 - Activation ID: c8029559b717
+2022-10-01 16:32:29,986 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00051 - Activation ID: c8029559b717
+2022-10-01 16:32:39,005 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 0 - Done: 117
+2022-10-01 16:32:39,005 [DEBUG] monitor.py:409 -- ExecutorID 661795-0 - Storage job monitor finished
+2022-10-01 16:32:39,029 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M000 - Got status from call 00045 - Activation ID: f007d3d86ee6 - Time: 120.18 seconds
+2022-10-01 16:32:39,159 [DEBUG] future.py:347 -- ExecutorID 661795-0 | JobID M000 - Got output from call 00045 - Activation ID: f007d3d86ee6
+2022-10-01 16:32:39,492 [INFO] executors.py:609 -- ExecutorID 661795-0 - Cleaning temporary data
+2022-10-01 16:32:39,510 [DEBUG] executors.py:519 -- ExecutorID 661795-0 - Finished getting results
+2022-10-01 16:32:39,511 [INFO] invokers.py:108 -- ExecutorID 661795-0 | JobID M001 - Selected Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 
+2022-10-01 16:32:39,511 [DEBUG] storage.py:411 -- Runtime metadata found in local memory cache
+2022-10-01 16:32:39,511 [DEBUG] job.py:233 -- ExecutorID 661795-0 | JobID M001 - Serializing function and data
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'os'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'os' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'tempfile'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'tempfile' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'math'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'math' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'concurrent'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'concurrent' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'logging'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'logging' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'contextlib'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'contextlib' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.errors'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:66 -- Queuing module 'lpc_workflow'
+2022-10-01 16:32:39,517 [DEBUG] module_dependency.py:117 -- Inspecting module 'lpc_workflow'
+2022-10-01 16:32:39,518 [DEBUG] module_dependency.py:128 -- Module 'lpc_workflow' is source/compiled. Added path '/home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py'
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:142 -- Module 'lpc_workflow' had these imports {'os', 'pdal', 'tempfile', 'shutil', 'json', 'time', 'rasterio', 'numpy', 'laspy', 'io'}
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'os' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'pdal' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'tempfile' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'shutil' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'json' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:160 -- Module 'lpc_workflow' Source import 'time' added to queue
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'rasterio' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'numpy' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'laspy' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'io' to be ignored
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:117 -- Inspecting module 'time'
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:172 -- Module 'time' is built-in. Skipping.
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.merge'
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:66 -- Queuing module 'time'
+2022-10-01 16:32:39,520 [DEBUG] module_dependency.py:106 -- Already inspected module 'time', skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'warnings'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'warnings' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'numpy'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'numpy' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'functools'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'functools' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.windows'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.coords'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:66 -- Queuing module 'affine'
+2022-10-01 16:32:39,521 [DEBUG] module_dependency.py:110 -- Module 'affine' is to be ignored, skipping
+2022-10-01 16:32:39,521 [DEBUG] serialize.py:73 -- Referenced modules: /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/errors.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/windows.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/affine/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/functools.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/merge.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/coords.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/concurrent/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/logging/__init__.py, time, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/warnings.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/numpy/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/os.py, /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/tempfile.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/contextlib.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/lib-dynload/math.cpython-39-x86_64-linux-gnu.so
+2022-10-01 16:32:39,521 [DEBUG] serialize.py:90 -- Modules to transmit: /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py
+2022-10-01 16:32:39,521 [DEBUG] job.py:267 -- ExecutorID 661795-0 | JobID M001 - Uploading function and modules to the storage backend
+2022-10-01 16:32:39,930 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0/e07a0c52e8af29f867ff9910ef30f9e0.func.pickle - Size: 14.6KiB - OK
+2022-10-01 16:32:39,930 [DEBUG] job.py:293 -- ExecutorID 661795-0 | JobID M001 - Uploading data to the storage backend
+2022-10-01 16:32:40,206 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/661795-0-M001/aggdata.pickle - Size: 21.1KiB - OK
+2022-10-01 16:32:40,206 [INFO] invokers.py:172 -- ExecutorID 661795-0 | JobID M001 - Starting function invocation: merge_dem_partitions_lithops_wrapper() - Total: 13 activations
+2022-10-01 16:32:40,206 [DEBUG] invokers.py:177 -- ExecutorID 661795-0 | JobID M001 - Worker processes: 16 - Chunksize: 16
+2022-10-01 16:32:40,965 [DEBUG] ssh_client.py:40 -- 23.22.49.218 ssh client created
+2022-10-01 16:32:42,074 [DEBUG] standalone.py:278 -- Found 8 free workers connected to master VM instance lithops-master-1317 (23.22.49.218)
+2022-10-01 16:32:42,074 [DEBUG] standalone.py:290 -- ExecutorID 661795-0 | JobID M001 - Going to run 13 activations in 1 workers
+2022-10-01 16:32:42,074 [DEBUG] standalone.py:293 -- Checking if VM instance lithops-master-1317 (23.22.49.218) is ready
+2022-10-01 16:32:42,867 [DEBUG] standalone.py:321 -- Job invoked on VM instance lithops-master-1317 (23.22.49.218)
+2022-10-01 16:32:42,868 [DEBUG] invokers.py:253 -- ExecutorID 661795-0 | JobID M001 - Job invoked (2.661s) - Activation ID: 661795-0-M001
+2022-10-01 16:32:42,868 [INFO] invokers.py:208 -- ExecutorID 661795-0 | JobID M001 - View execution logs at /tmp/lithops/logs/661795-0-M001.log
+2022-10-01 16:32:42,869 [DEBUG] monitor.py:381 -- ExecutorID 661795-0 - Starting Storage job monitor
+2022-10-01 16:32:42,870 [INFO] wait.py:97 -- ExecutorID 661795-0 - Waiting for 100% of 13 function activations to complete
+2022-10-01 16:32:45,008 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 13 - Done: 0
+2022-10-01 16:32:49,885 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00000 - Activation ID: 5e41144bc29e - Time: 3.75 seconds
+2022-10-01 16:32:50,075 [DEBUG] monitor.py:127 -- ExecutorID 661795-0 - Pending: 0 - Running: 0 - Done: 13
+2022-10-01 16:32:50,075 [DEBUG] monitor.py:409 -- ExecutorID 661795-0 - Storage job monitor finished
+2022-10-01 16:32:50,893 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00001 - Activation ID: 5e41144bc29e - Time: 3.75 seconds
+2022-10-01 16:32:50,895 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00002 - Activation ID: 5e41144bc29e - Time: 3.75 seconds
+2022-10-01 16:32:50,896 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00003 - Activation ID: 5e41144bc29e - Time: 3.73 seconds
+2022-10-01 16:32:50,899 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00006 - Activation ID: 5e41144bc29e - Time: 3.75 seconds
+2022-10-01 16:32:50,900 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00004 - Activation ID: 5e41144bc29e - Time: 3.76 seconds
+2022-10-01 16:32:50,900 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00005 - Activation ID: 5e41144bc29e - Time: 3.75 seconds
+2022-10-01 16:32:50,904 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00007 - Activation ID: 5e41144bc29e - Time: 3.74 seconds
+2022-10-01 16:32:50,905 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00009 - Activation ID: 5e41144bc29e - Time: 3.76 seconds
+2022-10-01 16:32:50,905 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00011 - Activation ID: 5e41144bc29e - Time: 3.73 seconds
+2022-10-01 16:32:50,907 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00010 - Activation ID: 5e41144bc29e - Time: 3.74 seconds
+2022-10-01 16:32:50,907 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00012 - Activation ID: 5e41144bc29e - Time: 3.77 seconds
+2022-10-01 16:32:50,908 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00008 - Activation ID: 5e41144bc29e - Time: 3.72 seconds
+>>> pipeline - start - 1664634570.7247221
+Processing wallclock time: 188.78617191314697 s
+>>> pipeline - end - 1664634771.2349262
+Merging wallclock time: 11.72397518157959 s
+Workflow wallclock time: 200.5102345943451 s

@@ -1,0 +1,773 @@
+2022-10-01 15:08:04,668 [INFO] config.py:131 -- Lithops v2.7.1.dev0
+2022-10-01 15:08:04,668 [DEBUG] config.py:90 -- Loading configuration from /home/aitor-pc/.lithops/config
+2022-10-01 15:08:04,689 [DEBUG] config.py:208 -- Loading Standalone backend module: aws_ec2
+2022-10-01 15:08:04,740 [DEBUG] config.py:248 -- Loading Storage backend module: aws_s3
+2022-10-01 15:08:04,741 [DEBUG] aws_s3.py:33 -- Creating S3 client
+2022-10-01 15:08:04,788 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+2022-10-01 15:08:04,788 [DEBUG] aws_ec2.py:51 -- Creating AWS EC2 client
+2022-10-01 15:08:04,829 [INFO] aws_ec2.py:76 -- AWS EC2 client created - Region: us-east-1
+2022-10-01 15:08:04,829 [DEBUG] standalone.py:58 -- Standalone handler created successfully
+2022-10-01 15:08:04,830 [DEBUG] invokers.py:94 -- ExecutorID c83ded-0 - Invoker initialized. Max workers: 100
+2022-10-01 15:08:04,830 [DEBUG] aws_ec2.py:88 -- Initializing AWS EC2 backend (reuse mode)
+2022-10-01 15:08:05,791 [DEBUG] executors.py:164 -- Function executor for aws_ec2 created with ID: c83ded-0
+2022-10-01 15:08:05,792 [DEBUG] config.py:90 -- Loading configuration from /home/aitor-pc/.lithops/config
+2022-10-01 15:08:05,819 [DEBUG] config.py:248 -- Loading Storage backend module: aws_s3
+2022-10-01 15:08:05,819 [DEBUG] aws_s3.py:33 -- Creating S3 client
+2022-10-01 15:08:05,824 [INFO] aws_s3.py:59 -- S3 client created - Region: us-east-1
+2022-10-01 15:08:06,415 [INFO] invokers.py:108 -- ExecutorID c83ded-0 | JobID M000 - Selected Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 
+2022-10-01 15:08:06,415 [DEBUG] storage.py:415 -- Runtime metadata found in local disk cache
+2022-10-01 15:08:06,416 [DEBUG] job.py:233 -- ExecutorID c83ded-0 | JobID M000 - Serializing function and data
+2022-10-01 15:08:06,423 [DEBUG] module_dependency.py:66 -- Queuing module 'time'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:117 -- Inspecting module 'time'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:172 -- Module 'time' is built-in. Skipping.
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:66 -- Queuing module 'concurrent'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:110 -- Module 'concurrent' is to be ignored, skipping
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:66 -- Queuing module 'numpy'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:110 -- Module 'numpy' is to be ignored, skipping
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:66 -- Queuing module 'laspy'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:110 -- Module 'laspy' is to be ignored, skipping
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:66 -- Queuing module 'lpc_workflow'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:117 -- Inspecting module 'lpc_workflow'
+2022-10-01 15:08:06,424 [DEBUG] module_dependency.py:128 -- Module 'lpc_workflow' is source/compiled. Added path '/home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py'
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:142 -- Module 'lpc_workflow' had these imports {'pdal', 'io', 'time', 'shutil', 'tempfile', 'rasterio', 'json', 'numpy', 'os', 'laspy'}
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'pdal' to be ignored
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'io' to be ignored
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:146 -- Module 'lpc_workflow' Source import 'time' already inspected
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'shutil' to be ignored
+2022-10-01 15:08:06,430 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'tempfile' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'rasterio' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'json' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'numpy' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'os' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'laspy' to be ignored
+2022-10-01 15:08:06,431 [DEBUG] serialize.py:73 -- Referenced modules: time, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/concurrent/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/laspy/__init__.py, /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/numpy/__init__.py
+2022-10-01 15:08:06,431 [DEBUG] serialize.py:90 -- Modules to transmit: /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py
+2022-10-01 15:08:06,431 [DEBUG] job.py:267 -- ExecutorID c83ded-0 | JobID M000 - Uploading function and modules to the storage backend
+2022-10-01 15:08:07,203 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0/356ca6fe4cb5c76d7ec970fc6eed24d7.func.pickle - Size: 14.5KiB - OK
+2022-10-01 15:08:07,204 [DEBUG] job.py:293 -- ExecutorID c83ded-0 | JobID M000 - Uploading data to the storage backend
+2022-10-01 15:08:07,442 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M000/aggdata.pickle - Size: 1.2KiB - OK
+2022-10-01 15:08:07,442 [INFO] invokers.py:172 -- ExecutorID c83ded-0 | JobID M000 - Starting function invocation: partition_las_lithops_wrapper() - Total: 13 activations
+2022-10-01 15:08:07,442 [DEBUG] invokers.py:177 -- ExecutorID c83ded-0 | JobID M000 - Worker processes: 16 - Chunksize: 16
+2022-10-01 15:08:08,219 [DEBUG] ssh_client.py:40 -- 50.19.17.95 ssh client created
+2022-10-01 15:08:09,439 [DEBUG] standalone.py:278 -- Found 0 free workers connected to master VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:08:09,439 [DEBUG] standalone.py:283 -- Going to create 1 new workers
+2022-10-01 15:08:09,770 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m000-0000
+2022-10-01 15:08:11,371 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m000-0000 created successfully 
+2022-10-01 15:08:11,372 [DEBUG] standalone.py:261 -- Total worker VM instances created: 1/1
+2022-10-01 15:08:11,372 [DEBUG] standalone.py:290 -- ExecutorID c83ded-0 | JobID M000 - Going to run 13 activations in 1 workers
+2022-10-01 15:08:11,372 [DEBUG] standalone.py:293 -- Checking if VM instance lithops-master-1317 (50.19.17.95) is ready
+2022-10-01 15:08:12,034 [DEBUG] standalone.py:321 -- Job invoked on VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:08:12,034 [DEBUG] invokers.py:253 -- ExecutorID c83ded-0 | JobID M000 - Job invoked (4.592s) - Activation ID: c83ded-0-M000
+2022-10-01 15:08:12,034 [INFO] invokers.py:208 -- ExecutorID c83ded-0 | JobID M000 - View execution logs at /tmp/lithops/logs/c83ded-0-M000.log
+2022-10-01 15:08:12,035 [DEBUG] monitor.py:381 -- ExecutorID c83ded-0 - Starting Storage job monitor
+2022-10-01 15:08:12,036 [INFO] wait.py:97 -- ExecutorID c83ded-0 - Getting results from 13 function activations
+2022-10-01 15:08:14,684 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 13 - Running: 0 - Done: 0
+2022-10-01 15:08:48,858 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 13 - Running: 0 - Done: 0
+2022-10-01 15:09:16,587 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 13 - Done: 0
+2022-10-01 15:09:50,976 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 13 - Done: 0
+2022-10-01 15:10:25,837 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 11 - Done: 2
+2022-10-01 15:10:26,445 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00000 - Activation ID: 163de76aee6f - Time: 67.25 seconds
+2022-10-01 15:10:26,449 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00003 - Activation ID: 163de76aee6f - Time: 68.74 seconds
+2022-10-01 15:10:27,033 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00000 - Activation ID: 163de76aee6f
+2022-10-01 15:10:27,124 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00003 - Activation ID: 163de76aee6f
+2022-10-01 15:10:27,351 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 9 - Done: 4
+2022-10-01 15:10:28,133 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00001 - Activation ID: 163de76aee6f - Time: 71.21 seconds
+2022-10-01 15:10:28,134 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00002 - Activation ID: 163de76aee6f - Time: 71.33 seconds
+2022-10-01 15:10:28,137 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00006 - Activation ID: 163de76aee6f - Time: 69.20 seconds
+2022-10-01 15:10:28,145 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00010 - Activation ID: 163de76aee6f - Time: 70.46 seconds
+2022-10-01 15:10:28,159 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 5 - Done: 8
+2022-10-01 15:10:28,271 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00001 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,276 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00002 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,278 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00006 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,279 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00010 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,282 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00009 - Activation ID: 163de76aee6f - Time: 71.10 seconds
+2022-10-01 15:10:28,286 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00012 - Activation ID: 163de76aee6f - Time: 70.75 seconds
+2022-10-01 15:10:28,415 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00009 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,424 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00012 - Activation ID: 163de76aee6f
+2022-10-01 15:10:28,948 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 2 - Done: 11
+2022-10-01 15:10:29,430 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00007 - Activation ID: 163de76aee6f - Time: 72.03 seconds
+2022-10-01 15:10:29,434 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00004 - Activation ID: 163de76aee6f - Time: 72.15 seconds
+2022-10-01 15:10:29,438 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00008 - Activation ID: 163de76aee6f - Time: 72.17 seconds
+2022-10-01 15:10:29,568 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00007 - Activation ID: 163de76aee6f
+2022-10-01 15:10:29,572 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00004 - Activation ID: 163de76aee6f
+2022-10-01 15:10:29,626 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00008 - Activation ID: 163de76aee6f
+2022-10-01 15:10:29,736 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 1 - Done: 12
+2022-10-01 15:10:30,587 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 0 - Done: 13
+2022-10-01 15:10:30,587 [DEBUG] monitor.py:409 -- ExecutorID c83ded-0 - Storage job monitor finished
+2022-10-01 15:10:30,631 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00005 - Activation ID: 163de76aee6f - Time: 74.06 seconds
+2022-10-01 15:10:30,632 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M000 - Got status from call 00011 - Activation ID: 163de76aee6f - Time: 72.53 seconds
+2022-10-01 15:10:30,768 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00011 - Activation ID: 163de76aee6f
+2022-10-01 15:10:30,770 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M000 - Got output from call 00005 - Activation ID: 163de76aee6f
+2022-10-01 15:10:31,101 [INFO] executors.py:609 -- ExecutorID c83ded-0 - Cleaning temporary data
+2022-10-01 15:10:31,120 [DEBUG] executors.py:519 -- ExecutorID c83ded-0 - Finished getting results
+2022-10-01 15:10:31,122 [INFO] invokers.py:108 -- ExecutorID c83ded-0 | JobID M001 - Selected Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 
+2022-10-01 15:10:31,123 [DEBUG] storage.py:411 -- Runtime metadata found in local memory cache
+2022-10-01 15:10:31,126 [DEBUG] job.py:233 -- ExecutorID c83ded-0 | JobID M001 - Serializing function and data
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'pdal'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:110 -- Module 'pdal' is to be ignored, skipping
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'time'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:117 -- Inspecting module 'time'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:172 -- Module 'time' is built-in. Skipping.
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'tempfile'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:110 -- Module 'tempfile' is to be ignored, skipping
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'json'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:110 -- Module 'json' is to be ignored, skipping
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'os'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:110 -- Module 'os' is to be ignored, skipping
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:66 -- Queuing module 'lpc_workflow'
+2022-10-01 15:10:31,179 [DEBUG] module_dependency.py:117 -- Inspecting module 'lpc_workflow'
+2022-10-01 15:10:31,180 [DEBUG] module_dependency.py:128 -- Module 'lpc_workflow' is source/compiled. Added path '/home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py'
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:142 -- Module 'lpc_workflow' had these imports {'pdal', 'io', 'time', 'shutil', 'tempfile', 'rasterio', 'json', 'numpy', 'os', 'laspy'}
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'pdal' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'io' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:146 -- Module 'lpc_workflow' Source import 'time' already inspected
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'shutil' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'tempfile' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'rasterio' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'json' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'numpy' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'os' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'laspy' to be ignored
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,182 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,183 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,184 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,185 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,186 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,187 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:66 -- Queuing module 'lithops.storage.utils'
+2022-10-01 15:10:31,188 [DEBUG] module_dependency.py:110 -- Module 'lithops' is to be ignored, skipping
+2022-10-01 15:10:31,188 [DEBUG] serialize.py:73 -- Referenced modules: /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/json/__init__.py, time, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/tempfile.py, /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py, /home/aitor-pc/Projects/lithops-github/lithops/lithops/storage/utils.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/os.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/pdal/__init__.py
+2022-10-01 15:10:31,188 [DEBUG] serialize.py:90 -- Modules to transmit: /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py
+2022-10-01 15:10:31,189 [DEBUG] job.py:267 -- ExecutorID c83ded-0 | JobID M001 - Uploading function and modules to the storage backend
+2022-10-01 15:10:31,474 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0/253f516868232b02dc9ef1d246f5bcac.func.pickle - Size: 13.9KiB - OK
+2022-10-01 15:10:31,474 [DEBUG] job.py:293 -- ExecutorID c83ded-0 | JobID M001 - Uploading data to the storage backend
+2022-10-01 15:10:31,842 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M001/aggdata.pickle - Size: 30.2KiB - OK
+2022-10-01 15:10:31,842 [INFO] invokers.py:172 -- ExecutorID c83ded-0 | JobID M001 - Starting function invocation: create_dem_lithops_wrapper() - Total: 117 activations
+2022-10-01 15:10:31,843 [DEBUG] invokers.py:177 -- ExecutorID c83ded-0 | JobID M001 - Worker processes: 16 - Chunksize: 16
+2022-10-01 15:10:32,640 [DEBUG] ssh_client.py:40 -- 50.19.17.95 ssh client created
+2022-10-01 15:10:33,776 [DEBUG] standalone.py:278 -- Found 1 free workers connected to master VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:10:33,776 [DEBUG] standalone.py:283 -- Going to create 7 new workers
+2022-10-01 15:10:34,117 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0000
+2022-10-01 15:10:34,124 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0001
+2022-10-01 15:10:34,131 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0002
+2022-10-01 15:10:34,136 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0004
+2022-10-01 15:10:34,142 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0003
+2022-10-01 15:10:34,147 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0006
+2022-10-01 15:10:34,147 [DEBUG] aws_ec2.py:450 -- Creating new VM instance lithops-worker-c83ded-0-m001-0005
+2022-10-01 15:10:36,414 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0005 created successfully 
+2022-10-01 15:10:36,493 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0000 created successfully 
+2022-10-01 15:10:36,558 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0003 created successfully 
+2022-10-01 15:10:36,567 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0004 created successfully 
+2022-10-01 15:10:36,572 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0006 created successfully 
+2022-10-01 15:10:36,602 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0002 created successfully 
+2022-10-01 15:10:36,671 [DEBUG] aws_ec2.py:465 -- VM instance lithops-worker-c83ded-0-m001-0001 created successfully 
+2022-10-01 15:10:36,672 [DEBUG] standalone.py:261 -- Total worker VM instances created: 7/7
+2022-10-01 15:10:36,672 [DEBUG] standalone.py:290 -- ExecutorID c83ded-0 | JobID M001 - Going to run 117 activations in 8 workers
+2022-10-01 15:10:36,672 [DEBUG] standalone.py:293 -- Checking if VM instance lithops-master-1317 (50.19.17.95) is ready
+2022-10-01 15:10:37,465 [DEBUG] standalone.py:321 -- Job invoked on VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:10:37,466 [DEBUG] invokers.py:253 -- ExecutorID c83ded-0 | JobID M001 - Job invoked (5.622s) - Activation ID: c83ded-0-M001
+2022-10-01 15:10:37,466 [INFO] invokers.py:208 -- ExecutorID c83ded-0 | JobID M001 - View execution logs at /tmp/lithops/logs/c83ded-0-M001.log
+2022-10-01 15:10:37,470 [DEBUG] monitor.py:381 -- ExecutorID c83ded-0 - Starting Storage job monitor
+2022-10-01 15:10:37,471 [INFO] wait.py:97 -- ExecutorID c83ded-0 - Getting results from 117 function activations
+2022-10-01 15:10:40,023 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 16 - Done: 0
+2022-10-01 15:11:14,389 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 16 - Done: 0
+2022-10-01 15:11:25,569 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00003 - Activation ID: 59fd3891d62b - Time: 45.00 seconds
+2022-10-01 15:11:25,690 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 13 - Done: 3
+2022-10-01 15:11:25,708 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00003 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:25,710 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00004 - Activation ID: 59fd3891d62b - Time: 45.01 seconds
+2022-10-01 15:11:25,711 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00005 - Activation ID: 59fd3891d62b - Time: 44.99 seconds
+2022-10-01 15:11:25,846 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00005 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:25,850 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00004 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:28,629 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 12 - Done: 4
+2022-10-01 15:11:28,862 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00013 - Activation ID: 59fd3891d62b - Time: 47.83 seconds
+2022-10-01 15:11:28,997 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00013 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:29,416 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 11 - Done: 5
+2022-10-01 15:11:30,001 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00015 - Activation ID: 59fd3891d62b - Time: 49.74 seconds
+2022-10-01 15:11:30,134 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00015 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:30,210 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 9 - Done: 7
+2022-10-01 15:11:30,995 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 8 - Done: 8
+2022-10-01 15:11:31,139 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00002 - Activation ID: 59fd3891d62b - Time: 51.31 seconds
+2022-10-01 15:11:31,144 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00008 - Activation ID: 59fd3891d62b - Time: 50.86 seconds
+2022-10-01 15:11:31,145 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00012 - Activation ID: 59fd3891d62b - Time: 50.69 seconds
+2022-10-01 15:11:31,274 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00002 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:31,279 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00008 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:31,282 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00012 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:31,772 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 6 - Done: 10
+2022-10-01 15:11:32,287 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00001 - Activation ID: 59fd3891d62b - Time: 52.16 seconds
+2022-10-01 15:11:32,291 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00014 - Activation ID: 59fd3891d62b - Time: 52.38 seconds
+2022-10-01 15:11:32,433 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00001 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:32,433 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00014 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:34,813 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 101 - Running: 3 - Done: 13
+2022-10-01 15:11:35,443 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00009 - Activation ID: 59fd3891d62b - Time: 54.59 seconds
+2022-10-01 15:11:35,448 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00010 - Activation ID: 59fd3891d62b - Time: 54.08 seconds
+2022-10-01 15:11:35,452 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00011 - Activation ID: 59fd3891d62b - Time: 54.33 seconds
+2022-10-01 15:11:35,584 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00009 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:35,588 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00010 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:35,719 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 5 - Running: 98 - Done: 14
+2022-10-01 15:11:35,981 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00011 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:35,984 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00000 - Activation ID: 59fd3891d62b - Time: 56.25 seconds
+2022-10-01 15:11:36,109 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00000 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:36,499 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 103 - Done: 14
+2022-10-01 15:11:38,874 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 102 - Done: 15
+2022-10-01 15:11:39,117 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00007 - Activation ID: 59fd3891d62b - Time: 57.76 seconds
+2022-10-01 15:11:39,239 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00007 - Activation ID: 59fd3891d62b
+2022-10-01 15:11:41,858 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 101 - Done: 16
+2022-10-01 15:11:42,246 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00006 - Activation ID: 59fd3891d62b - Time: 61.76 seconds
+2022-10-01 15:11:42,394 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00006 - Activation ID: 59fd3891d62b
+2022-10-01 15:12:15,847 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 101 - Done: 16
+2022-10-01 15:12:31,703 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 100 - Done: 17
+2022-10-01 15:12:32,497 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00112 - Activation ID: 3d369c65f7b9 - Time: 55.07 seconds
+2022-10-01 15:12:32,596 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 99 - Done: 18
+2022-10-01 15:12:33,062 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00112 - Activation ID: 3d369c65f7b9
+2022-10-01 15:12:33,065 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00115 - Activation ID: 3d369c65f7b9 - Time: 56.26 seconds
+2022-10-01 15:12:33,197 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00115 - Activation ID: 3d369c65f7b9
+2022-10-01 15:12:33,514 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 98 - Done: 19
+2022-10-01 15:12:34,201 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00114 - Activation ID: 3d369c65f7b9 - Time: 57.14 seconds
+2022-10-01 15:12:34,334 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00114 - Activation ID: 3d369c65f7b9
+2022-10-01 15:12:38,957 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 96 - Done: 21
+2022-10-01 15:12:39,346 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00113 - Activation ID: 3d369c65f7b9 - Time: 60.64 seconds
+2022-10-01 15:12:39,350 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00116 - Activation ID: 3d369c65f7b9 - Time: 62.52 seconds
+2022-10-01 15:12:39,477 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00113 - Activation ID: 3d369c65f7b9
+2022-10-01 15:12:39,480 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00116 - Activation ID: 3d369c65f7b9
+2022-10-01 15:12:40,275 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 95 - Done: 22
+2022-10-01 15:12:40,485 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00063 - Activation ID: 5691d65a89a5 - Time: 64.81 seconds
+2022-10-01 15:12:40,618 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00063 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:43,360 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 94 - Done: 23
+2022-10-01 15:12:43,627 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00031 - Activation ID: 042c7f9f6628 - Time: 67.59 seconds
+2022-10-01 15:12:43,761 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00031 - Activation ID: 042c7f9f6628
+2022-10-01 15:12:44,188 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 93 - Done: 24
+2022-10-01 15:12:44,765 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00032 - Activation ID: 10b792b1059b - Time: 68.60 seconds
+2022-10-01 15:12:44,897 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00032 - Activation ID: 10b792b1059b
+2022-10-01 15:12:47,720 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 89 - Done: 28
+2022-10-01 15:12:47,908 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00069 - Activation ID: ffa404b40993 - Time: 70.93 seconds
+2022-10-01 15:12:47,913 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00098 - Activation ID: 015370197d37 - Time: 71.16 seconds
+2022-10-01 15:12:47,917 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00078 - Activation ID: ffa404b40993 - Time: 70.98 seconds
+2022-10-01 15:12:47,921 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00058 - Activation ID: 5691d65a89a5 - Time: 71.58 seconds
+2022-10-01 15:12:48,038 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00098 - Activation ID: 015370197d37
+2022-10-01 15:12:48,044 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00069 - Activation ID: ffa404b40993
+2022-10-01 15:12:48,053 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00078 - Activation ID: ffa404b40993
+2022-10-01 15:12:48,056 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00058 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:49,060 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00056 - Activation ID: 5691d65a89a5 - Time: 72.51 seconds
+2022-10-01 15:12:49,064 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00016 - Activation ID: 042c7f9f6628 - Time: 72.87 seconds
+2022-10-01 15:12:49,070 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00085 - Activation ID: b3cbcae58add - Time: 72.59 seconds
+2022-10-01 15:12:49,072 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 83 - Done: 34
+2022-10-01 15:12:49,075 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00079 - Activation ID: ffa404b40993 - Time: 72.72 seconds
+2022-10-01 15:12:49,200 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00056 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:49,203 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00016 - Activation ID: 042c7f9f6628
+2022-10-01 15:12:49,208 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00079 - Activation ID: ffa404b40993
+2022-10-01 15:12:49,213 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00085 - Activation ID: b3cbcae58add
+2022-10-01 15:12:49,218 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00086 - Activation ID: b3cbcae58add - Time: 72.61 seconds
+2022-10-01 15:12:49,218 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00105 - Activation ID: 015370197d37 - Time: 72.97 seconds
+2022-10-01 15:12:49,355 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00105 - Activation ID: 015370197d37
+2022-10-01 15:12:49,360 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00086 - Activation ID: b3cbcae58add
+2022-10-01 15:12:49,907 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 80 - Done: 37
+2022-10-01 15:12:50,367 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00017 - Activation ID: 042c7f9f6628 - Time: 73.45 seconds
+2022-10-01 15:12:50,371 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00092 - Activation ID: b3cbcae58add - Time: 74.30 seconds
+2022-10-01 15:12:50,372 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00057 - Activation ID: 5691d65a89a5 - Time: 73.95 seconds
+2022-10-01 15:12:50,505 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00017 - Activation ID: 042c7f9f6628
+2022-10-01 15:12:50,508 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00092 - Activation ID: b3cbcae58add
+2022-10-01 15:12:50,511 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00057 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:50,856 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 78 - Done: 39
+2022-10-01 15:12:51,517 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00034 - Activation ID: 10b792b1059b - Time: 75.42 seconds
+2022-10-01 15:12:51,521 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00030 - Activation ID: 042c7f9f6628 - Time: 75.48 seconds
+2022-10-01 15:12:51,654 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00034 - Activation ID: 10b792b1059b
+2022-10-01 15:12:51,656 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00030 - Activation ID: 042c7f9f6628
+2022-10-01 15:12:54,232 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 74 - Done: 43
+2022-10-01 15:12:54,668 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00033 - Activation ID: 10b792b1059b - Time: 77.53 seconds
+2022-10-01 15:12:54,673 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00106 - Activation ID: 015370197d37 - Time: 77.21 seconds
+2022-10-01 15:12:54,673 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00111 - Activation ID: 015370197d37 - Time: 78.36 seconds
+2022-10-01 15:12:54,681 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00060 - Activation ID: 5691d65a89a5 - Time: 78.36 seconds
+2022-10-01 15:12:54,806 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00033 - Activation ID: 10b792b1059b
+2022-10-01 15:12:54,814 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00106 - Activation ID: 015370197d37
+2022-10-01 15:12:54,816 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00060 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:54,821 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00111 - Activation ID: 015370197d37
+2022-10-01 15:12:55,829 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00061 - Activation ID: 5691d65a89a5 - Time: 79.22 seconds
+2022-10-01 15:12:55,830 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00055 - Activation ID: 5691d65a89a5 - Time: 80.05 seconds
+2022-10-01 15:12:55,837 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00062 - Activation ID: 5691d65a89a5 - Time: 79.28 seconds
+2022-10-01 15:12:55,844 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00084 - Activation ID: b3cbcae58add - Time: 79.19 seconds
+2022-10-01 15:12:55,845 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00097 - Activation ID: 015370197d37 - Time: 79.04 seconds
+2022-10-01 15:12:55,933 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 67 - Done: 50
+2022-10-01 15:12:55,972 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00061 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:55,976 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00084 - Activation ID: b3cbcae58add
+2022-10-01 15:12:55,978 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00055 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:55,982 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00097 - Activation ID: 015370197d37
+2022-10-01 15:12:55,985 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00062 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:55,989 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00109 - Activation ID: 015370197d37 - Time: 80.31 seconds
+2022-10-01 15:12:55,989 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00059 - Activation ID: 5691d65a89a5 - Time: 79.52 seconds
+2022-10-01 15:12:56,126 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00109 - Activation ID: 015370197d37
+2022-10-01 15:12:56,137 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00059 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:56,778 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 63 - Done: 54
+2022-10-01 15:12:57,145 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00021 - Activation ID: 042c7f9f6628 - Time: 81.43 seconds
+2022-10-01 15:12:57,150 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00054 - Activation ID: 5691d65a89a5 - Time: 80.52 seconds
+2022-10-01 15:12:57,154 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00080 - Activation ID: b3cbcae58add - Time: 81.41 seconds
+2022-10-01 15:12:57,157 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00093 - Activation ID: b3cbcae58add - Time: 80.59 seconds
+2022-10-01 15:12:57,285 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00021 - Activation ID: 042c7f9f6628
+2022-10-01 15:12:57,289 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00054 - Activation ID: 5691d65a89a5
+2022-10-01 15:12:57,292 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00080 - Activation ID: b3cbcae58add
+2022-10-01 15:12:57,295 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00093 - Activation ID: b3cbcae58add
+2022-10-01 15:12:57,734 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 62 - Done: 55
+2022-10-01 15:12:58,299 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00040 - Activation ID: 10b792b1059b - Time: 81.99 seconds
+2022-10-01 15:12:58,428 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00040 - Activation ID: 10b792b1059b
+2022-10-01 15:12:58,678 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 61 - Done: 56
+2022-10-01 15:12:59,433 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00108 - Activation ID: 015370197d37 - Time: 83.48 seconds
+2022-10-01 15:12:59,568 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00108 - Activation ID: 015370197d37
+2022-10-01 15:12:59,643 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 57 - Done: 60
+2022-10-01 15:13:00,490 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 53 - Done: 64
+2022-10-01 15:13:00,579 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00027 - Activation ID: 042c7f9f6628 - Time: 83.53 seconds
+2022-10-01 15:13:00,583 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00028 - Activation ID: 042c7f9f6628 - Time: 84.53 seconds
+2022-10-01 15:13:00,584 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00024 - Activation ID: 042c7f9f6628 - Time: 84.93 seconds
+2022-10-01 15:13:00,584 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00035 - Activation ID: 10b792b1059b - Time: 84.59 seconds
+2022-10-01 15:13:00,597 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00094 - Activation ID: b3cbcae58add - Time: 84.29 seconds
+2022-10-01 15:13:00,597 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00089 - Activation ID: b3cbcae58add - Time: 83.51 seconds
+2022-10-01 15:13:00,606 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00096 - Activation ID: 015370197d37 - Time: 84.49 seconds
+2022-10-01 15:13:00,610 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00037 - Activation ID: 10b792b1059b - Time: 84.26 seconds
+2022-10-01 15:13:00,721 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00028 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:00,723 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00024 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:00,726 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00035 - Activation ID: 10b792b1059b
+2022-10-01 15:13:00,731 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00027 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:00,732 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00094 - Activation ID: b3cbcae58add
+2022-10-01 15:13:00,734 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00089 - Activation ID: b3cbcae58add
+2022-10-01 15:13:00,746 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00096 - Activation ID: 015370197d37
+2022-10-01 15:13:01,181 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00037 - Activation ID: 10b792b1059b
+2022-10-01 15:13:01,555 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 49 - Done: 68
+2022-10-01 15:13:02,189 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00077 - Activation ID: ffa404b40993 - Time: 85.93 seconds
+2022-10-01 15:13:02,194 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00043 - Activation ID: 10b792b1059b - Time: 85.46 seconds
+2022-10-01 15:13:02,199 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00088 - Activation ID: b3cbcae58add - Time: 85.51 seconds
+2022-10-01 15:13:02,203 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00091 - Activation ID: b3cbcae58add - Time: 85.85 seconds
+2022-10-01 15:13:02,327 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00077 - Activation ID: ffa404b40993
+2022-10-01 15:13:02,332 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00043 - Activation ID: 10b792b1059b
+2022-10-01 15:13:02,341 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00088 - Activation ID: b3cbcae58add
+2022-10-01 15:13:02,460 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00091 - Activation ID: b3cbcae58add
+2022-10-01 15:13:02,613 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 47 - Done: 70
+2022-10-01 15:13:03,479 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00047 - Activation ID: 10b792b1059b - Time: 87.14 seconds
+2022-10-01 15:13:03,483 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00025 - Activation ID: 042c7f9f6628 - Time: 87.15 seconds
+2022-10-01 15:13:03,613 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00025 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:03,620 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00047 - Activation ID: 10b792b1059b
+2022-10-01 15:13:03,914 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 44 - Done: 73
+2022-10-01 15:13:04,624 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00038 - Activation ID: 10b792b1059b - Time: 88.01 seconds
+2022-10-01 15:13:04,625 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00101 - Activation ID: 015370197d37 - Time: 87.64 seconds
+2022-10-01 15:13:04,627 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00110 - Activation ID: 015370197d37 - Time: 87.66 seconds
+2022-10-01 15:13:04,732 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 41 - Done: 76
+2022-10-01 15:13:04,753 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00038 - Activation ID: 10b792b1059b
+2022-10-01 15:13:04,758 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00110 - Activation ID: 015370197d37
+2022-10-01 15:13:04,763 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00101 - Activation ID: 015370197d37
+2022-10-01 15:13:04,768 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00018 - Activation ID: 042c7f9f6628 - Time: 88.78 seconds
+2022-10-01 15:13:04,773 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00020 - Activation ID: 042c7f9f6628 - Time: 89.14 seconds
+2022-10-01 15:13:04,777 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00087 - Activation ID: b3cbcae58add - Time: 89.61 seconds
+2022-10-01 15:13:04,907 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00018 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:04,910 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00087 - Activation ID: b3cbcae58add
+2022-10-01 15:13:04,912 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00020 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:05,666 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 36 - Done: 81
+2022-10-01 15:13:05,921 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00073 - Activation ID: ffa404b40993 - Time: 89.89 seconds
+2022-10-01 15:13:05,925 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00041 - Activation ID: 10b792b1059b - Time: 89.91 seconds
+2022-10-01 15:13:05,929 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00044 - Activation ID: 10b792b1059b - Time: 90.07 seconds
+2022-10-01 15:13:05,934 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00099 - Activation ID: 015370197d37 - Time: 90.08 seconds
+2022-10-01 15:13:05,938 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00100 - Activation ID: 015370197d37 - Time: 89.93 seconds
+2022-10-01 15:13:06,063 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00041 - Activation ID: 10b792b1059b
+2022-10-01 15:13:06,066 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00100 - Activation ID: 015370197d37
+2022-10-01 15:13:06,071 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00073 - Activation ID: ffa404b40993
+2022-10-01 15:13:06,072 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00044 - Activation ID: 10b792b1059b
+2022-10-01 15:13:06,074 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00099 - Activation ID: 015370197d37
+2022-10-01 15:13:06,518 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 32 - Done: 85
+2022-10-01 15:13:07,083 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00029 - Activation ID: 042c7f9f6628 - Time: 91.23 seconds
+2022-10-01 15:13:07,083 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00107 - Activation ID: 015370197d37 - Time: 90.65 seconds
+2022-10-01 15:13:07,083 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00026 - Activation ID: 042c7f9f6628 - Time: 91.00 seconds
+2022-10-01 15:13:07,087 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00095 - Activation ID: b3cbcae58add - Time: 90.90 seconds
+2022-10-01 15:13:07,228 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00029 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:07,229 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00107 - Activation ID: 015370197d37
+2022-10-01 15:13:07,239 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00026 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:07,253 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00095 - Activation ID: b3cbcae58add
+2022-10-01 15:13:07,376 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 29 - Done: 88
+2022-10-01 15:13:08,201 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 27 - Done: 90
+2022-10-01 15:13:08,261 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00019 - Activation ID: 042c7f9f6628 - Time: 91.76 seconds
+2022-10-01 15:13:08,263 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00083 - Activation ID: b3cbcae58add - Time: 92.49 seconds
+2022-10-01 15:13:08,263 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00042 - Activation ID: 10b792b1059b - Time: 92.23 seconds
+2022-10-01 15:13:08,268 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00102 - Activation ID: 015370197d37 - Time: 92.86 seconds
+2022-10-01 15:13:08,272 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00090 - Activation ID: b3cbcae58add - Time: 91.43 seconds
+2022-10-01 15:13:08,402 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00019 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:08,409 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00042 - Activation ID: 10b792b1059b
+2022-10-01 15:13:08,413 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00083 - Activation ID: b3cbcae58add
+2022-10-01 15:13:08,421 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00090 - Activation ID: b3cbcae58add
+2022-10-01 15:13:08,442 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00102 - Activation ID: 015370197d37
+2022-10-01 15:13:09,108 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 26 - Done: 91
+2022-10-01 15:13:09,447 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00064 - Activation ID: ffa404b40993 - Time: 93.65 seconds
+2022-10-01 15:13:09,577 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00064 - Activation ID: ffa404b40993
+2022-10-01 15:13:09,958 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 24 - Done: 93
+2022-10-01 15:13:10,583 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00068 - Activation ID: ffa404b40993 - Time: 94.37 seconds
+2022-10-01 15:13:10,584 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00076 - Activation ID: ffa404b40993 - Time: 94.48 seconds
+2022-10-01 15:13:10,714 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00068 - Activation ID: ffa404b40993
+2022-10-01 15:13:10,721 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00076 - Activation ID: ffa404b40993
+2022-10-01 15:13:11,218 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 23 - Done: 94
+2022-10-01 15:13:11,726 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00039 - Activation ID: 10b792b1059b - Time: 95.53 seconds
+2022-10-01 15:13:11,859 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00039 - Activation ID: 10b792b1059b
+2022-10-01 15:13:12,481 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 19 - Done: 98
+2022-10-01 15:13:12,868 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00046 - Activation ID: 10b792b1059b - Time: 96.00 seconds
+2022-10-01 15:13:12,872 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00053 - Activation ID: 5691d65a89a5 - Time: 95.85 seconds
+2022-10-01 15:13:12,876 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00072 - Activation ID: ffa404b40993 - Time: 96.17 seconds
+2022-10-01 15:13:12,879 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00103 - Activation ID: 015370197d37 - Time: 96.73 seconds
+2022-10-01 15:13:13,008 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00046 - Activation ID: 10b792b1059b
+2022-10-01 15:13:13,011 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00053 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:13,014 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00072 - Activation ID: ffa404b40993
+2022-10-01 15:13:13,016 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00103 - Activation ID: 015370197d37
+2022-10-01 15:13:13,544 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 16 - Done: 101
+2022-10-01 15:13:14,024 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00023 - Activation ID: 042c7f9f6628 - Time: 97.10 seconds
+2022-10-01 15:13:14,024 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00049 - Activation ID: 5691d65a89a5 - Time: 97.58 seconds
+2022-10-01 15:13:14,032 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00066 - Activation ID: ffa404b40993 - Time: 97.79 seconds
+2022-10-01 15:13:14,154 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00023 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:14,169 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00066 - Activation ID: ffa404b40993
+2022-10-01 15:13:14,169 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00049 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:14,506 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 14 - Done: 103
+2022-10-01 15:13:15,205 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00036 - Activation ID: 10b792b1059b - Time: 99.19 seconds
+2022-10-01 15:13:15,217 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00074 - Activation ID: ffa404b40993 - Time: 98.60 seconds
+2022-10-01 15:13:15,353 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00036 - Activation ID: 10b792b1059b
+2022-10-01 15:13:15,356 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00074 - Activation ID: ffa404b40993
+2022-10-01 15:13:15,364 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 12 - Done: 105
+2022-10-01 15:13:16,367 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00050 - Activation ID: 5691d65a89a5 - Time: 100.94 seconds
+2022-10-01 15:13:16,375 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00081 - Activation ID: b3cbcae58add - Time: 100.02 seconds
+2022-10-01 15:13:16,380 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00104 - Activation ID: 015370197d37 - Time: 99.61 seconds
+2022-10-01 15:13:16,500 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00050 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:16,507 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00081 - Activation ID: b3cbcae58add
+2022-10-01 15:13:16,537 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00104 - Activation ID: 015370197d37
+2022-10-01 15:13:16,759 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 9 - Done: 108
+2022-10-01 15:13:17,542 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00067 - Activation ID: ffa404b40993 - Time: 100.99 seconds
+2022-10-01 15:13:17,546 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00082 - Activation ID: b3cbcae58add - Time: 101.57 seconds
+2022-10-01 15:13:17,688 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00082 - Activation ID: b3cbcae58add
+2022-10-01 15:13:17,696 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00067 - Activation ID: ffa404b40993
+2022-10-01 15:13:17,831 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 8 - Done: 109
+2022-10-01 15:13:18,700 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00051 - Activation ID: 5691d65a89a5 - Time: 101.64 seconds
+2022-10-01 15:13:18,833 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00051 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:19,250 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 7 - Done: 110
+2022-10-01 15:13:19,837 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00052 - Activation ID: 5691d65a89a5 - Time: 103.46 seconds
+2022-10-01 15:13:19,965 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00052 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:23,306 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 5 - Done: 112
+2022-10-01 15:13:23,978 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00022 - Activation ID: 042c7f9f6628 - Time: 105.67 seconds
+2022-10-01 15:13:23,982 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00065 - Activation ID: ffa404b40993 - Time: 107.35 seconds
+2022-10-01 15:13:24,108 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00022 - Activation ID: 042c7f9f6628
+2022-10-01 15:13:24,115 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00065 - Activation ID: ffa404b40993
+2022-10-01 15:13:24,604 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 2 - Done: 115
+2022-10-01 15:13:25,123 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00048 - Activation ID: 5691d65a89a5 - Time: 108.75 seconds
+2022-10-01 15:13:25,127 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00075 - Activation ID: ffa404b40993 - Time: 108.93 seconds
+2022-10-01 15:13:25,132 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00070 - Activation ID: ffa404b40993 - Time: 109.02 seconds
+2022-10-01 15:13:25,257 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00075 - Activation ID: ffa404b40993
+2022-10-01 15:13:25,262 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00048 - Activation ID: 5691d65a89a5
+2022-10-01 15:13:25,263 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00070 - Activation ID: ffa404b40993
+2022-10-01 15:13:25,889 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 1 - Done: 116
+2022-10-01 15:13:26,269 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00071 - Activation ID: ffa404b40993 - Time: 110.03 seconds
+2022-10-01 15:13:26,401 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00071 - Activation ID: ffa404b40993
+2022-10-01 15:13:38,410 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 0 - Done: 117
+2022-10-01 15:13:38,411 [DEBUG] monitor.py:409 -- ExecutorID c83ded-0 - Storage job monitor finished
+2022-10-01 15:13:38,453 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M001 - Got status from call 00045 - Activation ID: 10b792b1059b - Time: 123.22 seconds
+2022-10-01 15:13:38,634 [DEBUG] future.py:347 -- ExecutorID c83ded-0 | JobID M001 - Got output from call 00045 - Activation ID: 10b792b1059b
+2022-10-01 15:13:38,978 [INFO] executors.py:609 -- ExecutorID c83ded-0 - Cleaning temporary data
+2022-10-01 15:13:38,998 [DEBUG] executors.py:519 -- ExecutorID c83ded-0 - Finished getting results
+2022-10-01 15:13:38,999 [INFO] invokers.py:108 -- ExecutorID c83ded-0 | JobID M002 - Selected Runtime: 786929956471.dkr.ecr.us-east-1.amazonaws.com/lithops_v2-7-0_276k/aitorarjona/copc:0.6 
+2022-10-01 15:13:38,999 [DEBUG] storage.py:411 -- Runtime metadata found in local memory cache
+2022-10-01 15:13:39,001 [DEBUG] job.py:233 -- ExecutorID c83ded-0 | JobID M002 - Serializing function and data
+2022-10-01 15:13:39,016 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.windows'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:66 -- Queuing module 'logging'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:110 -- Module 'logging' is to be ignored, skipping
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.coords'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:66 -- Queuing module 'time'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:117 -- Inspecting module 'time'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:172 -- Module 'time' is built-in. Skipping.
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:66 -- Queuing module 'warnings'
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:110 -- Module 'warnings' is to be ignored, skipping
+2022-10-01 15:13:39,017 [DEBUG] module_dependency.py:66 -- Queuing module 'math'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'math' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'concurrent'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'concurrent' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'tempfile'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'tempfile' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'os'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'os' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.errors'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'numpy'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'numpy' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'affine'
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:110 -- Module 'affine' is to be ignored, skipping
+2022-10-01 15:13:39,018 [DEBUG] module_dependency.py:66 -- Queuing module 'lpc_workflow'
+2022-10-01 15:13:39,019 [DEBUG] module_dependency.py:117 -- Inspecting module 'lpc_workflow'
+2022-10-01 15:13:39,019 [DEBUG] module_dependency.py:128 -- Module 'lpc_workflow' is source/compiled. Added path '/home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py'
+2022-10-01 15:13:39,022 [DEBUG] module_dependency.py:142 -- Module 'lpc_workflow' had these imports {'pdal', 'io', 'time', 'shutil', 'tempfile', 'rasterio', 'json', 'numpy', 'os', 'laspy'}
+2022-10-01 15:13:39,022 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'pdal' to be ignored
+2022-10-01 15:13:39,022 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'io' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:146 -- Module 'lpc_workflow' Source import 'time' already inspected
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'shutil' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'tempfile' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'rasterio' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'json' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'numpy' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'os' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:154 -- Module 'lpc_workflow' Source import 'laspy' to be ignored
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:66 -- Queuing module 'functools'
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:110 -- Module 'functools' is to be ignored, skipping
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:66 -- Queuing module 'rasterio.merge'
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:110 -- Module 'rasterio' is to be ignored, skipping
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:66 -- Queuing module 'contextlib'
+2022-10-01 15:13:39,023 [DEBUG] module_dependency.py:110 -- Module 'contextlib' is to be ignored, skipping
+2022-10-01 15:13:39,023 [DEBUG] serialize.py:73 -- Referenced modules: /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/lib-dynload/math.cpython-39-x86_64-linux-gnu.so, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/functools.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/numpy/__init__.py, time, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/windows.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/concurrent/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/contextlib.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/logging/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/warnings.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/tempfile.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/affine/__init__.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/merge.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/errors.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/__init__.py, /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/os.py, /home/aitor-pc/anaconda3/envs/copc/lib/python3.9/site-packages/rasterio/coords.py
+2022-10-01 15:13:39,023 [DEBUG] serialize.py:90 -- Modules to transmit: /home/aitor-pc/Projects/cloud-data/cloud-native-datasets-validation/geospatial/lithops_/lpc_workflow.py
+2022-10-01 15:13:39,024 [DEBUG] job.py:267 -- ExecutorID c83ded-0 | JobID M002 - Uploading function and modules to the storage backend
+2022-10-01 15:13:39,402 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0/e07a0c52e8af29f867ff9910ef30f9e0.func.pickle - Size: 14.6KiB - OK
+2022-10-01 15:13:39,402 [DEBUG] job.py:293 -- ExecutorID c83ded-0 | JobID M002 - Uploading data to the storage backend
+2022-10-01 15:13:39,685 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/c83ded-0-M002/aggdata.pickle - Size: 21.0KiB - OK
+2022-10-01 15:13:39,686 [INFO] invokers.py:172 -- ExecutorID c83ded-0 | JobID M002 - Starting function invocation: merge_dem_partitions_lithops_wrapper() - Total: 13 activations
+2022-10-01 15:13:39,686 [DEBUG] invokers.py:177 -- ExecutorID c83ded-0 | JobID M002 - Worker processes: 16 - Chunksize: 16
+2022-10-01 15:13:40,459 [DEBUG] ssh_client.py:40 -- 50.19.17.95 ssh client created
+2022-10-01 15:13:41,580 [DEBUG] standalone.py:278 -- Found 8 free workers connected to master VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:13:41,580 [DEBUG] standalone.py:290 -- ExecutorID c83ded-0 | JobID M002 - Going to run 13 activations in 1 workers
+2022-10-01 15:13:41,580 [DEBUG] standalone.py:293 -- Checking if VM instance lithops-master-1317 (50.19.17.95) is ready
+2022-10-01 15:13:42,392 [DEBUG] standalone.py:321 -- Job invoked on VM instance lithops-master-1317 (50.19.17.95)
+2022-10-01 15:13:42,392 [DEBUG] invokers.py:253 -- ExecutorID c83ded-0 | JobID M002 - Job invoked (2.706s) - Activation ID: c83ded-0-M002
+2022-10-01 15:13:42,392 [INFO] invokers.py:208 -- ExecutorID c83ded-0 | JobID M002 - View execution logs at /tmp/lithops/logs/c83ded-0-M002.log
+2022-10-01 15:13:42,394 [DEBUG] monitor.py:381 -- ExecutorID c83ded-0 - Starting Storage job monitor
+2022-10-01 15:13:42,394 [INFO] wait.py:97 -- ExecutorID c83ded-0 - Waiting for 100% of 13 function activations to complete
+2022-10-01 15:13:44,658 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 13 - Done: 0
+2022-10-01 15:13:49,428 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00000 - Activation ID: e67b4be9013f - Time: 4.61 seconds
+2022-10-01 15:13:49,877 [DEBUG] monitor.py:127 -- ExecutorID c83ded-0 - Pending: 0 - Running: 0 - Done: 13
+2022-10-01 15:13:49,878 [DEBUG] monitor.py:409 -- ExecutorID c83ded-0 - Storage job monitor finished
+2022-10-01 15:13:50,437 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00001 - Activation ID: e67b4be9013f - Time: 4.61 seconds
+2022-10-01 15:13:50,441 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00003 - Activation ID: e67b4be9013f - Time: 4.61 seconds
+2022-10-01 15:13:50,443 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00004 - Activation ID: e67b4be9013f - Time: 4.59 seconds
+2022-10-01 15:13:50,445 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00007 - Activation ID: e67b4be9013f - Time: 4.60 seconds
+2022-10-01 15:13:50,447 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00006 - Activation ID: e67b4be9013f - Time: 4.60 seconds
+2022-10-01 15:13:50,448 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00005 - Activation ID: e67b4be9013f - Time: 4.60 seconds
+2022-10-01 15:13:50,449 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00008 - Activation ID: e67b4be9013f - Time: 4.60 seconds
+2022-10-01 15:13:50,450 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00009 - Activation ID: e67b4be9013f - Time: 4.60 seconds
+2022-10-01 15:13:50,451 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00011 - Activation ID: e67b4be9013f - Time: 4.58 seconds
+2022-10-01 15:13:50,451 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00012 - Activation ID: e67b4be9013f - Time: 4.59 seconds
+2022-10-01 15:13:50,452 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00002 - Activation ID: e67b4be9013f - Time: 4.61 seconds
+2022-10-01 15:13:50,452 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00010 - Activation ID: e67b4be9013f - Time: 4.58 seconds
+>>> pipeline - start - 1664629686.4148984
+>>> pipeline - end - 1664630030.7838633

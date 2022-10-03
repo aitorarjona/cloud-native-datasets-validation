@@ -116,6 +116,7 @@ def run_naive_workflow():
     storage = lithops.storage.Storage()
 
     keys = storage.list_keys(bucket=BUCKET, prefix='laz/CA_YosemiteNP_2019/')
+    keys = keys[:len(keys) // 4]
 
     try:
         print(f'>>> pipeline - start - {time.time()}')
@@ -155,12 +156,14 @@ def run_cloudnative_workflow():
     storage = lithops.storage.Storage()
 
     keys = storage.list_keys(bucket=BUCKET, prefix='copc/CA_YosemiteNP_2019/')
+    keys = keys[:len(keys) // 4]
 
     part_keys = [(key, part) for key in keys for part in range(SQUARE_SPLIT * SQUARE_SPLIT)]
 
     try:
         t0 = time.time()
         t0_proc = time.time()
+        print(f'>>> pipeline - start - {time.time()}')
         fut1 = fexec.map(create_dem_copc_lithops_wrapper, part_keys)
         dems = fexec.get_result(fs=fut1)
         t1_proc = time.time()
@@ -174,6 +177,7 @@ def run_cloudnative_workflow():
         t0_merge = time.time()
         fut2 = fexec.map(merge_dem_partitions_lithops_wrapper, grouped_dems)
         fexec.wait(fs=fut2)
+        print(f'>>> pipeline - end - {time.time()}')
         t1_merge = time.time()
 
         print(f'Merging wallclock time: {t1_merge - t0_merge} s')
@@ -207,6 +211,6 @@ def preprocess_dataset():
 
 
 if __name__ == '__main__':
-    preprocess_dataset()
+    # preprocess_dataset()
     # run_naive_workflow()
-    # run_cloudnative_workflow()
+    run_cloudnative_workflow()
