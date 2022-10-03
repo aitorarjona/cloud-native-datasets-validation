@@ -119,7 +119,7 @@ def run_naive_workflow():
     keys = keys[:len(keys) // 4]
 
     try:
-        print(f'>>> pipeline - start - {time.time()}')
+        print(f'>>> 0 - pipeline - start - {time.time()}')
         fut1 = fexec.map(partition_las_lithops_wrapper, keys)
         partitions = fexec.get_result(fs=fut1)
 
@@ -134,7 +134,7 @@ def run_naive_workflow():
 
         fut3 = fexec.map(merge_dem_partitions_lithops_wrapper, grouped_dems)
         fexec.wait(fs=fut3)
-        print(f'>>> pipeline - end - {time.time()}')
+        print(f'>>> 0 - pipeline - end - {time.time()}')
 
         fut1_stats = [f.stats for f in fut1]
         with open('naive_partition_stats.json', 'w') as file:
@@ -163,7 +163,7 @@ def run_cloudnative_workflow():
     try:
         t0 = time.time()
         t0_proc = time.time()
-        print(f'>>> pipeline - start - {time.time()}')
+        print(f'>>> 0 - pipeline - start - {time.time()}')
         fut1 = fexec.map(create_dem_copc_lithops_wrapper, part_keys)
         dems = fexec.get_result(fs=fut1)
         t1_proc = time.time()
@@ -177,7 +177,7 @@ def run_cloudnative_workflow():
         t0_merge = time.time()
         fut2 = fexec.map(merge_dem_partitions_lithops_wrapper, grouped_dems)
         fexec.wait(fs=fut2)
-        print(f'>>> pipeline - end - {time.time()}')
+        print(f'>>> 0 - pipeline - end - {time.time()}')
         t1_merge = time.time()
 
         print(f'Merging wallclock time: {t1_merge - t0_merge} s')

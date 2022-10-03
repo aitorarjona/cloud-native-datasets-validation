@@ -453,8 +453,8 @@
 2022-10-01 16:32:50,907 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00010 - Activation ID: 5e41144bc29e - Time: 3.74 seconds
 2022-10-01 16:32:50,907 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00012 - Activation ID: 5e41144bc29e - Time: 3.77 seconds
 2022-10-01 16:32:50,908 [DEBUG] future.py:271 -- ExecutorID 661795-0 | JobID M001 - Got status from call 00008 - Activation ID: 5e41144bc29e - Time: 3.72 seconds
->>> pipeline - start - 1664634570.7247221
+>>> 0 - pipeline - start - 1664634570.7247221
 Processing wallclock time: 188.78617191314697 s
->>> pipeline - end - 1664634771.2349262
+>>> 0 - pipeline - end - 1664634771.2349262
 Merging wallclock time: 11.72397518157959 s
 Workflow wallclock time: 200.5102345943451 s

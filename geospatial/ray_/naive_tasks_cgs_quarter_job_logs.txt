@@ -1,5 +1,5 @@
 ['point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz', 'point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz']
->>> pipeline - start - 1664403977.3458705
+>>> 0 - pipeline - start - 1664403977.3458705
 (partition_las_ray_task_wrapper pid=570, ip=172.31.9.25) >>> partition_las - start - 1664403979.9587348 - point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
 (partition_las_ray_task_wrapper pid=570, ip=172.31.9.25) Going to partition file point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz into 9 chunks
 (partition_las_ray_task_wrapper pid=574, ip=172.31.9.25) >>> partition_las - start - 1664403979.9949675 - point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
@@ -559,7 +559,7 @@
 (merge_dem_partitions_ray_task_wrapper pid=566, ip=172.31.9.25) Merging point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
 (merge_dem_partitions_ray_task_wrapper pid=565, ip=172.31.9.25) Done merging point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
 (merge_dem_partitions_ray_task_wrapper pid=565, ip=172.31.9.25) >>> merge_dem_partitions - end - 1664404199.407977 - point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
->>> pipeline - end - 1664404199.537027
+>>> 0 - pipeline - end - 1664404199.537027
 (merge_dem_partitions_ray_task_wrapper pid=570, ip=172.31.9.25) Done merging point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
 (merge_dem_partitions_ray_task_wrapper pid=570, ip=172.31.9.25) >>> merge_dem_partitions - end - 1664404199.45394 - point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
 (merge_dem_partitions_ray_task_wrapper pid=566, ip=172.31.9.25) Done merging point-cloud-datasets/laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz

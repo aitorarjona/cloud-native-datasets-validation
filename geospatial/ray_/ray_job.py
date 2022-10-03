@@ -431,7 +431,7 @@ def run_naive_workflow():
     paths = paths[:len(paths) // 4]
     print(paths)
 
-    print(f'>>> pipeline - start - {time.time()}')
+    print(f'>>> 0 - pipeline - start - {time.time()}')
 
     print('Reading files...')
     ds = ray.data.read_binary_files(paths, filesystem=file_system, include_paths=True)
@@ -447,7 +447,7 @@ def run_naive_workflow():
      )
     print('Done')
 
-    print(f'>>> pipeline - end - {time.time()}')
+    print(f'>>> 0 - pipeline - end - {time.time()}')
 
 
 def run_cloudnative_workflow():
@@ -475,7 +475,7 @@ def run_cloudnative_workflow():
     paths = paths[:len(paths) // 4]
     print(paths)
 
-    print(f'>>> pipeline - start - {time.time()}')
+    print(f'>>> 0 - pipeline - start - {time.time()}')
 
     print('Executing pipeline...')
     part_keys = [(path, part) for path in paths for part in range(SQUARE_SPLIT * SQUARE_SPLIT)]
@@ -486,7 +486,7 @@ def run_cloudnative_workflow():
                  .map_groups(merge_dem_partitions_ray_wrapper))
     print('Done')
 
-    print(f'>>> pipeline - end - {time.time()}')
+    print(f'>>> 0 - pipeline - end - {time.time()}')
 
 
 def run_naive_tasks():
@@ -504,7 +504,7 @@ def run_naive_tasks():
     paths = paths[:len(paths) // 4]
     print(paths)
 
-    print(f'>>> pipeline - start - {time.time()}')
+    print(f'>>> 0 - pipeline - start - {time.time()}')
 
     partition_tasks = []
     for path in paths:
@@ -531,7 +531,7 @@ def run_naive_tasks():
 
     ray.get(merge_tasks)
 
-    print(f'>>> pipeline - end - {time.time()}')
+    print(f'>>> 0 - pipeline - end - {time.time()}')
 
 
 def run_cloudnative_tasks():
@@ -549,7 +549,7 @@ def run_cloudnative_tasks():
     paths = paths[:len(paths) // 4]
     print(paths)
 
-    print(f'>>> pipeline - start - {time.time()}')
+    print(f'>>> 0 - pipeline - start - {time.time()}')
 
     part_keys = [(key, part) for key in paths for part in range(SQUARE_SPLIT * SQUARE_SPLIT)]
 
@@ -570,7 +570,7 @@ def run_cloudnative_tasks():
 
     ray.get(merge_tasks)
 
-    print(f'>>> pipeline - end - {time.time()}')
+    print(f'>>> 0 - pipeline - end - {time.time()}')
 
 
 if __name__ == '__main__':
