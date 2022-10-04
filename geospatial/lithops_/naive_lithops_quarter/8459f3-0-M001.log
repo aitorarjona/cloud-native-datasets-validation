@@ -10,10 +10,10 @@ Activation: 'aitorarjona/copc:0.6' (e3d349ff-4a80-414a-8a59-bf3a9f067d2e)
     2022-09-28 20:53:40,409 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,786 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9386156 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e3d349ff-4a80-414a-8a59-bf3a9f067d2e - create_dem - start - 1664398420.9386156 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 783947 bytes
-    >>> create_dem - end - 1664398450.687818 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e3d349ff-4a80-414a-8a59-bf3a9f067d2e - create_dem - end - 1664398450.687818 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:10,776 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00003/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:10,776 [INFO] jobrunner.py:239 -- Success function execution
@@ -36,10 +36,10 @@ Activation: 'aitorarjona/copc:0.6' (d658f80a-b8f2-4ca5-8666-ebfc21923a91)
     2022-09-28 20:53:40,374 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,752 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.8971515 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> d658f80a-b8f2-4ca5-8666-ebfc21923a91 - create_dem - start - 1664398420.8971515 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 880658 bytes
-    >>> create_dem - end - 1664398450.2047381 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> d658f80a-b8f2-4ca5-8666-ebfc21923a91 - create_dem - end - 1664398450.2047381 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:10,309 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00004/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:10,310 [INFO] jobrunner.py:239 -- Success function execution
@@ -62,10 +62,10 @@ Activation: 'aitorarjona/copc:0.6' (caf541ae-22f2-4876-8ef9-dc148fa990e3)
     2022-09-28 20:53:41,773 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,509 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6549833 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> caf541ae-22f2-4876-8ef9-dc148fa990e3 - create_dem - start - 1664398422.6549833 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1069702 bytes
-    >>> create_dem - end - 1664398451.821776 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> caf541ae-22f2-4876-8ef9-dc148fa990e3 - create_dem - end - 1664398451.821776 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:11,936 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00005/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:11,937 [INFO] jobrunner.py:239 -- Success function execution
@@ -88,10 +88,10 @@ Activation: 'aitorarjona/copc:0.6' (2e0e46db-b93a-4f4f-a877-4f1995b146d6)
     2022-09-28 20:53:42,713 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,366 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5055919 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 2e0e46db-b93a-4f4f-a877-4f1995b146d6 - create_dem - start - 1664398423.5055919 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1172184 bytes
-    >>> create_dem - end - 1664398455.054696 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 2e0e46db-b93a-4f4f-a877-4f1995b146d6 - create_dem - end - 1664398455.054696 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:15,169 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00031/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:15,170 [INFO] jobrunner.py:239 -- Success function execution
@@ -114,10 +114,10 @@ Activation: 'aitorarjona/copc:0.6' (0697ca54-8c01-4baf-a241-56b7caba63b4)
     2022-09-28 20:53:42,277 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,151 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.2866085 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 0697ca54-8c01-4baf-a241-56b7caba63b4 - create_dem - start - 1664398423.2866085 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 768301 bytes
-    >>> create_dem - end - 1664398453.5307038 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 0697ca54-8c01-4baf-a241-56b7caba63b4 - create_dem - end - 1664398453.5307038 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:13,656 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00063/cloudobject_0 - Size: 489.6KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:13,656 [INFO] jobrunner.py:239 -- Success function execution
@@ -140,10 +140,10 @@ Activation: 'aitorarjona/copc:0.6' (4767c923-0c12-4c3d-9f0e-ef4484ba8ea3)
     2022-09-28 20:53:42,303 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,981 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.1527379 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 4767c923-0c12-4c3d-9f0e-ef4484ba8ea3 - create_dem - start - 1664398423.1527379 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 889935 bytes
-    >>> create_dem - end - 1664398456.7233658 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 4767c923-0c12-4c3d-9f0e-ef4484ba8ea3 - create_dem - end - 1664398456.7233658 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:16,800 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00015/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:16,801 [INFO] jobrunner.py:239 -- Success function execution
@@ -166,10 +166,10 @@ Activation: 'aitorarjona/copc:0.6' (5a76d2db-a0b9-4c9e-9acf-975b73c1c8c3)
     2022-09-28 20:53:42,008 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,740 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8670769 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 5a76d2db-a0b9-4c9e-9acf-975b73c1c8c3 - create_dem - start - 1664398422.8670769 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1333286 bytes
-    >>> create_dem - end - 1664398455.815105 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 5a76d2db-a0b9-4c9e-9acf-975b73c1c8c3 - create_dem - end - 1664398455.815105 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:15,944 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00078/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:15,945 [INFO] jobrunner.py:239 -- Success function execution
@@ -192,10 +192,10 @@ Activation: 'aitorarjona/copc:0.6' (4867f865-034a-4ec1-9b53-623fea75a2f2)
     2022-09-28 20:53:42,977 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,990 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.1320856 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 4867f865-034a-4ec1-9b53-623fea75a2f2 - create_dem - start - 1664398424.1320856 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1160338 bytes
-    >>> create_dem - end - 1664398455.8726099 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 4867f865-034a-4ec1-9b53-623fea75a2f2 - create_dem - end - 1664398455.8726099 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:16,014 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00032/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:16,015 [INFO] jobrunner.py:239 -- Success function execution
@@ -218,10 +218,10 @@ Activation: 'aitorarjona/copc:0.6' (f6ef8638-7737-4e14-addf-2b15d2611a44)
     2022-09-28 20:53:41,816 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,502 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6633005 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> f6ef8638-7737-4e14-addf-2b15d2611a44 - create_dem - start - 1664398422.6633005 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1049658 bytes
-    >>> create_dem - end - 1664398456.2819984 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> f6ef8638-7737-4e14-addf-2b15d2611a44 - create_dem - end - 1664398456.2819984 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:16,434 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00085/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:16,434 [INFO] jobrunner.py:239 -- Success function execution
@@ -244,10 +244,10 @@ Activation: 'aitorarjona/copc:0.6' (7d703a08-c040-4a5e-95ad-d135d86eccad)
     2022-09-28 20:53:40,363 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,765 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9112415 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 7d703a08-c040-4a5e-95ad-d135d86eccad - create_dem - start - 1664398420.9112415 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1367271 bytes
-    >>> create_dem - end - 1664398458.090612 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 7d703a08-c040-4a5e-95ad-d135d86eccad - create_dem - end - 1664398458.090612 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:18,257 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00001/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:18,257 [INFO] jobrunner.py:239 -- Success function execution
@@ -270,10 +270,10 @@ Activation: 'aitorarjona/copc:0.6' (d0f8f134-7bc0-4081-8f70-58f43c0335ef)
     2022-09-28 20:53:42,359 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,180 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.36065 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> d0f8f134-7bc0-4081-8f70-58f43c0335ef - create_dem - start - 1664398423.36065 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 910147 bytes
-    >>> create_dem - end - 1664398459.448402 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> d0f8f134-7bc0-4081-8f70-58f43c0335ef - create_dem - end - 1664398459.448402 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:19,530 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00057/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:19,531 [INFO] jobrunner.py:239 -- Success function execution
@@ -296,10 +296,10 @@ Activation: 'aitorarjona/copc:0.6' (6b1b9f26-4b86-4ff9-b9c0-e233a0029287)
     2022-09-28 20:53:42,263 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,032 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.197357 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 6b1b9f26-4b86-4ff9-b9c0-e233a0029287 - create_dem - start - 1664398423.197357 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1128750 bytes
-    >>> create_dem - end - 1664398459.0777562 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 6b1b9f26-4b86-4ff9-b9c0-e233a0029287 - create_dem - end - 1664398459.0777562 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:19,245 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00056/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:19,246 [INFO] jobrunner.py:239 -- Success function execution
@@ -322,10 +322,10 @@ Activation: 'aitorarjona/copc:0.6' (504bc2d6-bacb-45ad-b851-fad5a067ff63)
     2022-09-28 20:53:41,870 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,608 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7653487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 504bc2d6-bacb-45ad-b851-fad5a067ff63 - create_dem - start - 1664398422.7653487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1148331 bytes
-    >>> create_dem - end - 1664398458.9073389 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 504bc2d6-bacb-45ad-b851-fad5a067ff63 - create_dem - end - 1664398458.9073389 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:19,020 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00058/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:19,021 [INFO] jobrunner.py:239 -- Success function execution
@@ -348,10 +348,10 @@ Activation: 'aitorarjona/copc:0.6' (3b0b1de0-b998-4330-a236-8ab937ed92d0)
     2022-09-28 20:53:42,778 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,696 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.8120298 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 3b0b1de0-b998-4330-a236-8ab937ed92d0 - create_dem - start - 1664398423.8120298 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 903456 bytes
-    >>> create_dem - end - 1664398458.317425 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 3b0b1de0-b998-4330-a236-8ab937ed92d0 - create_dem - end - 1664398458.317425 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:18,451 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00069/cloudobject_0 - Size: 483.6KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:18,451 [INFO] jobrunner.py:239 -- Success function execution
@@ -374,10 +374,10 @@ Activation: 'aitorarjona/copc:0.6' (b17d6ff1-4d69-4113-82fd-cfccaf504a14)
     2022-09-28 20:53:42,055 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,818 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.9747345 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> b17d6ff1-4d69-4113-82fd-cfccaf504a14 - create_dem - start - 1664398422.9747345 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1104080 bytes
-    >>> create_dem - end - 1664398459.168184 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> b17d6ff1-4d69-4113-82fd-cfccaf504a14 - create_dem - end - 1664398459.168184 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:19,275 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00086/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:19,276 [INFO] jobrunner.py:239 -- Success function execution
@@ -400,10 +400,10 @@ Activation: 'aitorarjona/copc:0.6' (d1ac0171-f43e-4cc1-b674-389aef2ccfa4)
     2022-09-28 20:53:42,600 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,229 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3577511 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> d1ac0171-f43e-4cc1-b674-389aef2ccfa4 - create_dem - start - 1664398423.3577511 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1554346 bytes
-    >>> create_dem - end - 1664398458.8333533 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> d1ac0171-f43e-4cc1-b674-389aef2ccfa4 - create_dem - end - 1664398458.8333533 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:18,915 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00105/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:18,915 [INFO] jobrunner.py:239 -- Success function execution
@@ -426,10 +426,10 @@ Activation: 'aitorarjona/copc:0.6' (e9e12c95-1642-4f04-b173-a34d8d54bbcb)
     2022-09-28 20:53:42,287 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,272 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4132214 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> e9e12c95-1642-4f04-b173-a34d8d54bbcb - create_dem - start - 1664398423.4132214 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1329751 bytes
-    >>> create_dem - end - 1664398457.9910123 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> e9e12c95-1642-4f04-b173-a34d8d54bbcb - create_dem - end - 1664398457.9910123 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:18,125 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00098/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:18,126 [INFO] jobrunner.py:239 -- Success function execution
@@ -452,10 +452,10 @@ Activation: 'aitorarjona/copc:0.6' (16f06c8e-3049-4ef1-94dd-32c09eb4b45f)
     2022-09-28 20:53:42,288 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,000 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.17431 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 16f06c8e-3049-4ef1-94dd-32c09eb4b45f - create_dem - start - 1664398423.17431 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 1012791 bytes
-    >>> create_dem - end - 1664398460.1424975 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 16f06c8e-3049-4ef1-94dd-32c09eb4b45f - create_dem - end - 1664398460.1424975 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:20,288 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00012/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:20,289 [INFO] jobrunner.py:239 -- Success function execution
@@ -478,10 +478,10 @@ Activation: 'aitorarjona/copc:0.6' (bf50a5a3-4838-4203-ac22-9840177cf92f)
     2022-09-28 20:53:42,156 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,049 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.2548916 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> bf50a5a3-4838-4203-ac22-9840177cf92f - create_dem - start - 1664398423.2548916 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1390381 bytes
-    >>> create_dem - end - 1664398460.1728773 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> bf50a5a3-4838-4203-ac22-9840177cf92f - create_dem - end - 1664398460.1728773 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:20,338 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00079/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:20,339 [INFO] jobrunner.py:239 -- Success function execution
@@ -504,10 +504,10 @@ Activation: 'aitorarjona/copc:0.6' (dc5529de-e2c5-4a05-a4fb-e239375f95cf)
     2022-09-28 20:53:40,356 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,798 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9674525 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> dc5529de-e2c5-4a05-a4fb-e239375f95cf - create_dem - start - 1664398420.9674525 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1047483 bytes
-    >>> create_dem - end - 1664398460.9740877 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> dc5529de-e2c5-4a05-a4fb-e239375f95cf - create_dem - end - 1664398460.9740877 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:21,067 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00002/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,067 [INFO] jobrunner.py:239 -- Success function execution
@@ -530,10 +530,10 @@ Activation: 'aitorarjona/copc:0.6' (851609b5-239b-489a-a194-e33f70d35b06)
     2022-09-28 20:53:41,641 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,294 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.4558494 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 851609b5-239b-489a-a194-e33f70d35b06 - create_dem - start - 1664398422.4558494 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1112766 bytes
-    >>> create_dem - end - 1664398461.592227 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 851609b5-239b-489a-a194-e33f70d35b06 - create_dem - end - 1664398461.592227 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:21,721 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00008/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,722 [INFO] jobrunner.py:239 -- Success function execution
@@ -556,10 +556,10 @@ Activation: 'aitorarjona/copc:0.6' (67d8970a-7114-4c99-a290-bf3991c67aa7)
     2022-09-28 20:53:40,380 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,826 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398421.0150573 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 67d8970a-7114-4c99-a290-bf3991c67aa7 - create_dem - start - 1664398421.0150573 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 812198 bytes
-    >>> create_dem - end - 1664398461.5858934 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 67d8970a-7114-4c99-a290-bf3991c67aa7 - create_dem - end - 1664398461.5858934 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:21,686 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00009/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,687 [INFO] jobrunner.py:239 -- Success function execution
@@ -582,10 +582,10 @@ Activation: 'aitorarjona/copc:0.6' (3651de4f-14fd-449e-9be5-c7ce214ad4bc)
     2022-09-28 20:53:42,599 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,385 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5712173 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 3651de4f-14fd-449e-9be5-c7ce214ad4bc - create_dem - start - 1664398423.5712173 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 998832 bytes
-    >>> create_dem - end - 1664398461.2595074 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 3651de4f-14fd-449e-9be5-c7ce214ad4bc - create_dem - end - 1664398461.2595074 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:21,425 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00014/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,426 [INFO] jobrunner.py:239 -- Success function execution
@@ -608,10 +608,10 @@ Activation: 'aitorarjona/copc:0.6' (bf0826d0-95a1-4339-a182-7509193bb919)
     2022-09-28 20:53:42,578 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,572 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.7530518 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> bf0826d0-95a1-4339-a182-7509193bb919 - create_dem - start - 1664398423.7530518 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 995362 bytes
-    >>> create_dem - end - 1664398461.136984 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> bf0826d0-95a1-4339-a182-7509193bb919 - create_dem - end - 1664398461.136984 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:21,285 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00013/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,286 [INFO] jobrunner.py:239 -- Success function execution
@@ -634,10 +634,10 @@ Activation: 'aitorarjona/copc:0.6' (732232ff-758d-4b90-b908-dd4d2097badf)
     2022-09-28 20:53:42,494 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,228 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4141142 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 732232ff-758d-4b90-b908-dd4d2097badf - create_dem - start - 1664398423.4141142 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 868439 bytes
-    >>> create_dem - end - 1664398461.2097259 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 732232ff-758d-4b90-b908-dd4d2097badf - create_dem - end - 1664398461.2097259 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:21,320 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00017/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,320 [INFO] jobrunner.py:239 -- Success function execution
@@ -660,10 +660,10 @@ Activation: 'aitorarjona/copc:0.6' (aedb2423-4b84-47e1-9d15-03f64bfcc90d)
     2022-09-28 20:53:41,716 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,385 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.551773 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> aedb2423-4b84-47e1-9d15-03f64bfcc90d - create_dem - start - 1664398422.551773 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1238105 bytes
-    >>> create_dem - end - 1664398461.8901708 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> aedb2423-4b84-47e1-9d15-03f64bfcc90d - create_dem - end - 1664398461.8901708 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:22,082 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00033/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:22,083 [INFO] jobrunner.py:239 -- Success function execution
@@ -686,10 +686,10 @@ Activation: 'aitorarjona/copc:0.6' (bd54293d-4e3f-4639-953f-5475244d8fd3)
     2022-09-28 20:53:42,620 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,331 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5188458 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> bd54293d-4e3f-4639-953f-5475244d8fd3 - create_dem - start - 1664398423.5188458 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 881585 bytes
-    >>> create_dem - end - 1664398462.312959 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> bd54293d-4e3f-4639-953f-5475244d8fd3 - create_dem - end - 1664398462.312959 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:22,419 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00016/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:22,420 [INFO] jobrunner.py:239 -- Success function execution
@@ -712,10 +712,10 @@ Activation: 'aitorarjona/copc:0.6' (079db48e-ce61-4aa3-b16c-b7ba34964b28)
     2022-09-28 20:53:42,254 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,139 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.303423 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 079db48e-ce61-4aa3-b16c-b7ba34964b28 - create_dem - start - 1664398423.303423 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1211407 bytes
-    >>> create_dem - end - 1664398461.3063304 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 079db48e-ce61-4aa3-b16c-b7ba34964b28 - create_dem - end - 1664398461.3063304 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:21,405 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00092/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:21,406 [INFO] jobrunner.py:239 -- Success function execution
@@ -738,10 +738,10 @@ Activation: 'aitorarjona/copc:0.6' (8fc341a1-3483-49f7-ab7e-5cb7bf2d18e3)
     2022-09-28 20:53:42,222 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,945 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.135034 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 8fc341a1-3483-49f7-ab7e-5cb7bf2d18e3 - create_dem - start - 1664398423.135034 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 922489 bytes
-    >>> create_dem - end - 1664398462.7522311 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 8fc341a1-3483-49f7-ab7e-5cb7bf2d18e3 - create_dem - end - 1664398462.7522311 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:22,856 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00010/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:22,856 [INFO] jobrunner.py:239 -- Success function execution
@@ -764,10 +764,10 @@ Activation: 'aitorarjona/copc:0.6' (5d867e53-d90a-408b-a5d9-625a76743a36)
     2022-09-28 20:53:42,542 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,253 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4353864 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 5d867e53-d90a-408b-a5d9-625a76743a36 - create_dem - start - 1664398423.4353864 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1007028 bytes
-    >>> create_dem - end - 1664398462.5222878 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 5d867e53-d90a-408b-a5d9-625a76743a36 - create_dem - end - 1664398462.5222878 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:22,627 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00030/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:22,628 [INFO] jobrunner.py:239 -- Success function execution
@@ -790,10 +790,10 @@ Activation: 'aitorarjona/copc:0.6' (51dbd277-9204-46e2-afa2-dd7f196f37ed)
     2022-09-28 20:53:42,541 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,360 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.554631 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 51dbd277-9204-46e2-afa2-dd7f196f37ed - create_dem - start - 1664398423.554631 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz...
     DEM result wrote 917752 bytes
-    >>> create_dem - end - 1664398463.3590171 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 51dbd277-9204-46e2-afa2-dd7f196f37ed - create_dem - end - 1664398463.3590171 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:54:23,464 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00011/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:23,465 [INFO] jobrunner.py:239 -- Success function execution
@@ -816,10 +816,10 @@ Activation: 'aitorarjona/copc:0.6' (46932505-eca1-4a33-b880-c5f078502ea4)
     2022-09-28 20:53:40,426 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,770 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9670887 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 46932505-eca1-4a33-b880-c5f078502ea4 - create_dem - start - 1664398420.9670887 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1100604 bytes
-    >>> create_dem - end - 1664398463.3130047 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 46932505-eca1-4a33-b880-c5f078502ea4 - create_dem - end - 1664398463.3130047 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:23,451 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00027/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:23,452 [INFO] jobrunner.py:239 -- Success function execution
@@ -842,10 +842,10 @@ Activation: 'aitorarjona/copc:0.6' (79af27fd-469c-4ae6-bab9-01a911fa8bad)
     2022-09-28 20:53:41,957 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,793 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.9632354 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 79af27fd-469c-4ae6-bab9-01a911fa8bad - create_dem - start - 1664398422.9632354 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1339001 bytes
-    >>> create_dem - end - 1664398464.2021353 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 79af27fd-469c-4ae6-bab9-01a911fa8bad - create_dem - end - 1664398464.2021353 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:24,321 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00034/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,322 [INFO] jobrunner.py:239 -- Success function execution
@@ -868,10 +868,10 @@ Activation: 'aitorarjona/copc:0.6' (e90b0030-1899-4b6f-91c9-8c000e4c284e)
     2022-09-28 20:53:42,779 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,625 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.8000605 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> e90b0030-1899-4b6f-91c9-8c000e4c284e - create_dem - start - 1664398423.8000605 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1233554 bytes
-    >>> create_dem - end - 1664398464.0412633 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> e90b0030-1899-4b6f-91c9-8c000e4c284e - create_dem - end - 1664398464.0412633 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:24,182 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00112/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,183 [INFO] jobrunner.py:239 -- Success function execution
@@ -894,10 +894,10 @@ Activation: 'aitorarjona/copc:0.6' (4b38760c-1138-4cb2-8fb6-03c90f3e9f0c)
     2022-09-28 20:53:41,779 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,483 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6607873 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 4b38760c-1138-4cb2-8fb6-03c90f3e9f0c - create_dem - start - 1664398422.6607873 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1252041 bytes
-    >>> create_dem - end - 1664398464.3510883 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 4b38760c-1138-4cb2-8fb6-03c90f3e9f0c - create_dem - end - 1664398464.3510883 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:24,434 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00061/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,435 [INFO] jobrunner.py:239 -- Success function execution
@@ -920,10 +920,10 @@ Activation: 'aitorarjona/copc:0.6' (467b9759-6704-46a9-9396-3e92756401e0)
     2022-09-28 20:53:42,362 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,308 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5066493 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 467b9759-6704-46a9-9396-3e92756401e0 - create_dem - start - 1664398423.5066493 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1016675 bytes
-    >>> create_dem - end - 1664398464.6892893 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 467b9759-6704-46a9-9396-3e92756401e0 - create_dem - end - 1664398464.6892893 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:24,813 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00062/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,814 [INFO] jobrunner.py:239 -- Success function execution
@@ -946,10 +946,10 @@ Activation: 'aitorarjona/copc:0.6' (33be5e7b-7215-4c6b-aca8-e1070d32e245)
     2022-09-28 20:53:42,130 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,931 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.1081066 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 33be5e7b-7215-4c6b-aca8-e1070d32e245 - create_dem - start - 1664398423.1081066 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1286288 bytes
-    >>> create_dem - end - 1664398464.3415153 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 33be5e7b-7215-4c6b-aca8-e1070d32e245 - create_dem - end - 1664398464.3415153 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:24,431 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00097/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,432 [INFO] jobrunner.py:239 -- Success function execution
@@ -972,10 +972,10 @@ Activation: 'aitorarjona/copc:0.6' (33118035-ac7c-496c-a193-f3e52d1bb3dc)
     2022-09-28 20:53:42,082 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,855 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.0270407 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 33118035-ac7c-496c-a193-f3e52d1bb3dc - create_dem - start - 1664398423.0270407 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1242119 bytes
-    >>> create_dem - end - 1664398464.2305624 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 33118035-ac7c-496c-a193-f3e52d1bb3dc - create_dem - end - 1664398464.2305624 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:24,367 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00084/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:24,368 [INFO] jobrunner.py:239 -- Success function execution
@@ -998,10 +998,10 @@ Activation: 'aitorarjona/copc:0.6' (b27a03f7-f7bf-4cc0-81d7-b374c47cb4a9)
     2022-09-28 20:53:42,346 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,974 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.1572697 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> b27a03f7-f7bf-4cc0-81d7-b374c47cb4a9 - create_dem - start - 1664398423.1572697 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1021797 bytes
-    >>> create_dem - end - 1664398465.400243 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> b27a03f7-f7bf-4cc0-81d7-b374c47cb4a9 - create_dem - end - 1664398465.400243 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:25,499 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00114/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:25,500 [INFO] jobrunner.py:239 -- Success function execution
@@ -1024,10 +1024,10 @@ Activation: 'aitorarjona/copc:0.6' (780db45f-64eb-44d2-81af-dd6e0cfc173e)
     2022-09-28 20:53:42,423 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,174 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3445904 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 780db45f-64eb-44d2-81af-dd6e0cfc173e - create_dem - start - 1664398423.3445904 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1308606 bytes
-    >>> create_dem - end - 1664398465.5635257 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 780db45f-64eb-44d2-81af-dd6e0cfc173e - create_dem - end - 1664398465.5635257 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:25,694 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00111/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:25,694 [INFO] jobrunner.py:239 -- Success function execution
@@ -1050,10 +1050,10 @@ Activation: 'aitorarjona/copc:0.6' (4feed070-9788-497e-9f00-e13de74e6ff5)
     2022-09-28 20:53:41,875 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,569 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.743799 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 4feed070-9788-497e-9f00-e13de74e6ff5 - create_dem - start - 1664398422.743799 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1261978 bytes
-    >>> create_dem - end - 1664398465.442471 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 4feed070-9788-497e-9f00-e13de74e6ff5 - create_dem - end - 1664398465.442471 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:25,568 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00055/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:25,568 [INFO] jobrunner.py:239 -- Success function execution
@@ -1076,10 +1076,10 @@ Activation: 'aitorarjona/copc:0.6' (e05794f9-e877-498b-88f9-725a101e8d12)
     2022-09-28 20:53:42,298 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,124 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3032057 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> e05794f9-e877-498b-88f9-725a101e8d12 - create_dem - start - 1664398423.3032057 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1183573 bytes
-    >>> create_dem - end - 1664398466.268272 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> e05794f9-e877-498b-88f9-725a101e8d12 - create_dem - end - 1664398466.268272 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:26,366 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00093/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:26,367 [INFO] jobrunner.py:239 -- Success function execution
@@ -1102,10 +1102,10 @@ Activation: 'aitorarjona/copc:0.6' (df2c04aa-dc16-4728-8636-28359216b3b9)
     2022-09-28 20:53:42,263 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,169 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.352251 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> df2c04aa-dc16-4728-8636-28359216b3b9 - create_dem - start - 1664398423.352251 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1313665 bytes
-    >>> create_dem - end - 1664398466.499822 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> df2c04aa-dc16-4728-8636-28359216b3b9 - create_dem - end - 1664398466.499822 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:26,700 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00054/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:26,701 [INFO] jobrunner.py:239 -- Success function execution
@@ -1128,10 +1128,10 @@ Activation: 'aitorarjona/copc:0.6' (390db72e-d19d-4c46-80d8-8a841f57c739)
     2022-09-28 20:53:41,809 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,546 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7441397 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 390db72e-d19d-4c46-80d8-8a841f57c739 - create_dem - start - 1664398422.7441397 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1194086 bytes
-    >>> create_dem - end - 1664398466.721487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 390db72e-d19d-4c46-80d8-8a841f57c739 - create_dem - end - 1664398466.721487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:26,836 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00000/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:26,837 [INFO] jobrunner.py:239 -- Success function execution
@@ -1154,10 +1154,10 @@ Activation: 'aitorarjona/copc:0.6' (d4db7df1-71e4-4f9b-9f91-ebe79579509e)
     2022-09-28 20:53:40,414 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,843 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9718137 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> d4db7df1-71e4-4f9b-9f91-ebe79579509e - create_dem - start - 1664398420.9718137 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1903980 bytes
-    >>> create_dem - end - 1664398467.0701842 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> d4db7df1-71e4-4f9b-9f91-ebe79579509e - create_dem - end - 1664398467.0701842 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:27,171 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00021/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,172 [INFO] jobrunner.py:239 -- Success function execution
@@ -1180,10 +1180,10 @@ Activation: 'aitorarjona/copc:0.6' (289b5e38-0a7a-4a91-b16f-99afe6699bc0)
     2022-09-28 20:53:41,835 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,564 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7111573 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 289b5e38-0a7a-4a91-b16f-99afe6699bc0 - create_dem - start - 1664398422.7111573 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1723532 bytes
-    >>> create_dem - end - 1664398466.8820567 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 289b5e38-0a7a-4a91-b16f-99afe6699bc0 - create_dem - end - 1664398466.8820567 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:27,003 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00040/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,004 [INFO] jobrunner.py:239 -- Success function execution
@@ -1206,10 +1206,10 @@ Activation: 'aitorarjona/copc:0.6' (1345e66f-8463-49a4-885b-a54618e5fe0c)
     2022-09-28 20:53:41,832 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,597 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.794506 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 1345e66f-8463-49a4-885b-a54618e5fe0c - create_dem - start - 1664398422.794506 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1169193 bytes
-    >>> create_dem - end - 1664398467.0448947 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 1345e66f-8463-49a4-885b-a54618e5fe0c - create_dem - end - 1664398467.0448947 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:27,173 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00060/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,174 [INFO] jobrunner.py:239 -- Success function execution
@@ -1232,10 +1232,10 @@ Activation: 'aitorarjona/copc:0.6' (5f67bbf0-8167-43c4-b0b8-d130345cf6fe)
     2022-09-28 20:53:42,396 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,299 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5022671 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 5f67bbf0-8167-43c4-b0b8-d130345cf6fe - create_dem - start - 1664398423.5022671 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1324826 bytes
-    >>> create_dem - end - 1664398467.1782074 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 5f67bbf0-8167-43c4-b0b8-d130345cf6fe - create_dem - end - 1664398467.1782074 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:27,279 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00080/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,280 [INFO] jobrunner.py:239 -- Success function execution
@@ -1258,10 +1258,10 @@ Activation: 'aitorarjona/copc:0.6' (68838c2d-7517-4600-8144-f62e7af91499)
     2022-09-28 20:53:42,320 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,046 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.236357 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 68838c2d-7517-4600-8144-f62e7af91499 - create_dem - start - 1664398423.236357 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1231747 bytes
-    >>> create_dem - end - 1664398467.1071491 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 68838c2d-7517-4600-8144-f62e7af91499 - create_dem - end - 1664398467.1071491 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:27,190 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00109/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,190 [INFO] jobrunner.py:239 -- Success function execution
@@ -1284,10 +1284,10 @@ Activation: 'aitorarjona/copc:0.6' (73b9f042-c108-4e74-a92e-fe9e96eb093f)
     2022-09-28 20:53:42,764 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,634 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.0381014 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 73b9f042-c108-4e74-a92e-fe9e96eb093f - create_dem - start - 1664398424.0381014 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 997009 bytes
-    >>> create_dem - end - 1664398467.1333582 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 73b9f042-c108-4e74-a92e-fe9e96eb093f - create_dem - end - 1664398467.1333582 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:27,255 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00115/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,256 [INFO] jobrunner.py:239 -- Success function execution
@@ -1310,10 +1310,10 @@ Activation: 'aitorarjona/copc:0.6' (e9b86c61-99a9-48d6-8168-1a85b97ee2e2)
     2022-09-28 20:53:40,409 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,761 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9695327 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e9b86c61-99a9-48d6-8168-1a85b97ee2e2 - create_dem - start - 1664398420.9695327 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1176355 bytes
-    >>> create_dem - end - 1664398467.8856692 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e9b86c61-99a9-48d6-8168-1a85b97ee2e2 - create_dem - end - 1664398467.8856692 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:27,977 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00006/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,978 [INFO] jobrunner.py:239 -- Success function execution
@@ -1336,10 +1336,10 @@ Activation: 'aitorarjona/copc:0.6' (e22060c5-5ec4-4d5f-a92f-fd0dcfd3639e)
     2022-09-28 20:53:41,694 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,458 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.64261 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e22060c5-5ec4-4d5f-a92f-fd0dcfd3639e - create_dem - start - 1664398422.64261 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz...
     DEM result wrote 1452090 bytes
-    >>> create_dem - end - 1664398467.613356 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> e22060c5-5ec4-4d5f-a92f-fd0dcfd3639e - create_dem - end - 1664398467.613356 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:54:27,740 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00007/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,740 [INFO] jobrunner.py:239 -- Success function execution
@@ -1362,10 +1362,10 @@ Activation: 'aitorarjona/copc:0.6' (54420e39-c0ae-4d1c-a303-faaded049d17)
     2022-09-28 20:53:42,743 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,450 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.649948 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 54420e39-c0ae-4d1c-a303-faaded049d17 - create_dem - start - 1664398423.649948 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz...
     DEM result wrote 1042967 bytes
-    >>> create_dem - end - 1664398467.972746 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> 54420e39-c0ae-4d1c-a303-faaded049d17 - create_dem - end - 1664398467.972746 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:54:28,116 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00059/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:28,116 [INFO] jobrunner.py:239 -- Success function execution
@@ -1388,10 +1388,10 @@ Activation: 'aitorarjona/copc:0.6' (42a35657-59b3-449c-9716-e15bdfdcb9c9)
     2022-09-28 20:53:42,910 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,864 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.0535345 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 42a35657-59b3-449c-9716-e15bdfdcb9c9 - create_dem - start - 1664398424.0535345 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1156946 bytes
-    >>> create_dem - end - 1664398467.8590868 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 42a35657-59b3-449c-9716-e15bdfdcb9c9 - create_dem - end - 1664398467.8590868 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:27,986 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00106/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,987 [INFO] jobrunner.py:239 -- Success function execution
@@ -1414,10 +1414,10 @@ Activation: 'aitorarjona/copc:0.6' (e2b182fa-5a1b-458d-839b-6a89560b1cd4)
     2022-09-28 20:53:41,815 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,565 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7273326 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> e2b182fa-5a1b-458d-839b-6a89560b1cd4 - create_dem - start - 1664398422.7273326 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1563068 bytes
-    >>> create_dem - end - 1664398467.7428288 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> e2b182fa-5a1b-458d-839b-6a89560b1cd4 - create_dem - end - 1664398467.7428288 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:27,872 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00077/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:27,873 [INFO] jobrunner.py:239 -- Success function execution
@@ -1440,10 +1440,10 @@ Activation: 'aitorarjona/copc:0.6' (9517cd17-aac4-4350-b0ee-f34b08842d97)
     2022-09-28 20:53:42,563 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,586 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.7840652 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 9517cd17-aac4-4350-b0ee-f34b08842d97 - create_dem - start - 1664398423.7840652 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1149468 bytes
-    >>> create_dem - end - 1664398468.098672 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 9517cd17-aac4-4350-b0ee-f34b08842d97 - create_dem - end - 1664398468.098672 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:28,172 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00108/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:28,173 [INFO] jobrunner.py:239 -- Success function execution
@@ -1466,10 +1466,10 @@ Activation: 'aitorarjona/copc:0.6' (24574c3e-89cc-4c97-b82a-d7e9d493704e)
     2022-09-28 20:53:42,278 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,899 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.101482 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 24574c3e-89cc-4c97-b82a-d7e9d493704e - create_dem - start - 1664398423.101482 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1185889 bytes
-    >>> create_dem - end - 1664398469.4569416 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 24574c3e-89cc-4c97-b82a-d7e9d493704e - create_dem - end - 1664398469.4569416 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:29,588 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00028/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:29,589 [INFO] jobrunner.py:239 -- Success function execution
@@ -1492,10 +1492,10 @@ Activation: 'aitorarjona/copc:0.6' (3e7dce1f-35d6-44f5-a9df-e83118140cff)
     2022-09-28 20:53:42,902 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,674 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.8332663 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 3e7dce1f-35d6-44f5-a9df-e83118140cff - create_dem - start - 1664398423.8332663 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1547729 bytes
-    >>> create_dem - end - 1664398468.847295 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 3e7dce1f-35d6-44f5-a9df-e83118140cff - create_dem - end - 1664398468.847295 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:28,925 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00037/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:28,926 [INFO] jobrunner.py:239 -- Success function execution
@@ -1518,10 +1518,10 @@ Activation: 'aitorarjona/copc:0.6' (70bd3060-4f43-4149-9c12-e95b6fb447e6)
     2022-09-28 20:53:41,989 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,840 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.056218 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 70bd3060-4f43-4149-9c12-e95b6fb447e6 - create_dem - start - 1664398423.056218 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1468632 bytes
-    >>> create_dem - end - 1664398469.417594 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 70bd3060-4f43-4149-9c12-e95b6fb447e6 - create_dem - end - 1664398469.417594 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:29,568 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00035/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:29,569 [INFO] jobrunner.py:239 -- Success function execution
@@ -1544,10 +1544,10 @@ Activation: 'aitorarjona/copc:0.6' (b69e805e-6242-482e-9188-cd21b1feab34)
     2022-09-28 20:53:42,715 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,456 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.658037 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> b69e805e-6242-482e-9188-cd21b1feab34 - create_dem - start - 1664398423.658037 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1495903 bytes
-    >>> create_dem - end - 1664398469.8377812 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> b69e805e-6242-482e-9188-cd21b1feab34 - create_dem - end - 1664398469.8377812 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:29,922 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00043/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:29,923 [INFO] jobrunner.py:239 -- Success function execution
@@ -1570,10 +1570,10 @@ Activation: 'aitorarjona/copc:0.6' (f30d8447-d858-449f-b56c-4f7e5dc0af97)
     2022-09-28 20:53:40,405 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,769 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9252899 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> f30d8447-d858-449f-b56c-4f7e5dc0af97 - create_dem - start - 1664398420.9252899 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1608051 bytes
-    >>> create_dem - end - 1664398470.5502603 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> f30d8447-d858-449f-b56c-4f7e5dc0af97 - create_dem - end - 1664398470.5502603 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:30,696 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00024/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:30,697 [INFO] jobrunner.py:239 -- Success function execution
@@ -1596,10 +1596,10 @@ Activation: 'aitorarjona/copc:0.6' (bbbd48e8-c1b3-46d7-ad73-0b7067b56987)
     2022-09-28 20:53:40,404 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,757 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398420.9138732 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> bbbd48e8-c1b3-46d7-ad73-0b7067b56987 - create_dem - start - 1664398420.9138732 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1318740 bytes
-    >>> create_dem - end - 1664398470.3430328 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> bbbd48e8-c1b3-46d7-ad73-0b7067b56987 - create_dem - end - 1664398470.3430328 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:30,542 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00026/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:30,543 [INFO] jobrunner.py:239 -- Success function execution
@@ -1622,10 +1622,10 @@ Activation: 'aitorarjona/copc:0.6' (90d12012-92e5-4e3a-8b95-6fbe0659209f)
     2022-09-28 20:53:41,982 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,653 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8279657 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 90d12012-92e5-4e3a-8b95-6fbe0659209f - create_dem - start - 1664398422.8279657 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1662407 bytes
-    >>> create_dem - end - 1664398471.2507036 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 90d12012-92e5-4e3a-8b95-6fbe0659209f - create_dem - end - 1664398471.2507036 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:31,341 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00089/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:31,342 [INFO] jobrunner.py:239 -- Success function execution
@@ -1648,10 +1648,10 @@ Activation: 'aitorarjona/copc:0.6' (66b043fb-cbdd-4398-939e-8e0007acb20d)
     2022-09-28 20:53:42,515 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,154 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.351118 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 66b043fb-cbdd-4398-939e-8e0007acb20d - create_dem - start - 1664398423.351118 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1372719 bytes
-    >>> create_dem - end - 1664398472.470604 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 66b043fb-cbdd-4398-939e-8e0007acb20d - create_dem - end - 1664398472.470604 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:32,599 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00087/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,599 [INFO] jobrunner.py:239 -- Success function execution
@@ -1674,10 +1674,10 @@ Activation: 'aitorarjona/copc:0.6' (346cc7b2-faf0-49b8-b18f-3792c40fd0a7)
     2022-09-28 20:53:41,629 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,287 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.4524252 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 346cc7b2-faf0-49b8-b18f-3792c40fd0a7 - create_dem - start - 1664398422.4524252 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1604109 bytes
-    >>> create_dem - end - 1664398472.6259618 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 346cc7b2-faf0-49b8-b18f-3792c40fd0a7 - create_dem - end - 1664398472.6259618 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:32,751 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00018/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,751 [INFO] jobrunner.py:239 -- Success function execution
@@ -1700,10 +1700,10 @@ Activation: 'aitorarjona/copc:0.6' (8cfe7864-9308-4742-b439-7d17cda86857)
     2022-09-28 20:53:42,013 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,731 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.9036567 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 8cfe7864-9308-4742-b439-7d17cda86857 - create_dem - start - 1664398422.9036567 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1711230 bytes
-    >>> create_dem - end - 1664398472.5002384 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 8cfe7864-9308-4742-b439-7d17cda86857 - create_dem - end - 1664398472.5002384 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:32,591 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00088/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,592 [INFO] jobrunner.py:239 -- Success function execution
@@ -1726,10 +1726,10 @@ Activation: 'aitorarjona/copc:0.6' (2d25d943-2c70-4c17-babf-e16c13bc311d)
     2022-09-28 20:53:42,666 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,685 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.9802132 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 2d25d943-2c70-4c17-babf-e16c13bc311d - create_dem - start - 1664398423.9802132 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1277313 bytes
-    >>> create_dem - end - 1664398471.7533302 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 2d25d943-2c70-4c17-babf-e16c13bc311d - create_dem - end - 1664398471.7533302 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:31,880 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00091/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:31,881 [INFO] jobrunner.py:239 -- Success function execution
@@ -1752,10 +1752,10 @@ Activation: 'aitorarjona/copc:0.6' (34ac535c-afc1-41fa-be86-521376c3f169)
     2022-09-28 20:53:42,164 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,923 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.1209552 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 34ac535c-afc1-41fa-be86-521376c3f169 - create_dem - start - 1664398423.1209552 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1258300 bytes
-    >>> create_dem - end - 1664398472.491124 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 34ac535c-afc1-41fa-be86-521376c3f169 - create_dem - end - 1664398472.491124 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:32,655 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00096/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,656 [INFO] jobrunner.py:239 -- Success function execution
@@ -1778,10 +1778,10 @@ Activation: 'aitorarjona/copc:0.6' (9ea074ee-6025-4d27-9cc9-557dfc412063)
     2022-09-28 20:53:42,359 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,352 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5825367 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 9ea074ee-6025-4d27-9cc9-557dfc412063 - create_dem - start - 1664398423.5825367 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1223848 bytes
-    >>> create_dem - end - 1664398472.12985 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 9ea074ee-6025-4d27-9cc9-557dfc412063 - create_dem - end - 1664398472.12985 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:32,270 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00094/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,270 [INFO] jobrunner.py:239 -- Success function execution
@@ -1804,10 +1804,10 @@ Activation: 'aitorarjona/copc:0.6' (a4f75c77-9108-4c8e-99aa-6ebe52e9af3a)
     2022-09-28 20:53:42,591 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,350 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5482755 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> a4f75c77-9108-4c8e-99aa-6ebe52e9af3a - create_dem - start - 1664398423.5482755 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1216134 bytes
-    >>> create_dem - end - 1664398471.6782382 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> a4f75c77-9108-4c8e-99aa-6ebe52e9af3a - create_dem - end - 1664398471.6782382 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:31,804 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00113/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:31,805 [INFO] jobrunner.py:239 -- Success function execution
@@ -1830,10 +1830,10 @@ Activation: 'aitorarjona/copc:0.6' (1777eb6e-4a60-4191-9708-202ee0f0521e)
     2022-09-28 20:53:42,388 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,155 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3592281 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 1777eb6e-4a60-4191-9708-202ee0f0521e - create_dem - start - 1664398423.3592281 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1178088 bytes
-    >>> create_dem - end - 1664398471.8755767 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 1777eb6e-4a60-4191-9708-202ee0f0521e - create_dem - end - 1664398471.8755767 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:32,026 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00110/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,027 [INFO] jobrunner.py:239 -- Success function execution
@@ -1856,10 +1856,10 @@ Activation: 'aitorarjona/copc:0.6' (ed0cecbd-f941-49e4-a8d1-3c7b951144cc)
     2022-09-28 20:53:42,509 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,211 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4318717 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> ed0cecbd-f941-49e4-a8d1-3c7b951144cc - create_dem - start - 1664398423.4318717 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz...
     DEM result wrote 1052883 bytes
-    >>> create_dem - end - 1664398472.6795847 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> ed0cecbd-f941-49e4-a8d1-3c7b951144cc - create_dem - end - 1664398472.6795847 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:54:32,791 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00116/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:32,792 [INFO] jobrunner.py:239 -- Success function execution
@@ -1882,10 +1882,10 @@ Activation: 'aitorarjona/copc:0.6' (6e4931df-f1a7-493d-bd4a-4d790f3b045c)
     2022-09-28 20:53:41,893 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,610 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7869008 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 6e4931df-f1a7-493d-bd4a-4d790f3b045c - create_dem - start - 1664398422.7869008 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 960961 bytes
-    >>> create_dem - end - 1664398473.0086446 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 6e4931df-f1a7-493d-bd4a-4d790f3b045c - create_dem - end - 1664398473.0086446 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:33,113 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00064/cloudobject_0 - Size: 621.5KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:33,114 [INFO] jobrunner.py:239 -- Success function execution
@@ -1908,10 +1908,10 @@ Activation: 'aitorarjona/copc:0.6' (efe70d89-fe54-4973-ae1c-1c98ad1c6b06)
     2022-09-28 20:53:40,460 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,869 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398421.0287244 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> efe70d89-fe54-4973-ae1c-1c98ad1c6b06 - create_dem - start - 1664398421.0287244 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1468296 bytes
-    >>> create_dem - end - 1664398474.019951 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> efe70d89-fe54-4973-ae1c-1c98ad1c6b06 - create_dem - end - 1664398474.019951 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:34,120 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00025/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:34,121 [INFO] jobrunner.py:239 -- Success function execution
@@ -1934,10 +1934,10 @@ Activation: 'aitorarjona/copc:0.6' (da73e411-9a6f-446f-9ca0-d9706e64aa62)
     2022-09-28 20:53:42,337 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,092 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3181734 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> da73e411-9a6f-446f-9ca0-d9706e64aa62 - create_dem - start - 1664398423.3181734 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1229738 bytes
-    >>> create_dem - end - 1664398473.642902 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> da73e411-9a6f-446f-9ca0-d9706e64aa62 - create_dem - end - 1664398473.642902 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:33,790 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00107/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:33,791 [INFO] jobrunner.py:239 -- Success function execution
@@ -1960,10 +1960,10 @@ Activation: 'aitorarjona/copc:0.6' (9b90ce7c-73a7-42dd-b506-51ad0e8f847c)
     2022-09-28 20:53:41,934 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,649 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8224492 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 9b90ce7c-73a7-42dd-b506-51ad0e8f847c - create_dem - start - 1664398422.8224492 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1704150 bytes
-    >>> create_dem - end - 1664398474.6311698 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 9b90ce7c-73a7-42dd-b506-51ad0e8f847c - create_dem - end - 1664398474.6311698 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:34,754 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00076/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:34,755 [INFO] jobrunner.py:239 -- Success function execution
@@ -1986,10 +1986,10 @@ Activation: 'aitorarjona/copc:0.6' (8a915a57-d6fb-4166-aa81-fad36204658c)
     2022-09-28 20:53:42,148 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,119 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.285011 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 8a915a57-d6fb-4166-aa81-fad36204658c - create_dem - start - 1664398423.285011 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1640133 bytes
-    >>> create_dem - end - 1664398475.1077678 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 8a915a57-d6fb-4166-aa81-fad36204658c - create_dem - end - 1664398475.1077678 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:35,262 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00038/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:35,263 [INFO] jobrunner.py:239 -- Success function execution
@@ -2012,10 +2012,10 @@ Activation: 'aitorarjona/copc:0.6' (1c047ba2-8156-480f-9132-a502e80b2253)
     2022-09-28 20:53:42,613 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,238 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3958948 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 1c047ba2-8156-480f-9132-a502e80b2253 - create_dem - start - 1664398423.3958948 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 2085608 bytes
-    >>> create_dem - end - 1664398475.0405293 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 1c047ba2-8156-480f-9132-a502e80b2253 - create_dem - end - 1664398475.0405293 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:35,159 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00073/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:35,160 [INFO] jobrunner.py:239 -- Success function execution
@@ -2038,10 +2038,10 @@ Activation: 'aitorarjona/copc:0.6' (cc22f218-0bea-417b-922a-5ecee4bbd50c)
     2022-09-28 20:53:41,834 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,554 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7534711 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> cc22f218-0bea-417b-922a-5ecee4bbd50c - create_dem - start - 1664398422.7534711 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1605632 bytes
-    >>> create_dem - end - 1664398475.8381371 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> cc22f218-0bea-417b-922a-5ecee4bbd50c - create_dem - end - 1664398475.8381371 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:35,984 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00042/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:35,984 [INFO] jobrunner.py:239 -- Success function execution
@@ -2064,10 +2064,10 @@ Activation: 'aitorarjona/copc:0.6' (1f6b60b6-90c5-4679-8f8c-69de5218ba9d)
     2022-09-28 20:53:41,853 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,445 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6680198 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 1f6b60b6-90c5-4679-8f8c-69de5218ba9d - create_dem - start - 1664398422.6680198 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1300265 bytes
-    >>> create_dem - end - 1664398475.0716121 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 1f6b60b6-90c5-4679-8f8c-69de5218ba9d - create_dem - end - 1664398475.0716121 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:35,204 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00101/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:35,205 [INFO] jobrunner.py:239 -- Success function execution
@@ -2090,10 +2090,10 @@ Activation: 'aitorarjona/copc:0.6' (e375962f-5beb-446d-9a4e-95187e2cca31)
     2022-09-28 20:53:41,814 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,505 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6996725 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> e375962f-5beb-446d-9a4e-95187e2cca31 - create_dem - start - 1664398422.6996725 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1577439 bytes
-    >>> create_dem - end - 1664398476.2963355 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> e375962f-5beb-446d-9a4e-95187e2cca31 - create_dem - end - 1664398476.2963355 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:36,416 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00072/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:36,417 [INFO] jobrunner.py:239 -- Success function execution
@@ -2116,10 +2116,10 @@ Activation: 'aitorarjona/copc:0.6' (efbaeed2-7538-4b51-9b86-5fec6d2f1dab)
     2022-09-28 20:53:41,787 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,520 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6891592 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> efbaeed2-7538-4b51-9b86-5fec6d2f1dab - create_dem - start - 1664398422.6891592 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1914174 bytes
-    >>> create_dem - end - 1664398478.6231844 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> efbaeed2-7538-4b51-9b86-5fec6d2f1dab - create_dem - end - 1664398478.6231844 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:38,712 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00041/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:38,713 [INFO] jobrunner.py:239 -- Success function execution
@@ -2142,10 +2142,10 @@ Activation: 'aitorarjona/copc:0.6' (f612a561-5c52-4e46-aad1-2d15c99cca58)
     2022-09-28 20:53:42,643 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,535 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.7801955 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> f612a561-5c52-4e46-aad1-2d15c99cca58 - create_dem - start - 1664398423.7801955 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz...
     DEM result wrote 1068590 bytes
-    >>> create_dem - end - 1664398479.379513 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> f612a561-5c52-4e46-aad1-2d15c99cca58 - create_dem - end - 1664398479.379513 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:54:39,524 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00029/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:39,525 [INFO] jobrunner.py:239 -- Success function execution
@@ -2168,10 +2168,10 @@ Activation: 'aitorarjona/copc:0.6' (0b7bf045-b87e-4a2c-ab5c-482aa4ecc730)
     2022-09-28 20:53:42,037 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,802 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.0315487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 0b7bf045-b87e-4a2c-ab5c-482aa4ecc730 - create_dem - start - 1664398423.0315487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1175433 bytes
-    >>> create_dem - end - 1664398477.245388 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 0b7bf045-b87e-4a2c-ab5c-482aa4ecc730 - create_dem - end - 1664398477.245388 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:37,365 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00090/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:37,366 [INFO] jobrunner.py:239 -- Success function execution
@@ -2194,10 +2194,10 @@ Activation: 'aitorarjona/copc:0.6' (e93e53b7-56f2-4bcc-9604-e5a076dd54ac)
     2022-09-28 20:53:42,164 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,001 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.1828136 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> e93e53b7-56f2-4bcc-9604-e5a076dd54ac - create_dem - start - 1664398423.1828136 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1220379 bytes
-    >>> create_dem - end - 1664398478.7895079 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> e93e53b7-56f2-4bcc-9604-e5a076dd54ac - create_dem - end - 1664398478.7895079 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:38,939 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00066/cloudobject_0 - Size: 674.2KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:38,940 [INFO] jobrunner.py:239 -- Success function execution
@@ -2220,10 +2220,10 @@ Activation: 'aitorarjona/copc:0.6' (5ba00162-609d-41bf-bf66-d5dc9a4ea06b)
     2022-09-28 20:53:42,072 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,805 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.0331852 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 5ba00162-609d-41bf-bf66-d5dc9a4ea06b - create_dem - start - 1664398423.0331852 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz...
     DEM result wrote 1078080 bytes
-    >>> create_dem - end - 1664398478.5514293 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 5ba00162-609d-41bf-bf66-d5dc9a4ea06b - create_dem - end - 1664398478.5514293 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:54:38,715 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00095/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:38,716 [INFO] jobrunner.py:239 -- Success function execution
@@ -2246,10 +2246,10 @@ Activation: 'aitorarjona/copc:0.6' (96f95bee-0245-46bb-ac7c-5dee93c26226)
     2022-09-28 20:53:41,637 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,333 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.529807 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 96f95bee-0245-46bb-ac7c-5dee93c26226 - create_dem - start - 1664398422.529807 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 1586240 bytes
-    >>> create_dem - end - 1664398476.956338 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 96f95bee-0245-46bb-ac7c-5dee93c26226 - create_dem - end - 1664398476.956338 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:37,307 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00047/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:37,308 [INFO] jobrunner.py:239 -- Success function execution
@@ -2272,10 +2272,10 @@ Activation: 'aitorarjona/copc:0.6' (40989044-2fa3-4d7e-9fee-65e10ce64a14)
     2022-09-28 20:53:41,858 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,608 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8130753 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 40989044-2fa3-4d7e-9fee-65e10ce64a14 - create_dem - start - 1664398422.8130753 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1718738 bytes
-    >>> create_dem - end - 1664398481.5382905 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 40989044-2fa3-4d7e-9fee-65e10ce64a14 - create_dem - end - 1664398481.5382905 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:41,620 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00039/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:41,621 [INFO] jobrunner.py:239 -- Success function execution
@@ -2298,10 +2298,10 @@ Activation: 'aitorarjona/copc:0.6' (c0561e39-7837-445a-82d3-f226e7301cd6)
     2022-09-28 20:53:42,629 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,359 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5714352 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> c0561e39-7837-445a-82d3-f226e7301cd6 - create_dem - start - 1664398423.5714352 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1729236 bytes
-    >>> create_dem - end - 1664398480.6177068 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> c0561e39-7837-445a-82d3-f226e7301cd6 - create_dem - end - 1664398480.6177068 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:40,749 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00044/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:40,750 [INFO] jobrunner.py:239 -- Success function execution
@@ -2324,10 +2324,10 @@ Activation: 'aitorarjona/copc:0.6' (56fa55cf-2d36-46de-99b7-fc89f217b218)
     2022-09-28 20:53:41,728 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,409 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.596166 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 56fa55cf-2d36-46de-99b7-fc89f217b218 - create_dem - start - 1664398422.596166 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1312873 bytes
-    >>> create_dem - end - 1664398483.0253603 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 56fa55cf-2d36-46de-99b7-fc89f217b218 - create_dem - end - 1664398483.0253603 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:43,181 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00023/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:43,182 [INFO] jobrunner.py:239 -- Success function execution
@@ -2350,10 +2350,10 @@ Activation: 'aitorarjona/copc:0.6' (ece6a0a4-3ec3-42c5-b4c3-935ced64c73f)
     2022-09-28 20:53:42,333 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,273 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.493116 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> ece6a0a4-3ec3-42c5-b4c3-935ced64c73f - create_dem - start - 1664398423.493116 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1455876 bytes
-    >>> create_dem - end - 1664398480.601467 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> ece6a0a4-3ec3-42c5-b4c3-935ced64c73f - create_dem - end - 1664398480.601467 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:40,697 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00099/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:40,698 [INFO] jobrunner.py:239 -- Success function execution
@@ -2376,10 +2376,10 @@ Activation: 'aitorarjona/copc:0.6' (33937ebe-ae3a-43df-91b9-de8097029e08)
     2022-09-28 20:53:42,265 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,123 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.3612359 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 33937ebe-ae3a-43df-91b9-de8097029e08 - create_dem - start - 1664398423.3612359 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1220195 bytes
-    >>> create_dem - end - 1664398481.020639 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 33937ebe-ae3a-43df-91b9-de8097029e08 - create_dem - end - 1664398481.020639 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:41,177 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00100/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:41,178 [INFO] jobrunner.py:239 -- Success function execution
@@ -2402,10 +2402,10 @@ Activation: 'aitorarjona/copc:0.6' (6616b34d-d2f7-4e86-8ad5-5832e7cda00e)
     2022-09-28 20:53:42,571 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,328 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5215104 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 6616b34d-d2f7-4e86-8ad5-5832e7cda00e - create_dem - start - 1664398423.5215104 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1565250 bytes
-    >>> create_dem - end - 1664398483.3887959 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 6616b34d-d2f7-4e86-8ad5-5832e7cda00e - create_dem - end - 1664398483.3887959 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:43,544 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00019/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:43,544 [INFO] jobrunner.py:239 -- Success function execution
@@ -2428,10 +2428,10 @@ Activation: 'aitorarjona/copc:0.6' (67758203-7408-4808-8974-0851e291325f)
     2022-09-28 20:53:40,406 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,830 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398421.0207303 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 67758203-7408-4808-8974-0851e291325f - create_dem - start - 1664398421.0207303 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1192507 bytes
-    >>> create_dem - end - 1664398483.888926 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 67758203-7408-4808-8974-0851e291325f - create_dem - end - 1664398483.888926 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:43,978 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00020/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:43,979 [INFO] jobrunner.py:239 -- Success function execution
@@ -2454,10 +2454,10 @@ Activation: 'aitorarjona/copc:0.6' (18ec8f13-09a0-4dc4-a91f-61a45d4ef2b6)
     2022-09-28 20:53:42,089 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,866 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.0625625 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 18ec8f13-09a0-4dc4-a91f-61a45d4ef2b6 - create_dem - start - 1664398423.0625625 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1890371 bytes
-    >>> create_dem - end - 1664398484.372473 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 18ec8f13-09a0-4dc4-a91f-61a45d4ef2b6 - create_dem - end - 1664398484.372473 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:44,476 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00083/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:44,477 [INFO] jobrunner.py:239 -- Success function execution
@@ -2480,10 +2480,10 @@ Activation: 'aitorarjona/copc:0.6' (79c1b05f-bb68-406b-b0b4-44b53b35555e)
     2022-09-28 20:53:42,457 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,347 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.6680539 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 79c1b05f-bb68-406b-b0b4-44b53b35555e - create_dem - start - 1664398423.6680539 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1612446 bytes
-    >>> create_dem - end - 1664398484.939347 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 79c1b05f-bb68-406b-b0b4-44b53b35555e - create_dem - end - 1664398484.939347 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:45,082 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00102/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:45,083 [INFO] jobrunner.py:239 -- Success function execution
@@ -2506,10 +2506,10 @@ Activation: 'aitorarjona/copc:0.6' (ed5f5545-e9f4-469c-a9b5-e2b148122fe5)
     2022-09-28 20:53:42,373 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,259 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4869065 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> ed5f5545-e9f4-469c-a9b5-e2b148122fe5 - create_dem - start - 1664398423.4869065 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1648101 bytes
-    >>> create_dem - end - 1664398484.6421883 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> ed5f5545-e9f4-469c-a9b5-e2b148122fe5 - create_dem - end - 1664398484.6421883 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:44,763 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00103/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:44,764 [INFO] jobrunner.py:239 -- Success function execution
@@ -2532,10 +2532,10 @@ Activation: 'aitorarjona/copc:0.6' (35e659bd-399d-4ba9-aab1-d8fb415ecce2)
     2022-09-28 20:53:41,866 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,591 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8091326 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 35e659bd-399d-4ba9-aab1-d8fb415ecce2 - create_dem - start - 1664398422.8091326 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz...
     DEM result wrote 1673620 bytes
-    >>> create_dem - end - 1664398486.6365054 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> 35e659bd-399d-4ba9-aab1-d8fb415ecce2 - create_dem - end - 1664398486.6365054 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:54:46,776 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00036/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:46,777 [INFO] jobrunner.py:239 -- Success function execution
@@ -2558,10 +2558,10 @@ Activation: 'aitorarjona/copc:0.6' (9ed8d7e6-579e-48c4-b0bc-86ac53d55e32)
     2022-09-28 20:53:41,801 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,546 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.7255862 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 9ed8d7e6-579e-48c4-b0bc-86ac53d55e32 - create_dem - start - 1664398422.7255862 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 2041804 bytes
-    >>> create_dem - end - 1664398486.1454194 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 9ed8d7e6-579e-48c4-b0bc-86ac53d55e32 - create_dem - end - 1664398486.1454194 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:46,253 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00046/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:46,254 [INFO] jobrunner.py:239 -- Success function execution
@@ -2584,10 +2584,10 @@ Activation: 'aitorarjona/copc:0.6' (3522fffb-4ce3-4efc-8e37-b354e986f8e5)
     2022-09-28 20:53:42,741 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,445 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.6499336 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 3522fffb-4ce3-4efc-8e37-b354e986f8e5 - create_dem - start - 1664398423.6499336 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 1876458 bytes
-    >>> create_dem - end - 1664398486.0953517 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 3522fffb-4ce3-4efc-8e37-b354e986f8e5 - create_dem - end - 1664398486.0953517 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:46,287 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00053/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:46,288 [INFO] jobrunner.py:239 -- Success function execution
@@ -2610,10 +2610,10 @@ Activation: 'aitorarjona/copc:0.6' (348aded1-9ef5-46c2-9a8f-8cf47e7b6fae)
     2022-09-28 20:53:42,017 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,805 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.009923 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 348aded1-9ef5-46c2-9a8f-8cf47e7b6fae - create_dem - start - 1664398423.009923 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1332417 bytes
-    >>> create_dem - end - 1664398486.0351336 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 348aded1-9ef5-46c2-9a8f-8cf47e7b6fae - create_dem - end - 1664398486.0351336 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:46,132 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00068/cloudobject_0 - Size: 710.8KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:46,134 [INFO] jobrunner.py:239 -- Success function execution
@@ -2636,10 +2636,10 @@ Activation: 'aitorarjona/copc:0.6' (76f309c2-0b62-4a57-ba47-b75d00e06375)
     2022-09-28 20:53:41,886 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,637 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.8457887 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 76f309c2-0b62-4a57-ba47-b75d00e06375 - create_dem - start - 1664398422.8457887 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 1918678 bytes
-    >>> create_dem - end - 1664398492.1271768 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 76f309c2-0b62-4a57-ba47-b75d00e06375 - create_dem - end - 1664398492.1271768 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:52,251 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00049/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:52,252 [INFO] jobrunner.py:239 -- Success function execution
@@ -2662,10 +2662,10 @@ Activation: 'aitorarjona/copc:0.6' (5f77031a-25fe-4587-9558-a8646b15da77)
     2022-09-28 20:53:42,637 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,373 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5985072 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 5f77031a-25fe-4587-9558-a8646b15da77 - create_dem - start - 1664398423.5985072 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1272027 bytes
-    >>> create_dem - end - 1664398491.287269 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 5f77031a-25fe-4587-9558-a8646b15da77 - create_dem - end - 1664398491.287269 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:51,425 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00065/cloudobject_0 - Size: 710.8KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:51,426 [INFO] jobrunner.py:239 -- Success function execution
@@ -2688,10 +2688,10 @@ Activation: 'aitorarjona/copc:0.6' (9a9f4b77-e65c-4bc1-ad62-7f2aa6080534)
     2022-09-28 20:53:42,894 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,703 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.9061508 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 9a9f4b77-e65c-4bc1-ad62-7f2aa6080534 - create_dem - start - 1664398423.9061508 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 2048989 bytes
-    >>> create_dem - end - 1664398490.94342 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 9a9f4b77-e65c-4bc1-ad62-7f2aa6080534 - create_dem - end - 1664398490.94342 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:51,037 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00082/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:51,038 [INFO] jobrunner.py:239 -- Success function execution
@@ -2714,10 +2714,10 @@ Activation: 'aitorarjona/copc:0.6' (0c7075fd-bdb2-42e0-bb59-aa2bba2891e2)
     2022-09-28 20:53:42,022 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,769 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.005215 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 0c7075fd-bdb2-42e0-bb59-aa2bba2891e2 - create_dem - start - 1664398423.005215 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1288487 bytes
-    >>> create_dem - end - 1664398492.0216238 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 0c7075fd-bdb2-42e0-bb59-aa2bba2891e2 - create_dem - end - 1664398492.0216238 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:52,114 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00067/cloudobject_0 - Size: 710.8KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:52,115 [INFO] jobrunner.py:239 -- Success function execution
@@ -2740,10 +2740,10 @@ Activation: 'aitorarjona/copc:0.6' (fae38734-f3a5-4947-a491-c771829ac588)
     2022-09-28 20:53:42,125 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,876 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.127792 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> fae38734-f3a5-4947-a491-c771829ac588 - create_dem - start - 1664398423.127792 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1594781 bytes
-    >>> create_dem - end - 1664398492.6255841 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> fae38734-f3a5-4947-a491-c771829ac588 - create_dem - end - 1664398492.6255841 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:52,751 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00074/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:52,752 [INFO] jobrunner.py:239 -- Success function execution
@@ -2766,10 +2766,10 @@ Activation: 'aitorarjona/copc:0.6' (4fb678c4-b107-4bb8-9da7-571df4e25e8e)
     2022-09-28 20:53:42,926 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,834 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.128921 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 4fb678c4-b107-4bb8-9da7-571df4e25e8e - create_dem - start - 1664398424.128921 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz...
     DEM result wrote 1409196 bytes
-    >>> create_dem - end - 1664398490.941974 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 4fb678c4-b107-4bb8-9da7-571df4e25e8e - create_dem - end - 1664398490.941974 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:54:51,047 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00104/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:51,048 [INFO] jobrunner.py:239 -- Success function execution
@@ -2792,10 +2792,10 @@ Activation: 'aitorarjona/copc:0.6' (863e6941-30e2-48ed-a91e-0108e6c9b840)
     2022-09-28 20:53:40,411 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:40,801 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398421.0134418 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 863e6941-30e2-48ed-a91e-0108e6c9b840 - create_dem - start - 1664398421.0134418 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz...
     DEM result wrote 1710479 bytes
-    >>> create_dem - end - 1664398493.1689796 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> 863e6941-30e2-48ed-a91e-0108e6c9b840 - create_dem - end - 1664398493.1689796 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:54:53,304 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00022/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:53,305 [INFO] jobrunner.py:239 -- Success function execution
@@ -2818,10 +2818,10 @@ Activation: 'aitorarjona/copc:0.6' (9d66512a-502f-41bb-9ff4-0158fe6783de)
     2022-09-28 20:53:41,690 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,363 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.6154244 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 9d66512a-502f-41bb-9ff4-0158fe6783de - create_dem - start - 1664398422.6154244 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz...
     DEM result wrote 1552174 bytes
-    >>> create_dem - end - 1664398493.8090487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> 9d66512a-502f-41bb-9ff4-0158fe6783de - create_dem - end - 1664398493.8090487 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:54:53,888 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00075/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:53,889 [INFO] jobrunner.py:239 -- Success function execution
@@ -2832,7 +2832,7 @@ Activation: 'aitorarjona/copc:0.6' (9d66512a-502f-41bb-9ff4-0158fe6783de)
     2022-09-28 20:54:53,964 [DEBUG] handler.py:182 -- JobRunner process finished
 ]
 
-Activation: 'aitorarjona/copc:0.6' (207e89e1-e405-48e6-92f1-a03a14bcd7de)
+Activation: 'aitorarjona/copc:0.6' (207e89e1-e45-48e6-92f1-a03a14bcd7de)
 [
     2022-09-28 20:53:42,689 [INFO] handler.py:152 -- Lithops v2.7.0 - Starting AWS Lambda execution
     2022-09-28 20:53:42,689 [INFO] handler.py:153 -- Execution ID: 8459f3-0-M001/00081
@@ -2844,10 +2844,10 @@ Activation: 'aitorarjona/copc:0.6' (207e89e1-e405-48e6-92f1-a03a14bcd7de)
     2022-09-28 20:53:42,743 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,518 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.7409794 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 207e89e1-e45-48e6-92f1-a03a14bcd7de - create_dem - start - 1664398423.7409794 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz...
     DEM result wrote 1861147 bytes
-    >>> create_dem - end - 1664398493.3613555 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 207e89e1-e45-48e6-92f1-a03a14bcd7de - create_dem - end - 1664398493.3613555 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:54:53,515 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00081/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:53,516 [INFO] jobrunner.py:239 -- Success function execution
@@ -2870,10 +2870,10 @@ Activation: 'aitorarjona/copc:0.6' (9b97614f-8489-4b46-af34-deb09e4c1455)
     2022-09-28 20:53:41,924 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,791 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.0510123 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 9b97614f-8489-4b46-af34-deb09e4c1455 - create_dem - start - 1664398423.0510123 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 1525743 bytes
-    >>> create_dem - end - 1664398495.4479418 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 9b97614f-8489-4b46-af34-deb09e4c1455 - create_dem - end - 1664398495.4479418 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:55,563 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00050/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:55,565 [INFO] jobrunner.py:239 -- Success function execution
@@ -2896,10 +2896,10 @@ Activation: 'aitorarjona/copc:0.6' (363624fd-519d-4f64-8773-d7729a448a9d)
     2022-09-28 20:53:42,048 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,228 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.4853582 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 363624fd-519d-4f64-8773-d7729a448a9d - create_dem - start - 1664398423.4853582 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1697151 bytes
-    >>> create_dem - end - 1664398495.0474076 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 363624fd-519d-4f64-8773-d7729a448a9d - create_dem - end - 1664398495.0474076 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:55,196 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00070/cloudobject_0 - Size: 710.8KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:55,197 [INFO] jobrunner.py:239 -- Success function execution
@@ -2922,10 +2922,10 @@ Activation: 'aitorarjona/copc:0.6' (50fa64de-bdc3-4c55-a9c4-93d5f960e08d)
     2022-09-28 20:53:42,316 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,312 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398423.5417747 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 50fa64de-bdc3-4c55-a9c4-93d5f960e08d - create_dem - start - 1664398423.5417747 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz...
     DEM result wrote 1623608 bytes
-    >>> create_dem - end - 1664398494.7243078 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 50fa64de-bdc3-4c55-a9c4-93d5f960e08d - create_dem - end - 1664398494.7243078 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:54:54,846 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00071/cloudobject_0 - Size: 710.8KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:54,846 [INFO] jobrunner.py:239 -- Success function execution
@@ -2948,10 +2948,10 @@ Activation: 'aitorarjona/copc:0.6' (70ed4a2c-ee9c-4df7-a766-9dbba058105e)
     2022-09-28 20:53:41,967 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,695 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.9507847 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 70ed4a2c-ee9c-4df7-a766-9dbba058105e - create_dem - start - 1664398422.9507847 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 1516566 bytes
-    >>> create_dem - end - 1664398496.9555614 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 70ed4a2c-ee9c-4df7-a766-9dbba058105e - create_dem - end - 1664398496.9555614 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:54:57,124 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00052/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:54:57,125 [INFO] jobrunner.py:239 -- Success function execution
@@ -2974,10 +2974,10 @@ Activation: 'aitorarjona/copc:0.6' (fad8d415-8aa8-4d0b-a78e-fd036925a095)
     2022-09-28 20:53:42,992 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,834 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.0415835 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> fad8d415-8aa8-4d0b-a78e-fd036925a095 - create_dem - start - 1664398424.0415835 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 2142727 bytes
-    >>> create_dem - end - 1664398505.3875427 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> fad8d415-8aa8-4d0b-a78e-fd036925a095 - create_dem - end - 1664398505.3875427 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:55:05,486 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00051/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:55:05,487 [INFO] jobrunner.py:239 -- Success function execution
@@ -3000,10 +3000,10 @@ Activation: 'aitorarjona/copc:0.6' (f99847a1-21da-4f3d-8315-621a12ed9332)
     2022-09-28 20:53:42,956 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:43,966 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398424.1696963 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> f99847a1-21da-4f3d-8315-621a12ed9332 - create_dem - start - 1664398424.1696963 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 2588589 bytes
-    >>> create_dem - end - 1664398512.977033 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> f99847a1-21da-4f3d-8315-621a12ed9332 - create_dem - end - 1664398512.977033 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:55:13,097 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00048/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:55:13,098 [INFO] jobrunner.py:239 -- Success function execution
@@ -3026,10 +3026,10 @@ Activation: 'aitorarjona/copc:0.6' (8fbc6a59-0172-406a-ad2b-f686d9f29de8)
     2022-09-28 20:53:41,873 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:53:42,683 [INFO] jobrunner.py:233 -- Going to execute 'create_dem_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> create_dem - start - 1664398422.9428973 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 8fbc6a59-0172-406a-ad2b-f686d9f29de8 - create_dem - start - 1664398422.9428973 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     Executing DEM pipeline for laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz...
     DEM result wrote 2368402 bytes
-    >>> create_dem - end - 1664398524.3338158 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 8fbc6a59-0172-406a-ad2b-f686d9f29de8 - create_dem - end - 1664398524.3338158 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:55:24,491 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M001-00045/cloudobject_0 - Size: 872.7KiB - OK
     ----------------------------------------------------------
     2022-09-28 20:55:24,492 [INFO] jobrunner.py:239 -- Success function execution

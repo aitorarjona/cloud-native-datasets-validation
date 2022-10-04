@@ -1,13 +1,23 @@
 from distutils.util import subst_vars
 import json
 import re
+from types import SimpleNamespace
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from pprint import pprint
 
-# INPUT_FILES = ['geospatial/ray_/naive_tasks_cgs_quarter_job_logs.txt']
-INPUT_FILES = ['geospatial/ray_/naive_quarter_zeroworkers.txt']
+matplotlib.rc('image', cmap='gray')
+# matplotlib.style.use('seaborn-white')
+matplotlib.rc('font', size=10.5)
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+
+logs1 = ['geospatial/ray_/naive_quarter_zeroworkers.txt']
+logs2 = ['geospatial/ray_/co_quarter_zeroworkers.txt']
+
+INITIAL_CPUS = 4
 
 
 def parse_entry(line):
@@ -81,12 +91,7 @@ def parse_ray_scheduler_entry(line):
             return 'scale_up', t, nodes
 
 
-if __name__ == '__main__':
-    logs = []
-    for input_file in INPUT_FILES:
-        with open(input_file, 'r') as file:
-            logs.extend(file.readlines())
-
+def ray_parse_logs(logs):
     task_events = []
     ray_events = []
     for log in logs:
@@ -95,7 +100,8 @@ if __name__ == '__main__':
             task_events.append(event)
         if '(scheduler' in log:
             event = parse_ray_scheduler_entry(log)
-            print(event)
+            if event:
+                ray_events.append(event)
     
     tasks = {}
     for event in task_events:
@@ -122,63 +128,107 @@ if __name__ == '__main__':
         elif '>>> 0 - pipeline - end' in log:
             entry = parse_entry(log)
             t1 = entry['t']
-
+    
     times = np.arange(int(t0), int(t1), 1)
-    times_X = [int(t1)-t for t in times][::-1]
-    # print(times_X)
+    times_X = np.array([int(t1)-t for t in times][::-1])
 
-    running_tasks_X = []
-    for time in times:
+    running_tasks_X = np.zeros(len(times_X))
+    for i, time in enumerate(times):
         running_tasks = 0
         for t0, t1 in tasks.values():
             if time >= t0 and time <= t1:
                 running_tasks += 1
-        running_tasks_X.append(running_tasks)
-    
-    avail_cpus = np.zeros(len(times_X))
+        running_tasks_X[i] = running_tasks
+
+    avail_cpus_X = np.array([INITIAL_CPUS] * len(times_X), dtype=np.int32)
     for evt, t, val in ray_events:
         if evt == 'resized':
-            
+            for i in range(len(times_X)):
+                if i >= t:
+                    avail_cpus_X[i] += val
 
-    for time in times:
-        cpus = 0
-        for t0, t1 in tasks.values():
-            if time >= t0 and time <= t1:
-                running_tasks += 1
-        running_tasks_X.append(running_tasks)
+    scaleup_events = []
+    for evt, t, val in ray_events:
+        if evt == 'scale_up':
+            scaleup_events.append(t)
+    
+    result = SimpleNamespace()
+    result.times_X = times_X
+    result.running_tasks_X = running_tasks_X
+    result.avail_cpus_X = avail_cpus_X
+    result.scaleup_events = scaleup_events
+    return result
 
+
+if __name__ == '__main__':
+    with open('geospatial/ray_/naive_quarter_zeroworkers.txt', 'r') as file:
+        naive_logs = file.readlines()
+    
+    with open('geospatial/ray_/co_quarter_zeroworkers.txt', 'r') as file:
+        co_logs = file.readlines()
+
+    naive_res = ray_parse_logs(naive_logs)
+    co_res = ray_parse_logs(co_logs)
+     
     # pprint(running_tasks_X)
-    fig, ax1 = plt.subplots()
+    # sns.set_style("white")
+    # sns.set_theme()
 
-    ax1.plot(times_X, running_tasks_X)
-    plt.axvline(x = 7, color = 'b', label = 'axvline - full height')
-    # ax.plot(times_X, pods_b2)
+    fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, sharey=True)
 
-    # ax1.set_xlabel('Wallclock time (s)')
+    ax1a = ax1
+    ax1a.plot(naive_res.times_X, naive_res.running_tasks_X, c='tab:blue')
+    ax1a.set_ylabel('Running tasks', c='tab:blue')
+    ax1a.tick_params(axis='y', colors='tab:blue')
 
-    # ax1.plot(times_X, pods_b1, lw=1.5, ls='--', label='Running Pods\nfor bucket-1')
-    # ax1.fill_between(times_X, np.min(pods_b1), pods_b1, alpha=0.25)
-    # ax1.plot(times_X, pods_b2, lw=1.5, ls='--', label='Running Pods\nfor bucket-2')
-    # ax1.fill_between(times_X, np.min(pods_b2), pods_b2, alpha=0.25)
-    # ax1.set_yticks(np.arange(1, 10, 3))
-    # ax1.set_ylabel('No. Pods')
+    ax1a.set_xlabel('Wallclock time (s)')
+    ax1a.grid(alpha=0.5, axis='y')
 
-    # ax2 = ax1.twinx()
-    # ax2.plot(times_X, reqs_b1, lw=2.5, label='Requests-in-flight\nfor bucket-1')
-    # ax2.plot(times_X, reqs_b2, lw=2.5, label='Requests-in-flight\nfor bucket-2')
-    # ax2.set_yticks(np.arange(1, 100, 10))
-    # ax2.set_ylabel('No. Requests in flight')
+    ax1b = ax1a.twinx()
 
-    # colors = ['pink', 'lightblue', 'lightgreen']
-    # for bplot in (bp1, bp2):
-    #     for patch, color in zip(bplot['boxes'], colors):
-    #         patch.set_facecolor(color)
+    ax1b.plot(naive_res.times_X, naive_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax1b.set_ylabel('Available CPUs', c='tab:orange')
+    ax1b.tick_params(axis='y', colors='tab:orange')
 
-    # fig.set_size_inches(10, 8)
-    # fig.suptitle('No-op PUT/GET 100 MiB payload')
+    for i, scaleup_event in enumerate(naive_res.scaleup_events):
+        if i == 0:
+            ax1a.axvline(x=scaleup_event, c='tab:green', ls='--', alpha=0.75, label='Scale-up event')
+        else:
+            ax1a.axvline(x=scaleup_event, c='tab:green', ls='--', alpha=0.75)
+
+    ax1b.grid(alpha=0.5, axis='y', ls=':')
+
+    handles, labels = ax1.get_legend_handles_labels()
+    if handles and labels:
+        ax1.legend(handles, labels, loc='upper left')
+
+    #####
+
+    ax2a = ax2
+    ax2a.plot(co_res.times_X, co_res.running_tasks_X, c='tab:blue')
+    ax2a.set_ylabel('Running tasks', c='tab:blue')
+    ax2a.tick_params(axis='y', colors='tab:blue')
+
+    ax2a.set_xlabel('Wallclock time (s)')
+    ax2a.grid(alpha=0.5, axis='y')
+
+    ax2b = ax2a.twinx()
+
+    ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax2b.set_ylabel('Available CPUs', c='tab:orange')
+    ax2b.tick_params(axis='y', colors='tab:orange')
+
+    for i, scaleup_event in enumerate(co_res.scaleup_events):
+        if i == 0:
+            ax2a.axvline(x=scaleup_event, c='tab:green', ls='--', alpha=0.75, label='Scale-up event')
+        else:
+            ax2a.axvline(x=scaleup_event, c='tab:green', ls='--', alpha=0.75)
+
+    ax2b.grid(alpha=0.5, axis='y', ls=':')
+
+    handles, labels = ax2.get_legend_handles_labels()
+    if handles and labels:
+        ax2.legend(handles, labels, loc='upper left')
+
     fig.tight_layout()
-    # handles, labels = handles, labels = [(a + b) for a, b in zip(ax1.get_legend_handles_labels(), ax2.get_legend_handles_labels())]
-    # plt.legend(handles, labels, loc='upper left',)
-    # # plt.show()
-    #fig.savefig(f'plot.pdf')
-    fig.savefig(f'plot.png', dpi=300)
+    fig.savefig(f'ray_compare.png', dpi=300)

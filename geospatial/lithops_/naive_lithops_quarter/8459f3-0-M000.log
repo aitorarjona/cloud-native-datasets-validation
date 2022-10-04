@@ -10,7 +10,7 @@ Activation: 'aitorarjona/copc:0.6' (85ce5c2b-5ce0-46d5-84c6-6b3ddec4dad4)
     2022-09-28 20:52:53,168 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:54,022 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398376.3496535 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 85ce5c2b-5ce0-46d5-84c6-6b3ddec4dad4 - partition_las - start - 1664398376.3496535 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     0.0%
     4.101718517515876%
     8.203437035031753%
@@ -37,7 +37,7 @@ Activation: 'aitorarjona/copc:0.6' (85ce5c2b-5ce0-46d5-84c6-6b3ddec4dad4)
     94.33952590286515%
     98.44124442038103%
     100.0%
-    >>> partition_las - end - 1664398405.4158351 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
+    >>> 85ce5c2b-5ce0-46d5-84c6-6b3ddec4dad4 - partition_las - end - 1664398405.4158351 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4884.laz
     2022-09-28 20:53:25,982 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00000/cloudobject_1 - Size: 12.3MiB - OK
     2022-09-28 20:53:26,063 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00000/cloudobject_0 - Size: 15.8MiB - OK
     2022-09-28 20:53:26,162 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00000/cloudobject_3 - Size: 13.2MiB - OK
@@ -68,7 +68,7 @@ Activation: 'aitorarjona/copc:0.6' (83d2093d-b7b3-4f45-bbe2-f6ea731e7550)
     2022-09-28 20:52:54,483 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,199 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.732994 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 83d2093d-b7b3-4f45-bbe2-f6ea731e7550 - partition_las - start - 1664398377.732994 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     0.0%
     3.9457841368034927%
     7.891568273606985%
@@ -96,7 +96,7 @@ Activation: 'aitorarjona/copc:0.6' (83d2093d-b7b3-4f45-bbe2-f6ea731e7550)
     94.69881928328383%
     98.64460342008732%
     100.0%
-    >>> partition_las - end - 1664398408.1985066 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
+    >>> 83d2093d-b7b3-4f45-bbe2-f6ea731e7550 - partition_las - end - 1664398408.1985066 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB4986.laz
     2022-09-28 20:53:28,984 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00001/cloudobject_1 - Size: 15.7MiB - OK
     2022-09-28 20:53:29,098 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00001/cloudobject_0 - Size: 16.5MiB - OK
     2022-09-28 20:53:29,144 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00001/cloudobject_2 - Size: 15.9MiB - OK
@@ -127,7 +127,7 @@ Activation: 'aitorarjona/copc:0.6' (b7206ca7-57e8-4d51-bb21-6d110708ccc8)
     2022-09-28 20:52:54,402 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,012 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398376.7666938 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> b7206ca7-57e8-4d51-bb21-6d110708ccc8 - partition_las - start - 1664398376.7666938 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     0.0%
     3.5644224445122794%
     7.128844889024559%
@@ -158,7 +158,7 @@ Activation: 'aitorarjona/copc:0.6' (b7206ca7-57e8-4d51-bb21-6d110708ccc8)
     96.23940600183154%
     99.80382844634383%
     100.0%
-    >>> partition_las - end - 1664398407.3587477 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
+    >>> b7206ca7-57e8-4d51-bb21-6d110708ccc8 - partition_las - end - 1664398407.3587477 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5274.laz
     2022-09-28 20:53:27,954 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00002/cloudobject_3 - Size: 10.9MiB - OK
     2022-09-28 20:53:28,076 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00002/cloudobject_0 - Size: 13.8MiB - OK
     2022-09-28 20:53:28,173 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00002/cloudobject_6 - Size: 13.5MiB - OK
@@ -189,7 +189,7 @@ Activation: 'aitorarjona/copc:0.6' (1cbd56d4-4b83-46be-a98e-d88382a1a8e5)
     2022-09-28 20:52:54,478 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,117 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.2883718 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 1cbd56d4-4b83-46be-a98e-d88382a1a8e5 - partition_las - start - 1664398377.2883718 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     0.0%
     3.731704200645077%
     7.463408401290154%
@@ -218,7 +218,7 @@ Activation: 'aitorarjona/copc:0.6' (1cbd56d4-4b83-46be-a98e-d88382a1a8e5)
     93.29260501612693%
     97.02430921677201%
     100.0%
-    >>> partition_las - end - 1664398407.7140715 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
+    >>> 1cbd56d4-4b83-46be-a98e-d88382a1a8e5 - partition_las - end - 1664398407.7140715 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5483.laz
     2022-09-28 20:53:28,237 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00003/cloudobject_4 - Size: 11.4MiB - OK
     2022-09-28 20:53:28,526 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00003/cloudobject_1 - Size: 17.0MiB - OK
     2022-09-28 20:53:28,528 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00003/cloudobject_0 - Size: 17.2MiB - OK
@@ -249,7 +249,7 @@ Activation: 'aitorarjona/copc:0.6' (d8f019c0-d2c1-4079-b6e0-7ebc78b00200)
     2022-09-28 20:52:54,674 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,537 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.1257088 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> d8f019c0-d2c1-4079-b6e0-7ebc78b00200 - partition_las - start - 1664398377.1257088 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     0.0%
     3.8547839661494456%
     7.709567932298891%
@@ -277,7 +277,7 @@ Activation: 'aitorarjona/copc:0.6' (d8f019c0-d2c1-4079-b6e0-7ebc78b00200)
     92.51481518758669%
     96.36959915373615%
     100.0%
-    >>> partition_las - end - 1664398407.5988886 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
+    >>> d8f019c0-d2c1-4079-b6e0-7ebc78b00200 - partition_las - end - 1664398407.5988886 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5681.laz
     2022-09-28 20:53:28,144 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00006/cloudobject_0 - Size: 14.4MiB - OK
     2022-09-28 20:53:28,174 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00006/cloudobject_1 - Size: 14.3MiB - OK
     2022-09-28 20:53:28,303 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00006/cloudobject_8 - Size: 15.5MiB - OK
@@ -308,7 +308,7 @@ Activation: 'aitorarjona/copc:0.6' (f7c0ba40-7a28-48b8-82dd-79ba4c64680a)
     2022-09-28 20:52:54,617 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,331 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398376.8702466 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> f7c0ba40-7a28-48b8-82dd-79ba4c64680a - partition_las - start - 1664398376.8702466 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     0.0%
     3.6872658724443466%
     7.374531744888693%
@@ -338,7 +338,7 @@ Activation: 'aitorarjona/copc:0.6' (f7c0ba40-7a28-48b8-82dd-79ba4c64680a)
     95.86891268355302%
     99.55617855599736%
     100.0%
-    >>> partition_las - end - 1664398409.4060843 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
+    >>> f7c0ba40-7a28-48b8-82dd-79ba4c64680a - partition_las - end - 1664398409.4060843 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5573.laz
     2022-09-28 20:53:30,092 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00004/cloudobject_1 - Size: 12.6MiB - OK
     2022-09-28 20:53:30,192 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00004/cloudobject_4 - Size: 12.0MiB - OK
     2022-09-28 20:53:30,259 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00004/cloudobject_2 - Size: 13.5MiB - OK
@@ -369,7 +369,7 @@ Activation: 'aitorarjona/copc:0.6' (9c65bde0-df7c-4546-9940-9c5817ffd93f)
     2022-09-28 20:52:54,403 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,035 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.4287252 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 9c65bde0-df7c-4546-9940-9c5817ffd93f - partition_las - start - 1664398377.4287252 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     0.0%
     3.5726510560631484%
     7.145302112126297%
@@ -399,7 +399,7 @@ Activation: 'aitorarjona/copc:0.6' (9c65bde0-df7c-4546-9940-9c5817ffd93f)
     92.88892745764184%
     96.46157851370499%
     100.0%
-    >>> partition_las - end - 1664398408.3404164 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
+    >>> 9c65bde0-df7c-4546-9940-9c5817ffd93f - partition_las - end - 1664398408.3404164 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5967.laz
     2022-09-28 20:53:28,792 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00007/cloudobject_0 - Size: 8.8MiB - OK
     2022-09-28 20:53:29,075 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00007/cloudobject_3 - Size: 14.9MiB - OK
     2022-09-28 20:53:29,093 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00007/cloudobject_6 - Size: 8.6MiB - OK
@@ -430,7 +430,7 @@ Activation: 'aitorarjona/copc:0.6' (b62431d9-5b8b-4aa8-be13-0e9dd2ad9d87)
     2022-09-28 20:52:54,742 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,554 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.4154835 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> b62431d9-5b8b-4aa8-be13-0e9dd2ad9d87 - partition_las - start - 1664398377.4154835 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     0.0%
     3.545846554908675%
     7.09169310981735%
@@ -461,7 +461,7 @@ Activation: 'aitorarjona/copc:0.6' (b62431d9-5b8b-4aa8-be13-0e9dd2ad9d87)
     95.73785698253423%
     99.2837035374429%
     100.0%
-    >>> partition_las - end - 1664398410.088062 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
+    >>> b62431d9-5b8b-4aa8-be13-0e9dd2ad9d87 - partition_las - end - 1664398410.088062 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6686.laz
     2022-09-28 20:53:30,603 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00008/cloudobject_1 - Size: 11.4MiB - OK
     2022-09-28 20:53:30,636 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00008/cloudobject_0 - Size: 16.1MiB - OK
     2022-09-28 20:53:30,852 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00008/cloudobject_6 - Size: 10.2MiB - OK
@@ -492,7 +492,7 @@ Activation: 'aitorarjona/copc:0.6' (72c47602-ebf2-4e4d-9979-c98f6bc03fc3)
     2022-09-28 20:52:54,691 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,433 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.0098324 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 72c47602-ebf2-4e4d-9979-c98f6bc03fc3 - partition_las - start - 1664398377.0098324 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     0.0%
     3.50357802906218%
     7.00715605812436%
@@ -523,7 +523,7 @@ Activation: 'aitorarjona/copc:0.6' (72c47602-ebf2-4e4d-9979-c98f6bc03fc3)
     94.59660678467885%
     98.10018481374104%
     100.0%
-    >>> partition_las - end - 1664398410.0655518 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
+    >>> 72c47602-ebf2-4e4d-9979-c98f6bc03fc3 - partition_las - end - 1664398410.0655518 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6687.laz
     2022-09-28 20:53:30,637 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00009/cloudobject_1 - Size: 16.7MiB - OK
     2022-09-28 20:53:30,752 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00009/cloudobject_2 - Size: 15.7MiB - OK
     2022-09-28 20:53:30,778 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00009/cloudobject_4 - Size: 12.9MiB - OK
@@ -554,7 +554,7 @@ Activation: 'aitorarjona/copc:0.6' (7d6d8207-4fb5-4cdc-921b-a3e314641ea4)
     2022-09-28 20:52:54,625 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,319 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.0957608 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 7d6d8207-4fb5-4cdc-921b-a3e314641ea4 - partition_las - start - 1664398377.0957608 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     0.0%
     3.545368844220393%
     7.090737688440786%
@@ -585,7 +585,7 @@ Activation: 'aitorarjona/copc:0.6' (7d6d8207-4fb5-4cdc-921b-a3e314641ea4)
     95.7249587939506%
     99.270327638171%
     100.0%
-    >>> partition_las - end - 1664398410.302333 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
+    >>> 7d6d8207-4fb5-4cdc-921b-a3e314641ea4 - partition_las - end - 1664398410.302333 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6974.laz
     2022-09-28 20:53:31,025 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00012/cloudobject_3 - Size: 14.0MiB - OK
     2022-09-28 20:53:31,037 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00012/cloudobject_1 - Size: 15.3MiB - OK
     2022-09-28 20:53:31,128 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00012/cloudobject_2 - Size: 16.7MiB - OK
@@ -616,7 +616,7 @@ Activation: 'aitorarjona/copc:0.6' (6c013af5-462c-4516-af54-a7df9a7bedb2)
     2022-09-28 20:52:54,671 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,423 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.4589813 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 6c013af5-462c-4516-af54-a7df9a7bedb2 - partition_las - start - 1664398377.4589813 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     0.0%
     3.549384233301594%
     7.098768466603188%
@@ -647,7 +647,7 @@ Activation: 'aitorarjona/copc:0.6' (6c013af5-462c-4516-af54-a7df9a7bedb2)
     95.83337429914303%
     99.38275853244461%
     100.0%
-    >>> partition_las - end - 1664398410.8830261 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
+    >>> 6c013af5-462c-4516-af54-a7df9a7bedb2 - partition_las - end - 1664398410.8830261 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6790.laz
     2022-09-28 20:53:31,480 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00010/cloudobject_3 - Size: 14.8MiB - OK
     2022-09-28 20:53:31,539 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00010/cloudobject_2 - Size: 13.1MiB - OK
     2022-09-28 20:53:31,771 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00010/cloudobject_1 - Size: 15.6MiB - OK
@@ -678,7 +678,7 @@ Activation: 'aitorarjona/copc:0.6' (50e87586-ba10-422b-92d0-e78fadacbedc)
     2022-09-28 20:52:54,635 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,315 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.1754112 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 50e87586-ba10-422b-92d0-e78fadacbedc - partition_las - start - 1664398377.1754112 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     0.0%
     3.042586968088861%
     6.085173936177722%
@@ -713,7 +713,7 @@ Activation: 'aitorarjona/copc:0.6' (50e87586-ba10-422b-92d0-e78fadacbedc)
     94.3201960107547%
     97.36278297884355%
     100.0%
-    >>> partition_las - end - 1664398415.70705 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
+    >>> 50e87586-ba10-422b-92d0-e78fadacbedc - partition_las - end - 1664398415.70705 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB6892.laz
     2022-09-28 20:53:36,447 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00011/cloudobject_1 - Size: 19.7MiB - OK
     2022-09-28 20:53:36,459 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00011/cloudobject_2 - Size: 18.8MiB - OK
     2022-09-28 20:53:36,522 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00011/cloudobject_6 - Size: 10.4MiB - OK
@@ -744,7 +744,7 @@ Activation: 'aitorarjona/copc:0.6' (444efb67-0ec9-405f-a8a6-5793b7f78f36)
     2022-09-28 20:52:54,851 [DEBUG] jobrunner.py:203 -- Process started
     2022-09-28 20:52:55,633 [INFO] jobrunner.py:233 -- Going to execute 'partition_las_lithops_wrapper()'
     ---------------------- FUNCTION LOG ----------------------
-    >>> partition_las - start - 1664398377.9628668 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 444efb67-0ec9-405f-a8a6-5793b7f78f36 - partition_las - start - 1664398377.9628668 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     0.0%
     2.992172148520534%
     5.984344297041068%
@@ -780,7 +780,7 @@ Activation: 'aitorarjona/copc:0.6' (444efb67-0ec9-405f-a8a6-5793b7f78f36)
     95.74950875265709%
     98.74168090117762%
     100.0%
-    >>> partition_las - end - 1664398417.340775 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
+    >>> 444efb67-0ec9-405f-a8a6-5793b7f78f36 - partition_las - end - 1664398417.340775 - laz/CA_YosemiteNP_2019/USGS_LPC_CA_YosemiteNP_2019_D19_11SKB5579.laz
     2022-09-28 20:53:37,866 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00005/cloudobject_1 - Size: 14.5MiB - OK
     2022-09-28 20:53:38,093 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00005/cloudobject_4 - Size: 17.2MiB - OK
     2022-09-28 20:53:38,200 [DEBUG] aws_s3.py:80 -- PUT Object lithops.jobs/tmp/8459f3-0-M000-00005/cloudobject_3 - Size: 16.3MiB - OK
