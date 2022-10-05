@@ -18,7 +18,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 logs1 = ['geospatial/ray_/naive_quarter_zeroworkers.txt']
 logs2 = ['geospatial/ray_/co_quarter_zeroworkers.txt']
 
-INITIAL_CPUS = 4
+INITIAL_CPUS = 132
 WORKER_NODE_CPUS = 16
 
 
@@ -43,11 +43,11 @@ def parse_ray_scheduler_entry(line):
         # if sub:
         #     time_stamp = m.pop()
         #     matches = re.findall(r'\d+', time_stamp)
-        #     t = int(matches[0]), int(matches[1])
+        #     t = math.ceil(matches[0]), math.ceil(matches[1])
 
         #     log = sub.pop()
         #     matches = re.findall(r'\d+', log)
-        #     cpus = int(matches.pop())
+        #     cpus = math.ceil(matches.pop())
 
         #     return 'resized', t, cpus
         
@@ -70,12 +70,12 @@ def parse_ray_scheduler_entry(line):
         # if sub:
         #     time_stamp = m.pop()
         #     matches = re.findall(r'\d+', time_stamp)
-        #     min, sec = int(matches[0]), int(matches[1])
+        #     min, sec = math.ceil(matches[0]), math.ceil(matches[1])
         #     t = (min * 60) + sec
 
         #     log = sub.pop()
         #     matches = re.findall(r'\d+', log)
-        #     cpus = int(matches.pop())
+        #     cpus = math.ceil(matches.pop())
 
         #     return 'resized', t, cpus
         
@@ -148,6 +148,7 @@ def ray_parse_logs(logs):
             for i in range(len(times_X)):
                 if i >= t:
                     avail_cpus_X[i] += val
+    avail_cpus_X[0] = 0
 
     scaleup_events = []
     # for evt, t, val in ray_events:
@@ -166,10 +167,12 @@ def ray_parse_logs(logs):
 
 
 if __name__ == '__main__':
-    with open('geospatial/ray_/naive_quarter_zeroworkers.txt', 'r') as file:
+    with open('geospatial/ray_/naive_quarter_allworkers.txt', 'r') as file:
+    # with open('geospatial/ray_/naive_quarter_zeroworkers.txt', 'r') as file:
         naive_logs = file.readlines()
     
-    with open('geospatial/ray_/co_quarter_zeroworkers.txt', 'r') as file:
+    with open('geospatial/ray_/co_quarter_allworkers.txt', 'r') as file:
+    # with open('geospatial/ray_/co_quarter_zeroworkers.txt', 'r') as file:
         co_logs = file.readlines()
 
     naive_res = ray_parse_logs(naive_logs)
@@ -179,10 +182,6 @@ if __name__ == '__main__':
     print(f'Total co time: {co_res.total}')
     print(f'Percent diff co/naive is {(naive_res.total * 100) / co_res.total}')
      
-    # pprint(running_tasks_X)
-    # sns.set_style("white")
-    # sns.set_theme()
-
     fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, sharey=True)
 
     ax1a = ax1
@@ -195,7 +194,7 @@ if __name__ == '__main__':
 
     ax1b = ax1a.twinx()
 
-    ax1b.plot(naive_res.times_X, naive_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax1b.plot(naive_res.times_X, naive_res.avail_cpus_X, c='tab:orange', ls=':')
     ax1b.set_ylabel('Available CPUs', c='tab:orange')
     ax1b.tick_params(axis='y', colors='tab:orange')
 
@@ -223,7 +222,7 @@ if __name__ == '__main__':
 
     ax2b = ax2a.twinx()
 
-    ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls=':')
     ax2b.set_ylabel('Requested CPUs', c='tab:orange')
     ax2b.tick_params(axis='y', colors='tab:orange')
 
@@ -240,4 +239,4 @@ if __name__ == '__main__':
         ax2.legend(handles, labels, loc='upper left')
 
     fig.tight_layout()
-    fig.savefig(f'ray_compare.png', dpi=300)
+    fig.savefig(f'ray_allworkers_compare.png', dpi=300)

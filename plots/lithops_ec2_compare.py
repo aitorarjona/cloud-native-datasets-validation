@@ -138,6 +138,7 @@ def lithops_parse_logs(func_logs, orch_logs):
 
 if __name__ == '__main__':
     naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter/'
+    # naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter_allworkers/'
 
     naive_logs = []
     naive_orch = []
@@ -155,6 +156,7 @@ if __name__ == '__main__':
     print(f'Total naive time: {naive_res.total}')
 
     co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter/'
+    # co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter_allworkers/'
 
     co_logs = []
     co_orch = []
