@@ -1,5 +1,7 @@
 import json
 import os
+import uuid
+import math
 import re
 from types import SimpleNamespace
 import matplotlib
@@ -20,16 +22,22 @@ logs2 = ['geospatial/ray_/co_quarter_zeroworkers.txt']
 INITIAL_CPUS = 4
 
 
-def parse_entry(line):
+def parse_entry(line, group_id=None):
+    group_id = group_id or '0'
+
     _, log = line.split('>>>', 1)
     log = log.strip()
     splits = log.split(' - ')
+
+    if len(splits) == 5:
+        splits = splits[1::]
+
     entry = {
-        'task_id': splits[0].strip(),
-        'stage': splits[1].strip(),
-        'event': splits[2].strip(),
-        't': float(splits[3].strip()),
-        'other': [s.strip() for s in splits[4:]]
+        'task_id': group_id,
+        'stage': splits[0].strip(),
+        'event': splits[1].strip(),
+        't': float(splits[2].strip()),
+        'other': [s.strip() for s in splits[3:]]
     }
     return entry
 
@@ -41,11 +49,11 @@ def parse_ray_scheduler_entry(line):
         if sub:
             time_stamp = m.pop()
             matches = re.findall(r'\d+', time_stamp)
-            t = int(matches[0]), int(matches[1])
+            t = math.ceil(matches[0]), math.ceil(matches[1])
 
             log = sub.pop()
             matches = re.findall(r'\d+', log)
-            cpus = int(matches.pop())
+            cpus = math.ceil(matches.pop())
 
             return 'resized', t, cpus
         
@@ -53,11 +61,11 @@ def parse_ray_scheduler_entry(line):
         if sub:
             time_stamp = m.pop()
             matches = re.findall(r'\d+', time_stamp)
-            t = int(matches.pop())
+            t = math.ceil(matches.pop())
 
             log = sub.pop()
             matches = re.findall(r'\d+', log)
-            nodes = int(matches.pop())
+            nodes = math.ceil(matches.pop())
 
             return 'scale_up', t, nodes
 
@@ -68,12 +76,12 @@ def parse_ray_scheduler_entry(line):
         if sub:
             time_stamp = m.pop()
             matches = re.findall(r'\d+', time_stamp)
-            min, sec = int(matches[0]), int(matches[1])
+            min, sec = math.ceil(matches[0]), math.ceil(matches[1])
             t = (min * 60) + sec
 
             log = sub.pop()
             matches = re.findall(r'\d+', log)
-            cpus = int(matches.pop())
+            cpus = math.ceil(matches.pop())
 
             return 'resized', t, cpus
         
@@ -81,27 +89,35 @@ def parse_ray_scheduler_entry(line):
         if sub:
             time_stamp = m.pop()
             matches = re.findall(r'\d+', time_stamp)
-            min, sec = int(matches[0]), int(matches[1])
+            min, sec = math.ceil(matches[0]), math.ceil(matches[1])
             t = (min * 60) + sec
 
             log = sub.pop()
             matches = re.findall(r'\d+', log)
-            nodes = int(matches.pop())
+            nodes = math.ceil(matches.pop())
 
             return 'scale_up', t, nodes
 
 
-def lithops_parse_logs(logs):
+def lithops_parse_logs(func_logs, stats_logs, orch_logs=None):
+    current_group = []
+    groups = []
+    
+    for line in func_logs:
+        line = line.strip()
+        current_group.append(line)
+
+        if len(line) == 1 and line[0] == ']':
+            groups.append(current_group)
+            current_group = []
+    
     task_events = []
-    ray_events = []
-    for log in logs:
-        if '>>>' in log:
-            event = parse_entry(log)
-            task_events.append(event)
-        if '(scheduler' in log:
-            event = parse_ray_scheduler_entry(log)
-            if event:
-                ray_events.append(event)
+    for group in groups:
+        group_id = uuid.uuid4().hex
+        for line in group:
+            if '>>>' in line:
+                event = parse_entry(line, group_id)
+                task_events.append(event)
     
     tasks = {}
     for event in task_events:
@@ -120,39 +136,59 @@ def lithops_parse_logs(logs):
             else:
                 tasks[event['task_id']] = (0, event['t'])
     
-    t0, t1 = None, None
-    for log in logs:
-        if '>>> 0 - pipeline - start' in log:
-            entry = parse_entry(log)
-            t0 = entry['t']
-        elif '>>> 0 - pipeline - end' in log:
-            entry = parse_entry(log)
-            t1 = entry['t']
+    if orch_logs:
+        t0, t1 = None, None
+        for log in logs:
+            if '>>> pipeline - start' in orch_logs:
+                entry = parse_entry(log)
+                t0 = entry['t']
+            elif '>>> pipeline - end' in orch_logs:
+                entry = parse_entry(log)
+                t1 = entry['t']
+    else:
+        mins = []
+        for stats_log in stats_logs:
+            t = min([t['host_job_create_tstamp'] for t in stats_log])
+            mins.append(t)
+        t0 = min(mins)
+
+        maxs = []
+        for stats_log in stats_logs:
+            t = min([t['host_status_done_tstamp'] for t in stats_log])
+            maxs.append(t)
+        t1 = max(maxs)
     
-    times = np.arange(int(t0), int(t1), 1)
-    times_X = np.array([int(t1)-t for t in times][::-1])
+    times = np.arange(math.ceil(t0), math.ceil(t1), 1)
+    times_X = np.array([math.ceil(t1)-t for t in times][::-1])
 
     running_tasks_X = np.zeros(len(times_X))
     for i, time in enumerate(times):
         running_tasks = 0
-        for t0, t1 in tasks.values():
-            if time >= t0 and time <= t1:
+        for tt0, tt1 in tasks.values():
+            if time >= tt0 and time <= tt1:
                 running_tasks += 1
         running_tasks_X[i] = running_tasks
-
-    avail_cpus_X = np.array([INITIAL_CPUS] * len(times_X), dtype=np.int32)
-    for evt, t, val in ray_events:
-        if evt == 'resized':
-            for i in range(len(times_X)):
-                if i >= t:
-                    avail_cpus_X[i] += val
-
+    
+    avail_cpus_X = np.zeros(len(times_X))
+    for i, time in enumerate(times):
+        running_tasks = 0
+        for stats_log in stats_logs:
+            for stat in stats_log:
+                tw0 = stat['worker_start_tstamp'] 
+                tw1 = stat['worker_end_tstamp']
+                if time >= tw0 and time <= tw1:
+                    running_tasks += 1
+        avail_cpus_X[i] = running_tasks
+    
     scaleup_events = []
-    for evt, t, val in ray_events:
-        if evt == 'scale_up':
-            scaleup_events.append(t)
+    for stats_log in stats_logs:
+        scaleup_t = min(t['host_submit_tstamp'] for t in stats_log)
+        scaleup_events.append(scaleup_t - t0)
     
     result = SimpleNamespace()
+    result.t0 = t0
+    result.t1 = t1
+    result.total = t1 - t0
     result.times_X = times_X
     result.running_tasks_X = running_tasks_X
     result.avail_cpus_X = avail_cpus_X
@@ -172,7 +208,11 @@ if __name__ == '__main__':
                 naive_logs.extend(logs)
             elif filename.endswith('.json'):
                 stats = json.loads(file.read())
-                naive_stats.extend(stats)
+                naive_stats.append(stats)
+    
+    naive_res = lithops_parse_logs(naive_logs, naive_stats)
+
+    print(f'Total naive time: {naive_res.total}')
 
     co_dir = 'geospatial/lithops_/co_lithops_quarter/'
 
@@ -185,12 +225,15 @@ if __name__ == '__main__':
                 co_logs.extend(logs)
             elif filename.endswith('.json'):
                 stats = json.loads(file.read())
-                co_stats.extend(stats)
+                co_stats.append(stats)
+    
+    co_res = lithops_parse_logs(co_logs, co_stats)
 
-    naive_res = lithops_parse_logs(naive_logs)
-    co_res = lithops_parse_logs(co_logs)
+    print(f'Total co time: {co_res.total}')
 
-    # pprint(running_tasks_X)
+    print(f'Percent diff co/naive is {(naive_res.total * 100) / co_res.total}')
+
+    # pprmath.ceil(running_tasks_X)
     # sns.set_style("white")
     # sns.set_theme()
 
@@ -201,12 +244,12 @@ if __name__ == '__main__':
     ax1a.set_ylabel('Running tasks', c='tab:blue')
     ax1a.tick_params(axis='y', colors='tab:blue')
 
-    ax1a.set_xlabel('Wallclock time (s)')
+    # ax1a.set_xlabel('Wallclock time (s)')
     ax1a.grid(alpha=0.5, axis='y')
 
     ax1b = ax1a.twinx()
 
-    ax1b.plot(naive_res.times_X, naive_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax1b.plot(naive_res.times_X, naive_res.avail_cpus_X, c='tab:orange', ls=':')
     ax1b.set_ylabel('Available CPUs', c='tab:orange')
     ax1b.tick_params(axis='y', colors='tab:orange')
 
@@ -220,7 +263,7 @@ if __name__ == '__main__':
 
     handles, labels = ax1.get_legend_handles_labels()
     if handles and labels:
-        ax1.legend(handles, labels, loc='upper left')
+        ax1.legend(handles, labels)
 
     #####
 
@@ -234,7 +277,7 @@ if __name__ == '__main__':
 
     ax2b = ax2a.twinx()
 
-    ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls='--')
+    ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls=':')
     ax2b.set_ylabel('Available CPUs', c='tab:orange')
     ax2b.tick_params(axis='y', colors='tab:orange')
 
@@ -248,7 +291,7 @@ if __name__ == '__main__':
 
     handles, labels = ax2.get_legend_handles_labels()
     if handles and labels:
-        ax2.legend(handles, labels, loc='upper left')
+        ax2.legend(handles, labels)
 
     fig.tight_layout()
-    fig.savefig(f'ray_compare.png', dpi=300)
+    fig.savefig(f'lithops_compare.png', dpi=300)

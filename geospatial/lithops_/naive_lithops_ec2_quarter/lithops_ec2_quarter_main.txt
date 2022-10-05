@@ -769,5 +769,5 @@
 2022-10-01 15:13:50,451 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00012 - Activation ID: e67b4be9013f - Time: 4.59 seconds
 2022-10-01 15:13:50,452 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00002 - Activation ID: e67b4be9013f - Time: 4.61 seconds
 2022-10-01 15:13:50,452 [DEBUG] future.py:271 -- ExecutorID c83ded-0 | JobID M002 - Got status from call 00010 - Activation ID: e67b4be9013f - Time: 4.58 seconds
->>> 0 - pipeline - start - 1664629686.4148984
->>> 0 - pipeline - end - 1664630030.7838633
+>>> pipeline - start - 1664629686.4148984
+>>> pipeline - end - 1664630030.7838633
