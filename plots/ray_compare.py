@@ -19,6 +19,7 @@ logs1 = ['geospatial/ray_/naive_quarter_zeroworkers.txt']
 logs2 = ['geospatial/ray_/co_quarter_zeroworkers.txt']
 
 INITIAL_CPUS = 4
+WORKER_NODE_CPUS = 16
 
 
 def parse_entry(line):
@@ -38,17 +39,17 @@ def parse_entry(line):
 def parse_ray_scheduler_entry(line):
     m = re.findall(r'\(scheduler\s\+\d+s\)', line)
     if m:
-        sub = re.findall(r'Resized\sto\s\d+\sCPUs', line)
-        if sub:
-            time_stamp = m.pop()
-            matches = re.findall(r'\d+', time_stamp)
-            t = int(matches[0]), int(matches[1])
+        # sub = re.findall(r'Resized\sto\s\d+\sCPUs', line)
+        # if sub:
+        #     time_stamp = m.pop()
+        #     matches = re.findall(r'\d+', time_stamp)
+        #     t = int(matches[0]), int(matches[1])
 
-            log = sub.pop()
-            matches = re.findall(r'\d+', log)
-            cpus = int(matches.pop())
+        #     log = sub.pop()
+        #     matches = re.findall(r'\d+', log)
+        #     cpus = int(matches.pop())
 
-            return 'resized', t, cpus
+        #     return 'resized', t, cpus
         
         sub = re.findall(r'Adding\s\d+\snodes\sof\stype', line)
         if sub:
@@ -60,23 +61,23 @@ def parse_ray_scheduler_entry(line):
             matches = re.findall(r'\d+', log)
             nodes = int(matches.pop())
 
-            return 'scale_up', t, nodes
+            return 'scale_up', t, nodes * WORKER_NODE_CPUS
 
     
     m = re.findall(r'\(scheduler\s\+\d+m\d+s\)', line)
     if m:
-        sub = re.findall(r'Resized\sto\s\d+\sCPUs', line)
-        if sub:
-            time_stamp = m.pop()
-            matches = re.findall(r'\d+', time_stamp)
-            min, sec = int(matches[0]), int(matches[1])
-            t = (min * 60) + sec
+        # sub = re.findall(r'Resized\sto\s\d+\sCPUs', line)
+        # if sub:
+        #     time_stamp = m.pop()
+        #     matches = re.findall(r'\d+', time_stamp)
+        #     min, sec = int(matches[0]), int(matches[1])
+        #     t = (min * 60) + sec
 
-            log = sub.pop()
-            matches = re.findall(r'\d+', log)
-            cpus = int(matches.pop())
+        #     log = sub.pop()
+        #     matches = re.findall(r'\d+', log)
+        #     cpus = int(matches.pop())
 
-            return 'resized', t, cpus
+        #     return 'resized', t, cpus
         
         sub = re.findall(r'Adding\s\d+\snodes\sof\stype', line)
         if sub:
@@ -89,7 +90,7 @@ def parse_ray_scheduler_entry(line):
             matches = re.findall(r'\d+', log)
             nodes = int(matches.pop())
 
-            return 'scale_up', t, nodes
+            return 'scale_up', t, nodes * WORKER_NODE_CPUS
 
 
 def ray_parse_logs(logs):
@@ -143,15 +144,15 @@ def ray_parse_logs(logs):
 
     avail_cpus_X = np.array([INITIAL_CPUS] * len(times_X), dtype=np.int32)
     for evt, t, val in ray_events:
-        if evt == 'resized':
+        if evt == 'scale_up':
             for i in range(len(times_X)):
                 if i >= t:
                     avail_cpus_X[i] += val
 
     scaleup_events = []
-    for evt, t, val in ray_events:
-        if evt == 'scale_up':
-            scaleup_events.append(t)
+    # for evt, t, val in ray_events:
+    #     if evt == 'scale_up':
+    #         scaleup_events.append(t)
     
     result = SimpleNamespace()
     result.t0 = t0
@@ -223,7 +224,7 @@ if __name__ == '__main__':
     ax2b = ax2a.twinx()
 
     ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls='--')
-    ax2b.set_ylabel('Available CPUs', c='tab:orange')
+    ax2b.set_ylabel('Requested CPUs', c='tab:orange')
     ax2b.tick_params(axis='y', colors='tab:orange')
 
     for i, scaleup_event in enumerate(co_res.scaleup_events):

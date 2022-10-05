@@ -181,9 +181,9 @@ def lithops_parse_logs(func_logs, stats_logs, orch_logs=None):
         avail_cpus_X[i] = running_tasks
     
     scaleup_events = []
-    for stats_log in stats_logs:
-        scaleup_t = min(t['host_submit_tstamp'] for t in stats_log)
-        scaleup_events.append(scaleup_t - t0)
+    # for stats_log in stats_logs:
+    #     scaleup_t = min(t['host_submit_tstamp'] for t in stats_log)
+    #     scaleup_events.append(scaleup_t - t0)
     
     result = SimpleNamespace()
     result.t0 = t0
@@ -278,7 +278,7 @@ if __name__ == '__main__':
     ax2b = ax2a.twinx()
 
     ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls=':')
-    ax2b.set_ylabel('Available CPUs', c='tab:orange')
+    ax2b.set_ylabel('Requested CPUs', c='tab:orange')
     ax2b.tick_params(axis='y', colors='tab:orange')
 
     for i, scaleup_event in enumerate(co_res.scaleup_events):

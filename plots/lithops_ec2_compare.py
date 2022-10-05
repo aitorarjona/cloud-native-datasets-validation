@@ -121,9 +121,9 @@ def lithops_parse_logs(func_logs, orch_logs):
                     avail_cpus_X[i] += val
 
     scaleup_events = []
-    for evt, t, val in lithops_events:
-        if evt == 'scale_up':
-            scaleup_events.append(t)
+    # for evt, t, val in lithops_events:
+    #     if evt == 'scale_up':
+    #         scaleup_events.append(t)
     
     result = SimpleNamespace()
     result.t0 = t0
@@ -218,7 +218,7 @@ if __name__ == '__main__':
     ax2b = ax2a.twinx()
 
     ax2b.plot(co_res.times_X, co_res.avail_cpus_X, c='tab:orange', ls=':')
-    ax2b.set_ylabel('Available CPUs', c='tab:orange')
+    ax2b.set_ylabel('Requested CPUs', c='tab:orange')
     ax2b.tick_params(axis='y', colors='tab:orange')
 
     for i, scaleup_event in enumerate(co_res.scaleup_events):
