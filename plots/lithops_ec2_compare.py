@@ -20,7 +20,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 logs1 = ['geospatial/ray_/naive_quarter_zeroworkers.txt']
 logs2 = ['geospatial/ray_/co_quarter_zeroworkers.txt']
 
-WORKER_NODE_CPUS = 16
+WORKER_NODE_CPUS = 16 * 8
 
 
 def parse_entry(line, group_id=None):
@@ -119,6 +119,7 @@ def lithops_parse_logs(func_logs, orch_logs):
             for i in range(len(times_X)):
                 if i >= t:
                     avail_cpus_X[i] += val
+    avail_cpus_X[0] = 0
 
     scaleup_events = []
     # for evt, t, val in lithops_events:
@@ -137,8 +138,8 @@ def lithops_parse_logs(func_logs, orch_logs):
 
 
 if __name__ == '__main__':
-    naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter/'
-    # naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter_allworkers/'
+    # naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter/'
+    naive_dir = 'geospatial/lithops_/naive_lithops_ec2_quarter_allworkers/'
 
     naive_logs = []
     naive_orch = []
@@ -155,8 +156,8 @@ if __name__ == '__main__':
 
     print(f'Total naive time: {naive_res.total}')
 
-    co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter/'
-    # co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter_allworkers/'
+    # co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter/'
+    co_dir = 'geospatial/lithops_/co_lithops_ec2_quarter_allworkers/'
 
     co_logs = []
     co_orch = []
@@ -236,4 +237,4 @@ if __name__ == '__main__':
         ax2.legend(handles, labels)
 
     fig.tight_layout()
-    fig.savefig(f'lithops_ec2_compare.png', dpi=300)
+    fig.savefig(f'lithops_ec2_compare_allworkers.png', dpi=300)
