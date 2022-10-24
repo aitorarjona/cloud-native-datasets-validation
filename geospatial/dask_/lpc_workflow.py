@@ -2,6 +2,7 @@ import io
 import json
 import tempfile
 import time
+import uuid
 
 import rasterio
 from laspy import CopcReader, Bounds
@@ -95,7 +96,8 @@ def recursive_split(x_min, y_min, x_max, y_max, max_x_size, max_y_size):
 
 
 def partition_las(file_path, lidar_data):
-    print(f'>>> partition_las - start - {time.time()} - {file_path}')
+    task_uuid = uuid.uuid4().hex
+    print(f'>>> {task_uuid} - partition_las - start - {time.time()} - {file_path}')
 
     with laspy.open(lidar_data) as file:
         sub_bounds = square_split(
@@ -120,7 +122,7 @@ def partition_las(file_path, lidar_data):
         try:
             count = 0
             for points in file.chunk_iterator(1_000_000):
-                print(f'{count / file.header.point_count * 100}%')
+                # print(f'{count / file.header.point_count * 100}%')
 
                 # For performance we need to use copy
                 # so that the underlying arrays are contiguous
@@ -140,19 +142,20 @@ def partition_las(file_path, lidar_data):
                     if point_piped == len(points):
                         break
                 count += len(points)
-            print(f'{count / file.header.point_count * 100}%')
+            # print(f'{count / file.header.point_count * 100}%')
         finally:
             for writer in writers:
                 if writer is not None:
                     writer.close()
 
         ret_value = [(file_path, i, buf.getvalue()) for i, buf in enumerate(buffers)]
-        print(f'>>> partition_las - end - {time.time()} - {file_path}')
+        print(f'>>> {task_uuid} - partition_las - end - {time.time()} - {file_path}')
         return ret_value
 
 
 def partition_copc(file_url, partition_num):
-    print(f'>>> partition_copc - start - {time.time()}')
+    task_uuid = uuid.uuid4().hex
+    print(f'>>> {task_uuid} - partition_copc - start - {time.time()}')
 
     with CopcReader.open(file_url) as copc_file:
         sub_bounds = square_split(
@@ -185,12 +188,13 @@ def partition_copc(file_url, partition_num):
 
         return_value = out_buff.getvalue()
 
-        print(f'>>> partition_copc - end - {time.time()}')
+        print(f'>>> {task_uuid} - partition_copc - end - {time.time()}')
         return return_value
 
 
 def create_dem(file_path, partition, las_data):
-    print(f'>>> create_dem - start - {time.time()} - {file_path}')
+    task_uuid = uuid.uuid4().hex
+    print(f'>>> {task_uuid} - create_dem - start - {time.time()} - {file_path}')
 
     tmp_prefix = tempfile.mktemp()
     laz_filename = tmp_prefix + '.laz'
@@ -252,14 +256,14 @@ def create_dem(file_path, partition, las_data):
         pipeline = pdal.Pipeline(json.dumps(dem_pipeline_json))
         # pipeline.validate()
         # pipeline.loglevel = 8
-        print(f'Executing DEM pipeline for {file_path}...')
+        # print(f'Executing DEM pipeline for {file_path}...')
         result = pipeline.execute()
-        print(f'DEM result wrote {result} bytes')
+        # print(f'DEM result wrote {result} bytes')
 
         with open(dem_filename, 'rb') as dem_file:
             dem = dem_file.read()
 
-        print(f'>>> create_dem - end - {time.time()} - {file_path}')
+        print(f'>>> {task_uuid} - create_dem - end - {time.time()} - {file_path}')
         return file_path, partition, dem
     finally:
         try:
@@ -273,7 +277,8 @@ def create_dem(file_path, partition, las_data):
 
 
 def merge_dem_partitions(key, partitions):
-    print(f'>>> merge_dem_partitions - start - {time.time()} - {key}')
+    task_uuid = uuid.uuid4().hex
+    print(f'>>> {task_uuid} - merge_dem_partitions - start - {time.time()} - {key}')
 
     file_path = key
 
@@ -289,7 +294,7 @@ def merge_dem_partitions(key, partitions):
             file.write(dem)
         dem_files.append(tmp_dem_file)
 
-    print(f'Merging {file_path}...')
+    # print(f'Merging {file_path}...')
 
     dems = [rasterio.open(f) for f in dem_files]
     mosaic_dem, output_dem = merge(dems)
@@ -311,8 +316,6 @@ def merge_dem_partitions(key, partitions):
     with rio.open(file_dem_merged, 'w', **dem_output_meta) as m:
         m.write(mosaic_dem)
 
-    print(f'Done merging {file_path}')
-
     with open(file_dem_merged, 'rb') as f:
         dem_merged = f.read()
     try:
@@ -326,5 +329,5 @@ def merge_dem_partitions(key, partitions):
         except FileNotFoundError:
             pass
 
-    print(f'>>> merge_dem_partitions - end - {time.time()} - {key}')
+    print(f'>>> {task_uuid} - merge_dem_partitions - end - {time.time()} - {key}')
     return file_path, dem_merged
