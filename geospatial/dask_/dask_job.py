@@ -52,7 +52,6 @@ def merge_partitions_dask_futures_wrapper(args):
     return key
 
 
-
 def run_naive_workflow():
     storage_options = {
         'key': 'minioadmin',
@@ -66,8 +65,7 @@ def run_naive_workflow():
     client = Client(threads_per_worker=1, n_workers=4, processes=True)
     client.start()
 
-    _, blocks, paths = dask.bytes.read_bytes(
-        's3://geospatial/las/*.las', include_path=True, **storage_options)
+    _, blocks, paths = dask.bytes.read_bytes('s3://geospatial/las/*.las', include_path=True, **storage_options)
 
     bag = dask.bag.from_sequence(zip(blocks, paths))
 
@@ -79,6 +77,7 @@ def run_naive_workflow():
                 .map(merge_partitions_dask_wrapper))
 
     client.compute(pipeline, sync=True)
+
 
 def run_futures_naive_workflow():
     storage_options = {
@@ -104,18 +103,16 @@ def run_futures_naive_workflow():
         for part_fut in part_futs:
             model_future = client.submit(create_dem_dask_futures_wrapper, part_fut)
             models_futures.append(model_future)
-    
+
     dems = client.gather(models_futures)
     grouped_dems = []
     for key, group in itertools.groupby(dems, lambda part: part[0]):
         grouped_dems.append(list(group))
-    
+
     merge_futures = client.map(merge_partitions_dask_futures_wrapper, grouped_dems)
     merged = client.gather(merge_futures)
 
     print(merged)
-
-    
 
 
 if __name__ == '__main__':
