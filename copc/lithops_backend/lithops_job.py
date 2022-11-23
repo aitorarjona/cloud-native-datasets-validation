@@ -197,20 +197,6 @@ def run_cloudnative_workflow():
         fexec.clean(clean_cloudobjects=True)
 
 
-def preprocess_dataset():
-    fexec = lithops.FunctionExecutor(log_level='DEBUG')
-
-    storage = lithops.storage.Storage()
-
-    keys = storage.list_keys(bucket='point-cloud-datasets', prefix='laz/CA_YosemiteNP_2019/')
-
-    fut = fexec.map(convert_to_copc_lithops_wrapper, keys)
-    res = fexec.get_result(fs=fut)
-
-    print(res)
-
-
 if __name__ == '__main__':
-    # preprocess_dataset()
     # run_naive_workflow()
     run_cloudnative_workflow()

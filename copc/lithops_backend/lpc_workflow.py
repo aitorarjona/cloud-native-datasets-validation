@@ -14,10 +14,9 @@ import pdal
 import laspy
 import shutil
 
-MAX_X_SIZE = 550.0
-MAX_Y_SIZE = 550.0
 
-SQUARE_SPLIT = 3
+X_SPLITS = 3
+Y_SPLITS = 3
 
 
 def force_delete_path(path):
@@ -28,93 +27,23 @@ def force_delete_path(path):
             shutil.rmtree(path)
 
 
-def convert_to_copc(lidar_data):
-    input_file_path = tempfile.mktemp()
-    output_file_path = tempfile.mktemp()
-
-    try:
-        force_delete_path(input_file_path)
-        force_delete_path(output_file_path)
-
-        with open(input_file_path, 'wb') as input_file:
-            input_file.write(lidar_data)
-
-        pipeline_json = [
-            {
-                "type": "readers.las",
-                "filename": input_file_path
-            },
-            {
-                "type": "writers.copc",
-                "filename": output_file_path
-            }
-        ]
-
-        pipeline = pdal.Pipeline(json.dumps(pipeline_json))
-        pipeline.execute()
-
-        with open(output_file_path, 'rb') as result_file:
-            result = result_file.read()
-
-        return result
-
-    finally:
-        force_delete_path(input_file_path)
-        force_delete_path(output_file_path)
-
-
-def square_split(x_min, y_min, x_max, y_max, square_splits):
-    x_size = (x_max - x_min) / square_splits
-    y_size = (y_max - y_min) / square_splits
-
-    bounds = []
-    for i in range(square_splits):
-        for j in range(square_splits):
-            x_min_bound = (x_size * i) + x_min
-            y_min_bound = (y_size * j) + y_min
-            x_max_bound = x_min_bound + x_size
-            y_max_bound = y_min_bound + y_size
-            bounds.append((x_min_bound, y_min_bound, x_max_bound, y_max_bound))
-    return bounds
-
-
-def recursive_split(x_min, y_min, x_max, y_max, max_x_size, max_y_size):
-    x_size = x_max - x_min
-    y_size = y_max - y_min
-
-    if x_size > max_x_size:
-        left = recursive_split(x_min, y_min, x_min + (x_size // 2), y_max, max_x_size, max_y_size)
-        right = recursive_split(x_min + (x_size // 2), y_min, x_max, y_max, max_x_size, max_y_size)
-        return left + right
-    elif y_size > max_y_size:
-        up = recursive_split(x_min, y_min, x_max, y_min + (y_size // 2), max_x_size, max_y_size)
-        down = recursive_split(x_min, y_min + (y_size // 2), x_max, y_max, max_x_size, max_y_size)
-        return up + down
-    else:
-        return [(x_min, y_min, x_max, y_max)]
-
-
 def partition_las(file_path, lidar_data):
     print(f'>>> partition_las - start - {time.time()} - {file_path}')
 
     with laspy.open(lidar_data) as file:
-        sub_bounds = square_split(
-            file.header.x_min,
-            file.header.y_min,
-            file.header.x_max,
-            file.header.y_max,
-            SQUARE_SPLIT
-        )
-        # sub_bounds = recursive_split(
-        #     file.header.mins[0],
-        #     file.header.mins[1],
-        #     file.header.maxs[0],
-        #     file.header.maxs[1],
-        #     MAX_X_SIZE,
-        #     MAX_Y_SIZE
-        # )
+        x_size = (x_max - x_min) / X_SPLITS
+        y_size = (y_max - y_min) / Y_SPLITS
 
-        buffers = [io.BytesIO() for _ in range(len(sub_bounds))]
+        bounds = []
+        for i in range(X_SPLITS):
+            for j in range(Y_SPLITS):
+                x_min_bound = (x_size * i) + x_min
+                y_min_bound = (y_size * j) + y_min
+                x_max_bound = x_min_bound + x_size
+                y_max_bound = y_min_bound + y_size
+                bounds.append((x_min_bound, y_min_bound, x_max_bound, y_max_bound))
+
+        buffers = [io.BytesIO() for _ in range(len(bounds))]
         writers = [laspy.open(buff, mode='w', header=file.header, closefd=False, do_compress=True) for buff in buffers]
 
         try:
@@ -122,22 +51,18 @@ def partition_las(file_path, lidar_data):
             for points in file.chunk_iterator(1_000_000):
                 print(f'{count / file.header.point_count * 100}%')
 
-                # For performance we need to use copy
-                # so that the underlying arrays are contiguous
                 x, y = points.x.copy(), points.y.copy()
+                points_piped = 0
 
-                point_piped = 0
-
-                for i, (x_min, y_min, x_max, y_max) in enumerate(sub_bounds):
+                for i, (x_min, y_min, x_max, y_max) in enumerate(bounds):
                     mask = (x >= x_min) & (x <= x_max) & (y >= y_min) & (y <= y_max)
 
                     if np.any(mask):
                         sub_points = points[mask]
-                        # print('write')
                         writers[i].write_points(sub_points)
 
-                    point_piped += np.sum(mask)
-                    if point_piped == len(points):
+                    points_piped += np.sum(mask)
+                    if points_piped == len(points):
                         break
                 count += len(points)
             print(f'{count / file.header.point_count * 100}%')
@@ -252,9 +177,9 @@ def create_dem(file_path, partition, las_data):
         pipeline = pdal.Pipeline(json.dumps(dem_pipeline_json))
         # pipeline.validate()
         # pipeline.loglevel = 8
-        print(f'Executing DEM pipeline for {file_path}...')
+        # print(f'Executing DEM pipeline for {file_path}...')
         result = pipeline.execute()
-        print(f'DEM result wrote {result} bytes')
+        # print(f'DEM result wrote {result} bytes')
 
         with open(dem_filename, 'rb') as dem_file:
             dem = dem_file.read()
