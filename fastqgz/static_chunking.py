@@ -25,7 +25,6 @@ if __name__ == '__main__':
 
     data_stream = s3_client.get_object(Bucket='genomics', Key='SRR21394969.fastq.gz')
 
-
     with ThreadPoolExecutor(max_workers=256) as pool:
         futures = []
         zip_stream = gzip.GzipFile(fileobj=data_stream['Body'])
