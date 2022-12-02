@@ -5,8 +5,9 @@ import math
 import tempfile
 import shutil
 import argparse
+import botocore
 
-LOCAL_TMP_DIR = "fastq-tmp"
+LOCAL_TMP_DIR = "fastq-data"
 
 
 def create_fasta_splits(sra_ids, splits, bucket, prefix):
@@ -23,18 +24,27 @@ def create_fasta_splits(sra_ids, splits, bucket, prefix):
         else:
             print(f'Found FASTQ file {sra_id}')
 
-        cmd = "wc -l {}.fastq | awk '{print $1;}'".format(sra_id)
+        file = os.path.join(LOCAL_TMP_DIR, sra_id+'.fastq')
+        cmd = "wc -l "+ file +" | awk '{print $1;}'"
         print(cmd)
-        lines = int(subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True))
+        lines = int(subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True).stdout)
         n_reads = math.ceil(lines / 4)
         print(f'{lines=},{n_reads=}')
 
         for split in range(1, splits + 1):
             if split == 1:
-                print('Uploading single split...')
                 key = os.path.join(prefix, sra_id + '_' + str(split), sra_id + '_0.fastq')
-                s3.upload_file(Filename=os.path.join(LOCAL_TMP_DIR, sra_id + '.fastq'), Bucket=bucket, Key=key)
-                print('Done')
+                try:
+                    s3.head_object(Bucket=bucket, Key=key)
+                    exists = True
+                except botocore.exceptions.ClientError:
+                    exists = False
+                if not exists:
+                    print('Uploading single split...')
+                    s3.upload_file(Filename=os.path.join(LOCAL_TMP_DIR, sra_id + '.fastq'), Bucket=bucket, Key=key)
+                    print('Done')
+                else:
+                    print('Key already exists')
                 continue
 
             lines_per_chunk = math.ceil(n_reads / split) * 4
@@ -43,19 +53,28 @@ def create_fasta_splits(sra_ids, splits, bucket, prefix):
             tmp_dir = tempfile.mktemp()
             shutil.rmtree(tmp_dir, ignore_errors=True)
             os.mkdir(tmp_dir)
-            cmd = ['split', '-l', lines_per_chunk, os.path.join(LOCAL_TMP_DIR, sra_id + '.fastq'), os.path.join(tmp_dir, 'chunk')]
+            cmd = ['split', '-l', str(lines_per_chunk), os.path.join(LOCAL_TMP_DIR, sra_id + '.fastq'), os.path.join(tmp_dir, 'chunk')]
             print(' '.join(cmd))
             subprocess.run(cmd, check=True)
 
-            chunks = os.listdir(tmp_dir).sort()
+            chunks = sorted(os.listdir(tmp_dir))
             print('Created chunks: ', chunks)
 
             for i, chunk in enumerate(chunks):
-                print(f'Uploading split {i}...')
                 key = os.path.join(prefix, sra_id + '_' + str(split), sra_id + '_' + str(i) + '.fastq')
-                s3.upload_file(Filename=os.path.join(tmp_dir, chunk), Bucket=bucket, Key=key)
-                print('Done')
+                try:
+                    s3.head_object(Bucket=bucket, Key=key)
+                    exists = True
+                except botocore.exceptions.ClientError:
+                    exists = False
+                if not exists:
+                    print(f'Uploading split {i}...')
+                    s3.upload_file(Filename=os.path.join(tmp_dir, chunk), Bucket=bucket, Key=key)
+                    print('Done')
+                else:
+                    print('Key alredy exists')
             
+            shutil.rmtree(tmp_dir, ignore_errors=True)
             print(f'Done processing file {sra_id}')
 
 if __name__ == '__main__':
@@ -76,7 +95,6 @@ if __name__ == '__main__':
             sra_ids.extend(input_file_file.readlines())
     
     print(sra_ids)
-    # create_fasta_splits(sra_ids, args.splits, args.bucket, args.prefix)
-
+    create_fasta_splits(sra_ids, args.splits, args.bucket, args.prefix)
 
 

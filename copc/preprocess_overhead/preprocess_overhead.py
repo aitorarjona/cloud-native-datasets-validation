@@ -7,7 +7,7 @@ import json
 
 from dataplug import CloudObject
 from dataplug.geospatial.laspc import LiDARPointCloud
-from dataplug.preprocess import LithopsPreprocessor, DummyPreprocessor
+from dataplug.preprocess import DummyPreprocessor
 from dataplug.util import setup_logging
 
 from datetime import datetime
