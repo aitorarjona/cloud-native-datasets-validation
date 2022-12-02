@@ -19,7 +19,7 @@ def load_stats():
         stats = df.to_dict()
         return stats
     else:
-        return []
+        return {}
 
 
 def save_stats(stats):
